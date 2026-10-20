@@ -1,0 +1,211 @@
+{
+  "schemaVersion": 1,
+  "id": "Z-01",
+  "seed": 49001,
+  "stage": {
+    "paper": "gayoushi",
+    "view": "top",
+    "mirror": "none"
+  },
+  "regions": {},
+  "steps": [
+    {
+      "id": "step-1",
+      "durationMs": 5000,
+      "caption": "ちいさい・おおきいを くらべよう",
+      "description": "同じ花を小さい配置と大きい配置で比べる。",
+      "actions": [
+        {
+          "id": "action-0",
+          "t": 0,
+          "dur": 5000,
+          "type": "compare",
+          "left": {
+            "schemaVersion": 1,
+            "id": "Z-01",
+            "seed": 49009,
+            "stage": {
+              "paper": "gayoushi",
+              "view": "top",
+              "mirror": "handedness"
+            },
+            "regions": {},
+            "steps": [
+              {
+                "id": "step-1",
+                "durationMs": 5000,
+                "caption": "ちいさい かたち",
+                "description": "ちいさい かたち",
+                "actions": [
+                  {
+                    "id": "action-0",
+                    "t": 0,
+                    "dur": 0,
+                    "type": "scene.object",
+                    "objectId": "flower",
+                    "sprite": "flower",
+                    "at": [
+                      500,
+                      310
+                    ],
+                    "scale": 0.9,
+                    "color": "aka"
+                  }
+                ]
+              }
+            ]
+          },
+          "right": {
+            "schemaVersion": 1,
+            "id": "Z-01",
+            "seed": 49009,
+            "stage": {
+              "paper": "gayoushi",
+              "view": "top",
+              "mirror": "handedness"
+            },
+            "regions": {},
+            "steps": [
+              {
+                "id": "step-1",
+                "durationMs": 5000,
+                "caption": "おおきい かたち",
+                "description": "おおきい かたち",
+                "actions": [
+                  {
+                    "id": "action-0",
+                    "t": 0,
+                    "dur": 0,
+                    "type": "scene.object",
+                    "objectId": "flower",
+                    "sprite": "flower",
+                    "at": [
+                      500,
+                      310
+                    ],
+                    "scale": 3,
+                    "color": "aka"
+                  }
+                ]
+              }
+            ]
+          },
+          "labels": [
+            "ちいさい かたち",
+            "おおきい かたち"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "step-2",
+      "durationMs": 5000,
+      "caption": "まわりの あきを みてみよう",
+      "description": "小さい花を左、大きい花を右へ置く。",
+      "actions": [
+        {
+          "id": "action-0",
+          "t": 0,
+          "dur": 0,
+          "type": "scene.object",
+          "objectId": "small",
+          "sprite": "flower",
+          "at": [
+            260,
+            300
+          ],
+          "scale": 0.8,
+          "color": "aka"
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 0,
+          "type": "scene.object",
+          "objectId": "large",
+          "sprite": "flower",
+          "at": [
+            720,
+            300
+          ],
+          "scale": 2.2,
+          "color": "aka"
+        },
+        {
+          "id": "action-2",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            150,
+            80
+          ],
+          "text": "まわりの あき"
+        }
+      ]
+    },
+    {
+      "id": "step-3",
+      "durationMs": 5000,
+      "caption": "あいている ばしょも つかえるね",
+      "description": "空きを点線の円で注目する。",
+      "actions": [
+        {
+          "id": "action-0",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.circle",
+          "at": [
+            280,
+            500
+          ],
+          "r": 70
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            140,
+            80
+          ],
+          "text": "あきから なにを かんじる？"
+        }
+      ]
+    },
+    {
+      "id": "step-4",
+      "durationMs": 5000,
+      "caption": "みせたい ことで えらぼう",
+      "description": "大きさを変える選択を示す。",
+      "actions": [
+        {
+          "id": "action-0",
+          "t": 0,
+          "dur": 0,
+          "type": "scene.object",
+          "objectId": "small",
+          "sprite": "flower",
+          "at": [
+            260,
+            300
+          ],
+          "scale": 1.4,
+          "color": "aka"
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            280,
+            570
+          ],
+          "text": "どちらも えらべるよ"
+        }
+      ]
+    }
+  ]
+}

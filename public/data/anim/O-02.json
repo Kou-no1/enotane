@@ -1,0 +1,189 @@
+{
+  "schemaVersion": 1,
+  "id": "O-02",
+  "seed": 47902,
+  "stage": {
+    "paper": "gayoushi",
+    "view": "top",
+    "mirror": "none"
+  },
+  "regions": {},
+  "steps": [
+    {
+      "id": "step-1",
+      "durationMs": 5000,
+      "caption": "{同じ|おなじ}{場所|ばしょ}から {長さ|ながさ}をくらべるよ",
+      "description": "りんごと容器を並べ、観察位置を固定する。",
+      "actions": [
+        {
+          "id": "action-0",
+          "t": 0,
+          "dur": 0,
+          "type": "scene.object",
+          "objectId": "apple",
+          "sprite": "apple",
+          "at": [
+            320,
+            345
+          ],
+          "scale": 1.6,
+          "color": "aka"
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 0,
+          "type": "scene.object",
+          "objectId": "cup",
+          "sprite": "water-cup",
+          "at": [
+            660,
+            345
+          ],
+          "scale": 1.8,
+          "color": "mizu"
+        },
+        {
+          "id": "action-2",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            150,
+            80
+          ],
+          "text": "みる ばしょを そろえる"
+        }
+      ]
+    },
+    {
+      "id": "step-2",
+      "durationMs": 5000,
+      "caption": "えんぴつを {目安|めやす}にしてみよう",
+      "description": "長さを比べる目安の鉛筆を紙上へ置く。",
+      "actions": [
+        {
+          "id": "action-0",
+          "t": 0,
+          "dur": 0,
+          "type": "tool.place",
+          "item": "pencil",
+          "to": [
+            220,
+            260
+          ],
+          "scale": 0.75
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.arrow",
+          "at": [
+            280,
+            210
+          ],
+          "to": [
+            280,
+            420
+          ],
+          "text": "ながさの めやす"
+        }
+      ]
+    },
+    {
+      "id": "step-3",
+      "durationMs": 5000,
+      "caption": "{角度|かくど}と {全体|ぜんたい}の{形|かたち}も{見る|みる}よ",
+      "description": "傾きの線と二つの大きさの比較を表示する。",
+      "actions": [
+        {
+          "id": "enter",
+          "type": "hand.enter",
+          "tool": "pencil",
+          "t": 0,
+          "dur": 400
+        },
+        {
+          "id": "action-0",
+          "t": 400,
+          "dur": 1800,
+          "type": "pencil.stroke",
+          "path": {
+            "gen": "line",
+            "x1": 160,
+            "y1": 495,
+            "x2": 450,
+            "y2": 440
+          },
+          "hardness": "2B",
+          "pressure": 0.3,
+          "width": 3
+        },
+        {
+          "id": "action-1",
+          "t": 2200,
+          "dur": 1800,
+          "type": "pencil.stroke",
+          "path": {
+            "gen": "line",
+            "x1": 570,
+            "y1": 440,
+            "x2": 760,
+            "y2": 440
+          },
+          "hardness": "2B",
+          "pressure": 0.3,
+          "width": 3
+        },
+        {
+          "id": "action-2",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            150,
+            80
+          ],
+          "text": "かたむきも くらべる"
+        },
+        {
+          "id": "exit",
+          "type": "hand.exit",
+          "t": 4100,
+          "dur": 400
+        }
+      ]
+    },
+    {
+      "id": "step-4",
+      "durationMs": 5000,
+      "caption": "{目安|めやす}は {観察|かんさつ}の{手がかり|てがかり}だよ",
+      "description": "絶対寸法の正解を要求しない言葉を表示する。",
+      "actions": [
+        {
+          "id": "action-0",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            120,
+            70
+          ],
+          "text": "ひりつの こたえは ひとつではない"
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            250,
+            575
+          ],
+          "text": "めに ちかづけない"
+        }
+      ]
+    }
+  ]
+}

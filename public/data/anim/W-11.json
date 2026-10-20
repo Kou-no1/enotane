@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1, "id": "W-11", "seed": 1108,
+  "stage": { "paper": "gayoushi", "view": "top", "mirror": "handedness" },
+  "regions": { "wet-area": { "shape": "ellipse", "cx": 500, "cy": 310, "rx": 300, "ry": 170 } },
+  "steps": [
+    {
+      "id": "wet-paper", "durationMs": 5000,
+      "caption": "まず{水|みず}だけをぬるよ",
+      "description": "紙の中央を水でぬらす。水は水色の絵の具とは違い、透明。光の補助表示でぬれた範囲を示す。",
+      "actions": [
+        { "id": "enter", "t": 0, "dur": 300, "type": "hand.enter", "tool": "brush-round", "from": "kiki" },
+        { "id": "wash", "t": 300, "dur": 2600, "type": "paint.wash", "color": "water", "water": 1, "region": { "ref": "wet-area" } },
+        { "id": "sheen", "t": 3000, "dur": 1500, "type": "fx.sheen", "region": { "ref": "wet-area" } },
+        { "id": "wet-label", "t": 3000, "dur": 1800, "type": "note.label", "at": [640, 200], "text": "ぬれているよ" }
+      ]
+    },
+    {
+      "id": "red-drop", "durationMs": 5000,
+      "caption": "かわく{前|まえ}に{色|いろ}をちょんとおく",
+      "description": "赤い色を一か所に置く。赤がぬれた紙の範囲へ広がる。広がり方は紙や絵の具によって違う。",
+      "actions": [
+        { "id": "zoom", "t": 0, "dur": 800, "type": "zoom.to", "rect": [280, 170, 300, 260] },
+        { "id": "red", "t": 900, "dur": 300, "type": "paint.drop", "color": "aka", "at": [420, 300], "size": 22 },
+        { "id": "red-bleed", "t": 1200, "dur": 2800, "type": "paint.bleed", "source": "red", "region": { "ref": "wet-area" }, "radius": 130 }
+      ]
+    },
+    {
+      "id": "yellow-drop", "durationMs": 5000,
+      "caption": "となりにちがう{色|いろ}もおいてみよう",
+      "description": "黄色を隣に置く。黄色も広がり、赤と重なる部分に別の色が見える。",
+      "actions": [
+        { "id": "reset-zoom", "t": 0, "dur": 600, "type": "zoom.reset" },
+        { "id": "yellow", "t": 700, "dur": 300, "type": "paint.drop", "color": "kiiro", "at": [580, 320], "size": 22 },
+        { "id": "yellow-bleed", "t": 1000, "dur": 2800, "type": "paint.bleed", "source": "yellow", "region": { "ref": "wet-area" }, "radius": 130 },
+        { "id": "mixed-area", "t": 3900, "dur": 1000, "type": "note.circle", "at": [500, 310], "r": 60, "text": "まざったところは？" }
+      ]
+    },
+    {
+      "id": "dry-paper", "durationMs": 5000,
+      "caption": "かわくまで まとう（はやく みせているよ）",
+      "description": "乾くまでの時間を短縮して示す。色の広がった形は残り、ぬれた光は消える。実物では乾くまで待つ。",
+      "actions": [
+        { "id": "exit", "t": 0, "dur": 300, "type": "hand.exit" },
+        { "id": "dry", "t": 0, "dur": 2400, "type": "paint.dry", "region": { "ref": "wet-area" } },
+        { "id": "observe", "t": 2500, "dur": 2300, "type": "note.label", "at": [500, 530], "text": "どんな かたちが みえる？" }
+      ]
+    }
+  ]
+}

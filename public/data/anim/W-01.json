@@ -1,0 +1,177 @@
+{
+  "schemaVersion": 1,
+  "id": "W-01",
+  "seed": 48701,
+  "stage": {
+    "paper": "gayoushi",
+    "view": "top",
+    "mirror": "handedness"
+  },
+  "regions": {},
+  "steps": [
+    {
+      "id": "step-1",
+      "durationMs": 5000,
+      "caption": "まず {紙|かみ}の{場所|ばしょ}を{決め|きめ}よう",
+      "description": "中央に紙、手前左にぞうきんを置く。",
+      "actions": [
+        {
+          "id": "action-0",
+          "t": 0,
+          "dur": 0,
+          "type": "tool.place",
+          "item": "paper",
+          "to": [
+            470,
+            305
+          ],
+          "scale": 3.6
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 0,
+          "type": "tool.place",
+          "item": "cloth",
+          "to": [
+            180,
+            500
+          ],
+          "scale": 1.1
+        },
+        {
+          "id": "action-2",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            150,
+            80
+          ],
+          "text": "かみを まんなかに"
+        }
+      ]
+    },
+    {
+      "id": "step-2",
+      "durationMs": 5000,
+      "caption": "{利き手|ききて}{側|がわ}に パレットを{置く|おく}よ",
+      "description": "標準は右側、左ききはステージ全体の反転に任せる。",
+      "actions": [
+        {
+          "id": "action-0",
+          "t": 0,
+          "dur": 0,
+          "type": "tool.place",
+          "item": "palette",
+          "to": [
+            830,
+            200
+          ],
+          "scale": 1.25
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 0,
+          "type": "tool.place",
+          "item": "brush-round",
+          "to": [
+            760,
+            420
+          ],
+          "scale": 0.7
+        },
+        {
+          "id": "action-2",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            580,
+            80
+          ],
+          "text": "%KIKI%がわに パレット"
+        }
+      ]
+    },
+    {
+      "id": "step-3",
+      "durationMs": 5000,
+      "caption": "{筆洗|ふであらい}を たおしにくい{所|ところ}へ",
+      "description": "筆洗を机の端から離れた右上へ置く。",
+      "actions": [
+        {
+          "id": "action-0",
+          "t": 0,
+          "dur": 0,
+          "type": "tool.place",
+          "item": "water-cup",
+          "to": [
+            805,
+            380
+          ],
+          "scale": 1.1
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.arrow",
+          "at": [
+            940,
+            480
+          ],
+          "to": [
+            820,
+            390
+          ],
+          "text": "とりやすい ばしょ"
+        }
+      ]
+    },
+    {
+      "id": "step-4",
+      "durationMs": 5000,
+      "caption": "{使い|つかい}やすく {場所|ばしょ}を{変え|かえ}ていいよ",
+      "description": "各道具の位置を少し調整して準備の自由度を示す。",
+      "actions": [
+        {
+          "id": "action-0",
+          "t": 0,
+          "dur": 0,
+          "type": "tool.place",
+          "item": "cloth",
+          "to": [
+            660,
+            515
+          ],
+          "scale": 1.1
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 0,
+          "type": "tool.place",
+          "item": "brush-round",
+          "to": [
+            755,
+            460
+          ],
+          "scale": 0.7
+        },
+        {
+          "id": "action-2",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            210,
+            575
+          ],
+          "text": "つくえに あわせて ためそう"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,183 @@
+{
+  "schemaVersion": 1,
+  "id": "M-07",
+  "seed": 47707,
+  "stage": {
+    "paper": "gayoushi",
+    "view": "top",
+    "mirror": "handedness"
+  },
+  "regions": {},
+  "steps": [
+    {
+      "id": "step-1",
+      "durationMs": 5000,
+      "caption": "{専用|せんよう}の{画材|がざい}と{液|えき}を {用意|ようい}するよ",
+      "description": "専用液の容器を示し、普通の水彩と区別する。",
+      "actions": [
+        {
+          "id": "action-0",
+          "t": 0,
+          "dur": 0,
+          "type": "tool.place",
+          "item": "tray",
+          "to": [
+            500,
+            320
+          ],
+          "scale": 3.5
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            150,
+            80
+          ],
+          "text": "せいひんで していされた えき"
+        },
+        {
+          "id": "action-2",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            320,
+            550
+          ],
+          "text": "おとなと じゅんび"
+        }
+      ]
+    },
+    {
+      "id": "step-2",
+      "durationMs": 5000,
+      "caption": "{水|みず}{面|めん}へ {色|いろ}をおくよ",
+      "description": "領域に赤・青・黄の模様を生成する。",
+      "actions": [
+        {
+          "id": "action-0",
+          "t": 400,
+          "dur": 3600,
+          "type": "marble.swirl",
+          "region": {
+            "shape": "rect",
+            "x": 190,
+            "y": 180,
+            "w": 620,
+            "h": 280
+          },
+          "colors": [
+            "aka",
+            "ao",
+            "kiiro"
+          ],
+          "turns": 1
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            150,
+            80
+          ],
+          "text": "みずの うえの もよう"
+        }
+      ]
+    },
+    {
+      "id": "step-3",
+      "durationMs": 5000,
+      "caption": "そっと{動かし|うごかし}て {模様|もよう}を{見|み}よう",
+      "description": "同じ色の領域へ回転数を変えた模様を図示する。",
+      "actions": [
+        {
+          "id": "action-0",
+          "t": 400,
+          "dur": 3600,
+          "type": "marble.swirl",
+          "region": {
+            "shape": "rect",
+            "x": 190,
+            "y": 180,
+            "w": 620,
+            "h": 280
+          },
+          "colors": [
+            "aka",
+            "ao",
+            "kiiro"
+          ],
+          "turns": 3
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            150,
+            80
+          ],
+          "text": "せんの ながれを ためす"
+        }
+      ]
+    },
+    {
+      "id": "step-4",
+      "durationMs": 5000,
+      "caption": "{紙|かみ}に{写|うつ}して {形|かたち}を{見つけ|みつけ}よう",
+      "description": "専用液上の模様を固定した紙へ転写し、紙が右下へ移る図示。実際の紙や顔料の転写条件は製品による。",
+      "actions": [
+        {
+          "id": "action-0",
+          "t": 400,
+          "dur": 3600,
+          "type": "marble.transfer",
+          "region": {
+            "shape": "rect",
+            "x": 190,
+            "y": 180,
+            "w": 620,
+            "h": 280
+          },
+          "to": [
+            725,
+            430
+          ],
+          "scale": 0.5
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.arrow",
+          "at": [
+            790,
+            150
+          ],
+          "to": [
+            790,
+            450
+          ],
+          "text": "かみへ うつす"
+        },
+        {
+          "id": "action-2",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            130,
+            560
+          ],
+          "text": "ふつうの すいさいだけでは ちがう"
+        }
+      ]
+    }
+  ]
+}

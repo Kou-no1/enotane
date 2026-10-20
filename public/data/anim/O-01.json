@@ -1,0 +1,222 @@
+{
+  "schemaVersion": 1,
+  "id": "O-01",
+  "seed": 47901,
+  "stage": {
+    "paper": "gayoushi",
+    "view": "top",
+    "mirror": "none"
+  },
+  "regions": {},
+  "steps": [
+    {
+      "id": "step-1",
+      "durationMs": 5000,
+      "caption": "もののふちを ゆっくり{見る|みる}よ",
+      "description": "葉の観察対象と目でたどる方向を表示する。",
+      "actions": [
+        {
+          "id": "action-0",
+          "t": 0,
+          "dur": 0,
+          "type": "scene.object",
+          "objectId": "leaf",
+          "sprite": "leaf",
+          "at": [
+            700,
+            305
+          ],
+          "scale": 2.1,
+          "color": "midori"
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.arrow",
+          "at": [
+            830,
+            150
+          ],
+          "to": [
+            770,
+            245
+          ],
+          "text": "めで たどる"
+        },
+        {
+          "id": "action-2",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            150,
+            80
+          ],
+          "text": "かみを みずに ためす"
+        }
+      ]
+    },
+    {
+      "id": "step-2",
+      "durationMs": 5000,
+      "caption": "{目|め}の{動き|うごき}に{合わせ|あわせ}て {線|せん}を{動かす|うごかす}",
+      "description": "観察対象を見ながら紙側へ非正確な輪郭を描く。",
+      "actions": [
+        {
+          "id": "enter",
+          "type": "hand.enter",
+          "tool": "pencil",
+          "t": 0,
+          "dur": 400
+        },
+        {
+          "id": "action-0",
+          "t": 400,
+          "dur": 3600,
+          "type": "pencil.stroke",
+          "path": {
+            "points": [
+              [
+                170,
+                450
+              ],
+              [
+                135,
+                330
+              ],
+              [
+                150,
+                210
+              ],
+              [
+                230,
+                165
+              ],
+              [
+                300,
+                230
+              ],
+              [
+                365,
+                260
+              ],
+              [
+                340,
+                350
+              ],
+              [
+                280,
+                445
+              ],
+              [
+                170,
+                450
+              ]
+            ]
+          },
+          "hardness": "2B",
+          "pressure": 0.65,
+          "width": 3
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            150,
+            80
+          ],
+          "text": "ずれても たのしもう"
+        },
+        {
+          "id": "exit",
+          "type": "hand.exit",
+          "t": 4100,
+          "dur": 400
+        }
+      ]
+    },
+    {
+      "id": "step-3",
+      "durationMs": 5000,
+      "caption": "ゆっくり{見た|みた}{所|ところ}を {話|はな}してみよう",
+      "description": "複雑な葉脈と輪郭の注目を示す。",
+      "actions": [
+        {
+          "id": "enter",
+          "type": "hand.enter",
+          "tool": "pencil",
+          "t": 0,
+          "dur": 400
+        },
+        {
+          "id": "action-0",
+          "t": 400,
+          "dur": 3600,
+          "type": "pencil.stroke",
+          "path": {
+            "points": [
+              [
+                175,
+                420
+              ],
+              [
+                230,
+                295
+              ],
+              [
+                325,
+                240
+              ]
+            ]
+          },
+          "hardness": "2B",
+          "pressure": 0.65,
+          "width": 3
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.arrow",
+          "at": [
+            450,
+            180
+          ],
+          "to": [
+            270,
+            240
+          ],
+          "text": "よく みた ところ"
+        },
+        {
+          "id": "exit",
+          "type": "hand.exit",
+          "t": 4100,
+          "dur": 400
+        }
+      ]
+    },
+    {
+      "id": "step-4",
+      "durationMs": 5000,
+      "caption": "{思い|おもい}がけない{線|せん}を {見つけ|みつけ}よう",
+      "description": "出来た線を採点せず見立てを促す。",
+      "actions": [
+        {
+          "id": "action-0",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            210,
+            570
+          ],
+          "text": "どんな かたちに みえる？"
+        }
+      ]
+    }
+  ]
+}

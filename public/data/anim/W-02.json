@@ -1,0 +1,206 @@
+{
+  "schemaVersion": 1,
+  "id": "W-02",
+  "seed": 48702,
+  "stage": {
+    "paper": "gayoushi",
+    "view": "top",
+    "mirror": "handedness"
+  },
+  "regions": {},
+  "steps": [
+    {
+      "id": "step-1",
+      "durationMs": 5000,
+      "caption": "パレットの{部屋|へや}を {見て|みて}みよう",
+      "description": "パレットを大きく配置する。",
+      "actions": [
+        {
+          "id": "action-0",
+          "t": 0,
+          "dur": 0,
+          "type": "tool.place",
+          "item": "palette",
+          "to": [
+            500,
+            330
+          ],
+          "scale": 3
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            150,
+            80
+          ],
+          "text": "ちいさい へやと ひろい へや"
+        }
+      ]
+    },
+    {
+      "id": "step-2",
+      "durationMs": 5000,
+      "caption": "{小さい部屋|ちいさいへや}へ {色|いろ}を{出す|だす}よ",
+      "description": "小さい色だまりを赤と黄色で置く。",
+      "actions": [
+        {
+          "id": "enter",
+          "type": "hand.enter",
+          "tool": "brush-round",
+          "t": 0,
+          "dur": 400
+        },
+        {
+          "id": "action-0",
+          "t": 400,
+          "dur": 1800,
+          "type": "paint.wash",
+          "region": {
+            "shape": "circle",
+            "cx": 340,
+            "cy": 270,
+            "r": 38
+          },
+          "color": "aka",
+          "water": 0.1,
+          "mode": "opaque"
+        },
+        {
+          "id": "action-1",
+          "t": 2200,
+          "dur": 1800,
+          "type": "paint.wash",
+          "region": {
+            "shape": "circle",
+            "cx": 445,
+            "cy": 230,
+            "r": 38
+          },
+          "color": "kiiro",
+          "water": 0.1,
+          "mode": "opaque"
+        },
+        {
+          "id": "action-2",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            150,
+            80
+          ],
+          "text": "すこしずつ だす"
+        },
+        {
+          "id": "exit",
+          "type": "hand.exit",
+          "t": 4100,
+          "dur": 400
+        }
+      ]
+    },
+    {
+      "id": "step-3",
+      "durationMs": 5000,
+      "caption": "{広い|ひろい}{部屋|へや}で {水|みず}を{混ぜ|まぜ}よう",
+      "description": "中央の混色領域へ赤を水で薄める。",
+      "actions": [
+        {
+          "id": "enter",
+          "type": "hand.enter",
+          "tool": "brush-round",
+          "t": 0,
+          "dur": 400
+        },
+        {
+          "id": "action-0",
+          "t": 400,
+          "dur": 3600,
+          "type": "paint.wash",
+          "region": {
+            "shape": "ellipse",
+            "cx": 530,
+            "cy": 390,
+            "rx": 120,
+            "ry": 65
+          },
+          "color": "aka",
+          "water": 0.7
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            390,
+            550
+          ],
+          "text": "ひろい へやで みずを たす"
+        },
+        {
+          "id": "exit",
+          "type": "hand.exit",
+          "t": 4100,
+          "dur": 400
+        }
+      ]
+    },
+    {
+      "id": "step-4",
+      "durationMs": 5000,
+      "caption": "ほかの{色|いろ}も {少し|すこし}{混ぜ|まぜ}られるね",
+      "description": "広い部屋で赤と黄色を混ぜる。",
+      "actions": [
+        {
+          "id": "enter",
+          "type": "hand.enter",
+          "tool": "brush-round",
+          "t": 0,
+          "dur": 400
+        },
+        {
+          "id": "action-0",
+          "t": 400,
+          "dur": 3600,
+          "type": "paint.mix",
+          "region": {
+            "shape": "ellipse",
+            "cx": 530,
+            "cy": 390,
+            "rx": 120,
+            "ry": 65
+          },
+          "colors": [
+            "aka",
+            "kiiro"
+          ],
+          "amounts": [
+            1,
+            1
+          ]
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            150,
+            80
+          ],
+          "text": "へやの かたちは どうぐで ちがう"
+        },
+        {
+          "id": "exit",
+          "type": "hand.exit",
+          "t": 4100,
+          "dur": 400
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,209 @@
+{
+  "schemaVersion": 1,
+  "id": "Z-05",
+  "seed": 49005,
+  "stage": {
+    "paper": "gayoushi",
+    "view": "top",
+    "mirror": "none"
+  },
+  "regions": {},
+  "steps": [
+    {
+      "id": "step-1",
+      "durationMs": 5000,
+      "caption": "{形|かたち}を はなして{置い|おい}てみよう",
+      "description": "三つの葉を離して置く。",
+      "actions": [
+        {
+          "id": "action-0",
+          "t": 0,
+          "dur": 0,
+          "type": "scene.object",
+          "objectId": "a",
+          "sprite": "leaf",
+          "at": [
+            220,
+            320
+          ],
+          "scale": 1.5,
+          "color": "aka",
+          "z": 1
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 0,
+          "type": "scene.object",
+          "objectId": "b",
+          "sprite": "leaf",
+          "at": [
+            500,
+            320
+          ],
+          "scale": 1.5,
+          "color": "kiiro",
+          "z": 2
+        },
+        {
+          "id": "action-2",
+          "t": 0,
+          "dur": 0,
+          "type": "scene.object",
+          "objectId": "c",
+          "sprite": "leaf",
+          "at": [
+            780,
+            320
+          ],
+          "scale": 1.5,
+          "color": "midori",
+          "z": 3
+        },
+        {
+          "id": "action-3",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            150,
+            80
+          ],
+          "text": "はなれた かたち"
+        }
+      ]
+    },
+    {
+      "id": "step-2",
+      "durationMs": 5000,
+      "caption": "{重ね|かさね}ると {前|まえ}{後|あと}が{見える|みえる}ね",
+      "description": "葉を近づけて前後を重なりで表す。",
+      "actions": [
+        {
+          "id": "action-0",
+          "t": 0,
+          "dur": 0,
+          "type": "scene.object",
+          "objectId": "a",
+          "sprite": "leaf",
+          "at": [
+            410,
+            320
+          ],
+          "scale": 1.8,
+          "color": "aka",
+          "z": 1
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 0,
+          "type": "scene.object",
+          "objectId": "b",
+          "sprite": "leaf",
+          "at": [
+            510,
+            330
+          ],
+          "scale": 1.8,
+          "color": "kiiro",
+          "z": 2
+        },
+        {
+          "id": "action-2",
+          "t": 0,
+          "dur": 0,
+          "type": "scene.object",
+          "objectId": "c",
+          "sprite": "leaf",
+          "at": [
+            610,
+            340
+          ],
+          "scale": 1.8,
+          "color": "midori",
+          "z": 3
+        },
+        {
+          "id": "action-3",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            150,
+            80
+          ],
+          "text": "てまえが おくを かくす"
+        }
+      ]
+    },
+    {
+      "id": "step-3",
+      "durationMs": 5000,
+      "caption": "{前|まえ}{後|あと}を {入れ|いれ}かえてみよう",
+      "description": "同じ位置で赤い葉のzを前へ変更する。",
+      "actions": [
+        {
+          "id": "action-0",
+          "t": 0,
+          "dur": 0,
+          "type": "scene.object",
+          "objectId": "a",
+          "sprite": "leaf",
+          "at": [
+            410,
+            320
+          ],
+          "scale": 1.8,
+          "color": "aka",
+          "z": 4
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            150,
+            80
+          ],
+          "text": "どれが まえに みえる？"
+        }
+      ]
+    },
+    {
+      "id": "step-4",
+      "durationMs": 5000,
+      "caption": "かくれた{所|ところ}も {想像|そうぞう}できるね",
+      "description": "隠れた輪郭を注記で想像するよう促す。",
+      "actions": [
+        {
+          "id": "action-0",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.arrow",
+          "at": [
+            700,
+            180
+          ],
+          "to": [
+            550,
+            320
+          ],
+          "text": "かくれた ところ"
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            200,
+            540
+          ],
+          "text": "どの かたちを まえに したい？"
+        }
+      ]
+    }
+  ]
+}

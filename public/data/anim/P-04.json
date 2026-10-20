@@ -1,0 +1,271 @@
+{
+  "schemaVersion": 1,
+  "id": "P-04",
+  "seed": 48004,
+  "stage": {
+    "paper": "gayoushi",
+    "view": "top",
+    "mirror": "handedness"
+  },
+  "regions": {},
+  "steps": [
+    {
+      "id": "step-1",
+      "durationMs": 5000,
+      "caption": "{同じ|おなじ}{力|ちから}で くらべよう",
+      "description": "HとHBを同じ力・幅で上から順に描く。",
+      "actions": [
+        {
+          "id": "enter",
+          "type": "hand.enter",
+          "tool": "pencil",
+          "t": 0,
+          "dur": 400
+        },
+        {
+          "id": "action-0",
+          "t": 400,
+          "dur": 1800,
+          "type": "pencil.stroke",
+          "path": {
+            "gen": "line",
+            "x1": 200,
+            "y1": 130,
+            "x2": 800,
+            "y2": 130
+          },
+          "hardness": "H",
+          "pressure": 0.65,
+          "width": 3
+        },
+        {
+          "id": "action-1",
+          "t": 2200,
+          "dur": 1800,
+          "type": "pencil.stroke",
+          "path": {
+            "gen": "line",
+            "x1": 200,
+            "y1": 220,
+            "x2": 800,
+            "y2": 220
+          },
+          "hardness": "HB",
+          "pressure": 0.65,
+          "width": 3
+        },
+        {
+          "id": "action-2",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            130,
+            130
+          ],
+          "text": "H"
+        },
+        {
+          "id": "action-3",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            130,
+            220
+          ],
+          "text": "HB"
+        },
+        {
+          "id": "exit",
+          "type": "hand.exit",
+          "t": 4100,
+          "dur": 400
+        }
+      ]
+    },
+    {
+      "id": "step-2",
+      "durationMs": 5000,
+      "caption": "Bと2Bも ならべるよ",
+      "description": "Bと2Bを同じ力・幅で描く。",
+      "actions": [
+        {
+          "id": "enter",
+          "type": "hand.enter",
+          "tool": "pencil",
+          "t": 0,
+          "dur": 400
+        },
+        {
+          "id": "action-0",
+          "t": 400,
+          "dur": 1800,
+          "type": "pencil.stroke",
+          "path": {
+            "gen": "line",
+            "x1": 200,
+            "y1": 310,
+            "x2": 800,
+            "y2": 310
+          },
+          "hardness": "B",
+          "pressure": 0.65,
+          "width": 3
+        },
+        {
+          "id": "action-1",
+          "t": 2200,
+          "dur": 1800,
+          "type": "pencil.stroke",
+          "path": {
+            "gen": "line",
+            "x1": 200,
+            "y1": 400,
+            "x2": 800,
+            "y2": 400
+          },
+          "hardness": "2B",
+          "pressure": 0.65,
+          "width": 3
+        },
+        {
+          "id": "action-2",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            130,
+            310
+          ],
+          "text": "B"
+        },
+        {
+          "id": "action-3",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            130,
+            400
+          ],
+          "text": "2B"
+        },
+        {
+          "id": "exit",
+          "type": "hand.exit",
+          "t": 4100,
+          "dur": 400
+        }
+      ]
+    },
+    {
+      "id": "step-3",
+      "durationMs": 5000,
+      "caption": "4Bの{線|せん}も {見て|みて}みよう",
+      "description": "五本目の4Bを加え、同じ条件の5本が並ぶ。",
+      "actions": [
+        {
+          "id": "enter",
+          "type": "hand.enter",
+          "tool": "pencil",
+          "t": 0,
+          "dur": 400
+        },
+        {
+          "id": "action-0",
+          "t": 400,
+          "dur": 3600,
+          "type": "pencil.stroke",
+          "path": {
+            "gen": "line",
+            "x1": 200,
+            "y1": 490,
+            "x2": 800,
+            "y2": 490
+          },
+          "hardness": "4B",
+          "pressure": 0.65,
+          "width": 3
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            130,
+            490
+          ],
+          "text": "4B"
+        },
+        {
+          "id": "action-2",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            420,
+            70
+          ],
+          "text": "おなじ ちから"
+        },
+        {
+          "id": "exit",
+          "type": "hand.exit",
+          "t": 4100,
+          "dur": 400
+        }
+      ]
+    },
+    {
+      "id": "step-4",
+      "durationMs": 5000,
+      "caption": "{紙|かみ}や{力|ちから}でも {変わる|かわる}よ",
+      "description": "五本を見比べる注記。濃いほうを正解にしない。",
+      "actions": [
+        {
+          "id": "action-0",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.arrow",
+          "at": [
+            700,
+            100
+          ],
+          "to": [
+            720,
+            130
+          ],
+          "text": "うすく みえる"
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.arrow",
+          "at": [
+            700,
+            560
+          ],
+          "to": [
+            720,
+            490
+          ],
+          "text": "こく みえる"
+        },
+        {
+          "id": "action-2",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            360,
+            590
+          ],
+          "text": "どれを つかいたい？"
+        }
+      ]
+    }
+  ]
+}

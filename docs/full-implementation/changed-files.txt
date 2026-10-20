@@ -1,0 +1,180 @@
+対象ルート: C:/Users/shudi/Documents/New project (M=変更、??=新規。今回の削除ファイルはなし)
+ M enotane/.gitignore
+ M enotane/README.md
+ M enotane/dev.html
+ M enotane/index.html
+ M enotane/package-lock.json
+ M enotane/package.json
+ M enotane/scripts/validate-anim.ts
+ M enotane/src/dev/main.tsx
+ M enotane/src/engine/compiler.ts
+ M enotane/src/engine/overlay.ts
+ M enotane/src/engine/schema.ts
+ M enotane/src/engine/shapes.ts
+ M enotane/src/engine/snapshots.ts
+ M enotane/src/engine/stage.ts
+ M enotane/src/engine/tools.ts
+ M enotane/src/engine/types.ts
+ M enotane/tests/schema.test.ts
+ M enotane/vite.config.ts
+ M enotane_design_revised.md
+?? enotane/docs/full-implementation/C-10-mid.png
+?? enotane/docs/full-implementation/P-02-mid.png
+?? enotane/docs/full-implementation/P-02.webm
+?? enotane/docs/full-implementation/P-03-mid.png
+?? enotane/docs/full-implementation/W-07-left.png
+?? enotane/docs/full-implementation/W-11-mid.png
+?? enotane/docs/full-implementation/a4-cards.png
+?? enotane/docs/full-implementation/a4-worksheet.png
+?? enotane/docs/full-implementation/all-69-canvas.txt
+?? enotane/docs/full-implementation/build-integrity.json
+?? enotane/docs/full-implementation/canvas-errors.json
+?? enotane/docs/full-implementation/changed-files.txt
+?? enotane/docs/full-implementation/composition-lab.png
+?? enotane/docs/full-implementation/content-audit.md
+?? enotane/docs/full-implementation/cpu-4x-performance.json
+?? enotane/docs/full-implementation/desktop-performance-loaded-host.json
+?? enotane/docs/full-implementation/desktop-performance-with-tracing.json
+?? enotane/docs/full-implementation/desktop-performance.json
+?? enotane/docs/full-implementation/engine-audit.md
+?? enotane/docs/full-implementation/export-P-02.png
+?? enotane/docs/full-implementation/home.png
+?? enotane/docs/full-implementation/mobile-360-text-200.png
+?? enotane/docs/full-implementation/mobile-360.png
+?? enotane/docs/full-implementation/mobile-layout.json
+?? enotane/docs/full-implementation/npm-audit.json
+?? enotane/docs/full-implementation/offline-W-11.png
+?? enotane/docs/full-implementation/offline-errors.json
+?? enotane/docs/full-implementation/original-3-regression.txt
+?? enotane/docs/full-implementation/performance-retest.json
+?? enotane/docs/full-implementation/playwright-results.json
+?? enotane/docs/full-implementation/print-longest-cards.png
+?? enotane/docs/full-implementation/print-worksheet.png
+?? enotane/docs/full-implementation/report.md
+?? enotane/docs/full-implementation/restore-performance-before.json
+?? enotane/docs/full-implementation/restore-performance.json
+?? enotane/docs/full-implementation/tools.png
+?? enotane/docs/full-implementation/ui-errors.json
+?? enotane/docs/full-implementation/video-playback.json
+?? enotane/e2e/comparison.spec.ts
+?? enotane/e2e/mobile-layout.spec.ts
+?? enotane/e2e/performance.spec.ts
+?? enotane/e2e/print-layout.spec.ts
+?? enotane/e2e/product.spec.ts
+?? enotane/playwright.config.ts
+?? enotane/public/assets/challenges/autumn-leaves-one.svg
+?? enotane/public/assets/challenges/autumn-leaves-path.svg
+?? enotane/public/assets/challenges/autumn-leaves-wind.svg
+?? enotane/public/assets/challenges/creature-floating.svg
+?? enotane/public/assets/challenges/creature-island.svg
+?? enotane/public/assets/challenges/creature-wing.svg
+?? enotane/public/assets/challenges/fireworks-garden.svg
+?? enotane/public/assets/challenges/fireworks-path.svg
+?? enotane/public/assets/challenges/fireworks-river.svg
+?? enotane/public/assets/challenges/forest-clearing.svg
+?? enotane/public/assets/challenges/forest-hill.svg
+?? enotane/public/assets/challenges/forest-river.svg
+?? enotane/public/assets/challenges/night-sky-cloud.svg
+?? enotane/public/assets/challenges/night-sky-moon.svg
+?? enotane/public/assets/challenges/night-sky-wind.svg
+?? enotane/public/assets/challenges/sports-day-group.svg
+?? enotane/public/assets/challenges/sports-day-jump.svg
+?? enotane/public/assets/challenges/sports-day-run.svg
+?? enotane/public/data/anim/C-01.json
+?? enotane/public/data/anim/C-02.json
+?? enotane/public/data/anim/C-03.json
+?? enotane/public/data/anim/C-04.json
+?? enotane/public/data/anim/C-05.json
+?? enotane/public/data/anim/C-06.json
+?? enotane/public/data/anim/C-07.json
+?? enotane/public/data/anim/C-08.json
+?? enotane/public/data/anim/C-10.json
+?? enotane/public/data/anim/C-11.json
+?? enotane/public/data/anim/C-12.json
+?? enotane/public/data/anim/K-01.json
+?? enotane/public/data/anim/K-02.json
+?? enotane/public/data/anim/K-03.json
+?? enotane/public/data/anim/K-04.json
+?? enotane/public/data/anim/K-05.json
+?? enotane/public/data/anim/K-06.json
+?? enotane/public/data/anim/M-01.json
+?? enotane/public/data/anim/M-02.json
+?? enotane/public/data/anim/M-03.json
+?? enotane/public/data/anim/M-04.json
+?? enotane/public/data/anim/M-05.json
+?? enotane/public/data/anim/M-06.json
+?? enotane/public/data/anim/M-07.json
+?? enotane/public/data/anim/O-01.json
+?? enotane/public/data/anim/O-02.json
+?? enotane/public/data/anim/O-03.json
+?? enotane/public/data/anim/O-04.json
+?? enotane/public/data/anim/O-05.json
+?? enotane/public/data/anim/O-06.json
+?? enotane/public/data/anim/P-01.json
+?? enotane/public/data/anim/P-03.json
+?? enotane/public/data/anim/P-04.json
+?? enotane/public/data/anim/P-05.json
+?? enotane/public/data/anim/P-06.json
+?? enotane/public/data/anim/P-07.json
+?? enotane/public/data/anim/P-08.json
+?? enotane/public/data/anim/P-09.json
+?? enotane/public/data/anim/P-10.json
+?? enotane/public/data/anim/W-01.json
+?? enotane/public/data/anim/W-02.json
+?? enotane/public/data/anim/W-03.json
+?? enotane/public/data/anim/W-04.json
+?? enotane/public/data/anim/W-05.json
+?? enotane/public/data/anim/W-06.json
+?? enotane/public/data/anim/W-07.json
+?? enotane/public/data/anim/W-08.json
+?? enotane/public/data/anim/W-09.json
+?? enotane/public/data/anim/W-10.json
+?? enotane/public/data/anim/W-12.json
+?? enotane/public/data/anim/W-13.json
+?? enotane/public/data/anim/W-14.json
+?? enotane/public/data/anim/W-15.json
+?? enotane/public/data/anim/W-16.json
+?? enotane/public/data/anim/W-17.json
+?? enotane/public/data/anim/W-18.json
+?? enotane/public/data/anim/Z-01.json
+?? enotane/public/data/anim/Z-02.json
+?? enotane/public/data/anim/Z-03.json
+?? enotane/public/data/anim/Z-04.json
+?? enotane/public/data/anim/Z-05.json
+?? enotane/public/data/anim/Z-06.json
+?? enotane/public/data/anim/Z-07.json
+?? enotane/public/data/anim/Z-08.json
+?? enotane/public/data/anim/Z-09.json
+?? enotane/public/data/anim/Z-10.json
+?? enotane/public/data/challenges.json
+?? enotane/public/data/lessons.json
+?? enotane/public/data/teacher-index.json
+?? enotane/public/sw.js
+?? enotane/scripts/animation-source.mjs
+?? enotane/scripts/challenge-source.mjs
+?? enotane/scripts/content-source.mjs
+?? enotane/scripts/generate-content.mjs
+?? enotane/src/app/App.tsx
+?? enotane/src/app/LessonPlayer.tsx
+?? enotane/src/app/features.css
+?? enotane/src/app/features.tsx
+?? enotane/src/app/routes.ts
+?? enotane/src/app/search.ts
+?? enotane/src/app/shared.tsx
+?? enotane/src/app/style.css
+?? enotane/src/app/transport.ts
+?? enotane/src/content/catalog.ts
+?? enotane/src/content/types.ts
+?? enotane/src/dev/FullVerification.tsx
+?? enotane/src/engine/mixing.ts
+?? enotane/src/engine/scene.ts
+?? enotane/src/engine/techniques.ts
+?? enotane/src/main.tsx
+?? enotane/src/store/progress.ts
+?? enotane/tests/exports.test.ts
+?? enotane/tests/extended-engine.test.ts
+?? enotane/tests/offline.test.ts
+?? enotane/tests/progress.test.ts
+?? enotane/tests/routes.test.ts
+?? enotane/tests/search.test.ts
+?? enotane/tests/transport.test.ts

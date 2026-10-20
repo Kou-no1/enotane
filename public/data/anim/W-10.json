@@ -1,0 +1,196 @@
+{
+  "schemaVersion": 1,
+  "id": "W-10",
+  "seed": 48710,
+  "stage": {
+    "paper": "gayoushi",
+    "view": "top",
+    "mirror": "handedness"
+  },
+  "regions": {},
+  "steps": [
+    {
+      "id": "step-1",
+      "durationMs": 5000,
+      "caption": "{濃い|こい}{色|いろ}から ぬるよ",
+      "description": "上部に比較的濃い青を横へ塗る。",
+      "actions": [
+        {
+          "id": "enter",
+          "type": "hand.enter",
+          "tool": "brush-round",
+          "t": 0,
+          "dur": 400
+        },
+        {
+          "id": "action-0",
+          "t": 400,
+          "dur": 3600,
+          "type": "paint.stroke",
+          "path": {
+            "gen": "line",
+            "x1": 180,
+            "y1": 180,
+            "x2": 820,
+            "y2": 180
+          },
+          "color": "ao",
+          "width": 70,
+          "water": 0.15,
+          "brush": "flat",
+          "part": "belly"
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            150,
+            80
+          ],
+          "text": "こい いろ"
+        },
+        {
+          "id": "exit",
+          "type": "hand.exit",
+          "t": 4100,
+          "dur": 400
+        }
+      ]
+    },
+    {
+      "id": "step-2",
+      "durationMs": 5000,
+      "caption": "{少し|すこし}{水|みず}を {足し|たし}てつなごう",
+      "description": "中段に水量を増やした青をつなぐ。",
+      "actions": [
+        {
+          "id": "enter",
+          "type": "hand.enter",
+          "tool": "brush-round",
+          "t": 0,
+          "dur": 400
+        },
+        {
+          "id": "action-0",
+          "t": 400,
+          "dur": 3600,
+          "type": "paint.stroke",
+          "path": {
+            "gen": "line",
+            "x1": 180,
+            "y1": 270,
+            "x2": 820,
+            "y2": 270
+          },
+          "color": "ao",
+          "width": 70,
+          "water": 0.5,
+          "brush": "flat",
+          "part": "belly"
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            150,
+            80
+          ],
+          "text": "みずを すこし たす"
+        },
+        {
+          "id": "exit",
+          "type": "hand.exit",
+          "t": 4100,
+          "dur": 400
+        }
+      ]
+    },
+    {
+      "id": "step-3",
+      "durationMs": 5000,
+      "caption": "さらに うすい{色|いろ}へつなぐよ",
+      "description": "下段へ水量を増やした色をつなぐ。",
+      "actions": [
+        {
+          "id": "enter",
+          "type": "hand.enter",
+          "tool": "brush-round",
+          "t": 0,
+          "dur": 400
+        },
+        {
+          "id": "action-0",
+          "t": 400,
+          "dur": 3600,
+          "type": "paint.stroke",
+          "path": {
+            "gen": "line",
+            "x1": 180,
+            "y1": 360,
+            "x2": 820,
+            "y2": 360
+          },
+          "color": "ao",
+          "width": 70,
+          "water": 0.9,
+          "brush": "flat",
+          "part": "belly"
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            150,
+            80
+          ],
+          "text": "すこしずつ かわる"
+        },
+        {
+          "id": "exit",
+          "type": "hand.exit",
+          "t": 4100,
+          "dur": 400
+        }
+      ]
+    },
+    {
+      "id": "step-4",
+      "durationMs": 5000,
+      "caption": "{空|そら}や{遠い|とおい}{景色|けしき}へ {使っ|つかっ}てみよう",
+      "description": "色が変わる完成面と遠い山を合わせる。",
+      "actions": [
+        {
+          "id": "action-0",
+          "t": 0,
+          "dur": 0,
+          "type": "scene.object",
+          "objectId": "far",
+          "sprite": "mountain",
+          "at": [
+            500,
+            460
+          ],
+          "scale": 2.4,
+          "color": "mizu"
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            210,
+            570
+          ],
+          "text": "どんな くうかんに したい？"
+        }
+      ]
+    }
+  ]
+}

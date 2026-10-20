@@ -1,0 +1,214 @@
+{
+  "schemaVersion": 1,
+  "id": "M-06",
+  "seed": 47706,
+  "stage": {
+    "paper": "gayoushi",
+    "view": "top",
+    "mirror": "handedness"
+  },
+  "regions": {},
+  "steps": [
+    {
+      "id": "step-1",
+      "durationMs": 5000,
+      "caption": "スポンジに いろを つけよう",
+      "description": "パレットとスポンジを置く。",
+      "actions": [
+        {
+          "id": "action-0",
+          "t": 0,
+          "dur": 0,
+          "type": "tool.place",
+          "item": "palette",
+          "to": [
+            220,
+            420
+          ],
+          "scale": 1.3
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 0,
+          "type": "tool.place",
+          "item": "sponge",
+          "to": [
+            230,
+            370
+          ],
+          "scale": 1
+        },
+        {
+          "id": "action-2",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            150,
+            80
+          ],
+          "text": "いろを つけすぎない"
+        }
+      ]
+    },
+    {
+      "id": "step-2",
+      "durationMs": 5000,
+      "caption": "そっと ぽんぽん おすよ",
+      "description": "緑のスポンジ跡を広めの領域へ押す。",
+      "actions": [
+        {
+          "id": "enter",
+          "type": "hand.enter",
+          "tool": "sponge",
+          "t": 0,
+          "dur": 400
+        },
+        {
+          "id": "action-0",
+          "t": 400,
+          "dur": 3600,
+          "type": "paint.dab",
+          "region": {
+            "shape": "ellipse",
+            "cx": 420,
+            "cy": 300,
+            "rx": 200,
+            "ry": 130
+          },
+          "color": "midori",
+          "tool": "sponge",
+          "count": 35
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            150,
+            80
+          ],
+          "text": "そっと おす"
+        },
+        {
+          "id": "exit",
+          "type": "hand.exit",
+          "t": 4100,
+          "dur": 400
+        }
+      ]
+    },
+    {
+      "id": "step-3",
+      "durationMs": 5000,
+      "caption": "かさねたり はなしたり しよう",
+      "description": "黄緑の跡を重ね、離れた場所にも押す。",
+      "actions": [
+        {
+          "id": "enter",
+          "type": "hand.enter",
+          "tool": "sponge",
+          "t": 0,
+          "dur": 400
+        },
+        {
+          "id": "action-0",
+          "t": 400,
+          "dur": 1800,
+          "type": "paint.dab",
+          "region": {
+            "shape": "ellipse",
+            "cx": 560,
+            "cy": 340,
+            "rx": 180,
+            "ry": 140
+          },
+          "color": "kimidori",
+          "tool": "sponge",
+          "count": 45
+        },
+        {
+          "id": "action-1",
+          "t": 2200,
+          "dur": 1800,
+          "type": "paint.dab",
+          "region": {
+            "shape": "circle",
+            "cx": 780,
+            "cy": 230,
+            "r": 65
+          },
+          "color": "kimidori",
+          "tool": "sponge",
+          "count": 9
+        },
+        {
+          "id": "action-2",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            150,
+            80
+          ],
+          "text": "かさなりと すきま"
+        },
+        {
+          "id": "exit",
+          "type": "hand.exit",
+          "t": 4100,
+          "dur": 400
+        }
+      ]
+    },
+    {
+      "id": "step-4",
+      "durationMs": 5000,
+      "caption": "ふわっとした あとを つかおう",
+      "description": "葉の集まりとして木の幹を添える。",
+      "actions": [
+        {
+          "id": "enter",
+          "type": "hand.enter",
+          "tool": "brush-round",
+          "t": 0,
+          "dur": 400
+        },
+        {
+          "id": "action-0",
+          "t": 400,
+          "dur": 3600,
+          "type": "paint.stroke",
+          "path": {
+            "gen": "line",
+            "x1": 510,
+            "y1": 400,
+            "x2": 510,
+            "y2": 530
+          },
+          "color": "chairo",
+          "width": 25
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            210,
+            570
+          ],
+          "text": "くもや もりに つかえるね"
+        },
+        {
+          "id": "exit",
+          "type": "hand.exit",
+          "t": 4100,
+          "dur": 400
+        }
+      ]
+    }
+  ]
+}

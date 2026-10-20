@@ -1,0 +1,253 @@
+{
+  "schemaVersion": 1,
+  "id": "C-12",
+  "seed": 46712,
+  "stage": {
+    "paper": "gayoushi",
+    "view": "top",
+    "mirror": "handedness"
+  },
+  "regions": {},
+  "steps": [
+    {
+      "id": "step-1",
+      "durationMs": 5000,
+      "caption": "よういされた {型|かた}を{置く|おく}よ",
+      "description": "中央の型を注記で示す。切る作業は画面に入れない。",
+      "actions": [
+        {
+          "id": "action-0",
+          "t": 0,
+          "dur": 0,
+          "type": "scene.object",
+          "objectId": "stencil",
+          "sprite": "triangle",
+          "at": [
+            500,
+            320
+          ],
+          "scale": 2.2,
+          "color": "shiro"
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            150,
+            80
+          ],
+          "text": "おとなが よういした かた"
+        }
+      ]
+    },
+    {
+      "id": "step-2",
+      "durationMs": 5000,
+      "caption": "{型|かた}のふちを ぬってみよう",
+      "description": "三角の周りへパスの線を置く。",
+      "actions": [
+        {
+          "id": "enter",
+          "type": "hand.enter",
+          "tool": "crayon",
+          "t": 0,
+          "dur": 400
+        },
+        {
+          "id": "action-0",
+          "t": 400,
+          "dur": 3600,
+          "type": "crayon.stroke",
+          "path": {
+            "points": [
+              [
+                370,
+                400
+              ],
+              [
+                500,
+                170
+              ],
+              [
+                630,
+                400
+              ],
+              [
+                370,
+                400
+              ]
+            ]
+          },
+          "color": "aka",
+          "width": 20,
+          "pressure": 0.65
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            150,
+            80
+          ],
+          "text": "ふちの パス"
+        },
+        {
+          "id": "exit",
+          "type": "hand.exit",
+          "t": 4100,
+          "dur": 400
+        }
+      ]
+    },
+    {
+      "id": "step-3",
+      "durationMs": 5000,
+      "caption": "{外|そと}へ こすってみよう",
+      "description": "型の外だけへ色を広げ、型の内側を残す。",
+      "actions": [
+        {
+          "id": "enter",
+          "type": "hand.enter",
+          "tool": "brush-round",
+          "t": 0,
+          "dur": 400
+        },
+        {
+          "id": "action-0",
+          "t": 400,
+          "dur": 3600,
+          "type": "stencil",
+          "region": {
+            "shape": "polygon",
+            "points": [
+              [
+                370,
+                400
+              ],
+              [
+                500,
+                170
+              ],
+              [
+                630,
+                400
+              ]
+            ]
+          },
+          "path": {
+            "subpaths": [
+              [
+                [
+                  400,
+                  360
+                ],
+                [
+                  315,
+                  370
+                ]
+              ],
+              [
+                [
+                  460,
+                  240
+                ],
+                [
+                  395,
+                  205
+                ]
+              ],
+              [
+                [
+                  550,
+                  260
+                ],
+                [
+                  625,
+                  230
+                ]
+              ],
+              [
+                [
+                  610,
+                  365
+                ],
+                [
+                  685,
+                  385
+                ]
+              ],
+              [
+                [
+                  495,
+                  400
+                ],
+                [
+                  495,
+                  500
+                ]
+              ]
+            ]
+          },
+          "color": "aka",
+          "width": 70,
+          "side": "outside"
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            150,
+            80
+          ],
+          "text": "そとへ こする"
+        },
+        {
+          "id": "exit",
+          "type": "hand.exit",
+          "t": 4100,
+          "dur": 400
+        }
+      ]
+    },
+    {
+      "id": "step-4",
+      "durationMs": 5000,
+      "caption": "{型|かた}を{外|そと}すと ふちが{残る|のこる}ね",
+      "description": "型を消し、抽象的な白い抜きとぼかしの境界を見せる。",
+      "actions": [
+        {
+          "id": "action-0",
+          "t": 0,
+          "dur": 0,
+          "type": "scene.object",
+          "objectId": "stencil",
+          "sprite": "triangle",
+          "at": [
+            500,
+            320
+          ],
+          "scale": 2.2,
+          "color": "shiro",
+          "opacity": 0
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            240,
+            560
+          ],
+          "text": "どんな かたに したい？"
+        }
+      ]
+    }
+  ]
+}

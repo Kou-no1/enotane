@@ -1,0 +1,173 @@
+{
+  "schemaVersion": 1,
+  "id": "Z-03",
+  "seed": 49003,
+  "stage": {
+    "paper": "gayoushi",
+    "view": "top",
+    "mirror": "none"
+  },
+  "regions": {},
+  "steps": [
+    {
+      "id": "step-1",
+      "durationMs": 5000,
+      "caption": "{同じ|おなじ}{形|かたち}を いくつか{置|お}こう",
+      "description": "同じ木を三つ並べる。",
+      "actions": [
+        {
+          "id": "action-0",
+          "t": 0,
+          "dur": 0,
+          "type": "scene.object",
+          "objectId": "a",
+          "sprite": "tree",
+          "at": [
+            250,
+            330
+          ],
+          "scale": 1.3,
+          "color": "midori"
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 0,
+          "type": "scene.object",
+          "objectId": "b",
+          "sprite": "tree",
+          "at": [
+            500,
+            330
+          ],
+          "scale": 1.3,
+          "color": "midori"
+        },
+        {
+          "id": "action-2",
+          "t": 0,
+          "dur": 0,
+          "type": "scene.object",
+          "objectId": "c",
+          "sprite": "tree",
+          "at": [
+            750,
+            330
+          ],
+          "scale": 1.3,
+          "color": "midori"
+        },
+        {
+          "id": "action-3",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            150,
+            80
+          ],
+          "text": "どこに めが いく？"
+        }
+      ]
+    },
+    {
+      "id": "step-2",
+      "durationMs": 5000,
+      "caption": "{大きさ|おおきさ}で {主役|しゅやく}を{変え|かえ}てみよう",
+      "description": "中央の木だけ大きくする。",
+      "actions": [
+        {
+          "id": "action-0",
+          "t": 0,
+          "dur": 0,
+          "type": "scene.object",
+          "objectId": "b",
+          "sprite": "tree",
+          "at": [
+            500,
+            320
+          ],
+          "scale": 2.4,
+          "color": "midori"
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            150,
+            80
+          ],
+          "text": "おおきさを かえる"
+        }
+      ]
+    },
+    {
+      "id": "step-3",
+      "durationMs": 5000,
+      "caption": "{色|いろ}でも {見え|みえ}{方|かた}が{変わる|かわる}ね",
+      "description": "左の木を赤へ変え、右へ位置を調整する。",
+      "actions": [
+        {
+          "id": "action-0",
+          "t": 0,
+          "dur": 0,
+          "type": "scene.object",
+          "objectId": "a",
+          "sprite": "tree",
+          "at": [
+            250,
+            330
+          ],
+          "scale": 1.3,
+          "color": "aka"
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 0,
+          "type": "scene.object",
+          "objectId": "b",
+          "sprite": "tree",
+          "at": [
+            570,
+            320
+          ],
+          "scale": 1.8,
+          "color": "midori"
+        },
+        {
+          "id": "action-2",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            150,
+            80
+          ],
+          "text": "いろと ばしょを かえる"
+        }
+      ]
+    },
+    {
+      "id": "step-4",
+      "durationMs": 5000,
+      "caption": "どこを {見て|みて}ほしい？",
+      "description": "単一の主役を強制せず見せたいことを問う。",
+      "actions": [
+        {
+          "id": "action-0",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            140,
+            520
+          ],
+          "text": "しゅやくを いくつに しても いい"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,224 @@
+{
+  "schemaVersion": 1,
+  "id": "M-05",
+  "seed": 47705,
+  "stage": {
+    "paper": "gayoushi",
+    "view": "top",
+    "mirror": "handedness"
+  },
+  "regions": {},
+  "steps": [
+    {
+      "id": "step-1",
+      "durationMs": 5000,
+      "caption": "{紙|かみ}の{周り|まわり}を {広く|ひろく}おおう",
+      "description": "広い範囲の養生と網・ブラシの道具を表示する。",
+      "actions": [
+        {
+          "id": "action-0",
+          "t": 0,
+          "dur": 0,
+          "type": "tool.place",
+          "item": "paper",
+          "to": [
+            500,
+            320
+          ],
+          "scale": 3.4
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 0,
+          "type": "tool.place",
+          "item": "net",
+          "to": [
+            790,
+            200
+          ],
+          "scale": 1.2
+        },
+        {
+          "id": "action-2",
+          "t": 0,
+          "dur": 0,
+          "type": "tool.place",
+          "item": "brush",
+          "to": [
+            700,
+            140
+          ],
+          "scale": 1
+        },
+        {
+          "id": "action-3",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            150,
+            80
+          ],
+          "text": "ひとへ むけない"
+        }
+      ]
+    },
+    {
+      "id": "step-2",
+      "durationMs": 5000,
+      "caption": "{網|あみ}とブラシで {点|てん}を{飛ばす|とばす}よ",
+      "description": "青い細かい点を中央の領域へ配置する。",
+      "actions": [
+        {
+          "id": "enter",
+          "type": "hand.enter",
+          "tool": "net-brush",
+          "t": 0,
+          "dur": 400
+        },
+        {
+          "id": "action-0",
+          "t": 400,
+          "dur": 3600,
+          "type": "splatter",
+          "region": {
+            "shape": "rect",
+            "x": 160,
+            "y": 160,
+            "w": 680,
+            "h": 310
+          },
+          "color": "ao",
+          "count": 250,
+          "size": 4
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 0,
+          "type": "tool.place",
+          "item": "net-brush",
+          "to": [
+            690,
+            230
+          ],
+          "scale": 1
+        },
+        {
+          "id": "action-2",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            150,
+            80
+          ],
+          "text": "かみへ むける"
+        },
+        {
+          "id": "exit",
+          "type": "hand.exit",
+          "t": 4100,
+          "dur": 400
+        }
+      ]
+    },
+    {
+      "id": "step-3",
+      "durationMs": 5000,
+      "caption": "{距離|きょり}や{色|いろ}を {変え|かえ}てみよう",
+      "description": "赤い少し大きな点を狭い領域へ重ねる。",
+      "actions": [
+        {
+          "id": "enter",
+          "type": "hand.enter",
+          "tool": "net-brush",
+          "t": 0,
+          "dur": 400
+        },
+        {
+          "id": "action-0",
+          "t": 400,
+          "dur": 3600,
+          "type": "splatter",
+          "region": {
+            "shape": "ellipse",
+            "cx": 450,
+            "cy": 320,
+            "rx": 230,
+            "ry": 130
+          },
+          "color": "aka",
+          "count": 100,
+          "size": 7
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            150,
+            80
+          ],
+          "text": "てんの おおきさを くらべる"
+        },
+        {
+          "id": "exit",
+          "type": "hand.exit",
+          "t": 4100,
+          "dur": 400
+        }
+      ]
+    },
+    {
+      "id": "step-4",
+      "durationMs": 5000,
+      "caption": "{細かい|こまかい}{点|てん}を {何|なに}に{使う|つかう}？",
+      "description": "星空の例へ白の点を重ねる。",
+      "actions": [
+        {
+          "id": "enter",
+          "type": "hand.enter",
+          "tool": "net-brush",
+          "t": 0,
+          "dur": 400
+        },
+        {
+          "id": "action-0",
+          "t": 400,
+          "dur": 3600,
+          "type": "splatter",
+          "region": {
+            "shape": "rect",
+            "x": 180,
+            "y": 180,
+            "w": 640,
+            "h": 270
+          },
+          "color": "shiro",
+          "count": 90,
+          "size": 3
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            240,
+            550
+          ],
+          "text": "かおを ちかづけない"
+        },
+        {
+          "id": "exit",
+          "type": "hand.exit",
+          "t": 4100,
+          "dur": 400
+        }
+      ]
+    }
+  ]
+}

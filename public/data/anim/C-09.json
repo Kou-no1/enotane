@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1, "id": "C-09", "seed": 909,
+  "stage": { "paper": "gayoushi", "view": "top", "mirror": "handedness" },
+  "regions": { "drawing": { "shape": "rect", "x": 120, "y": 85, "w": 760, "h": 445 } },
+  "steps": [
+    {
+      "id": "color-under", "durationMs": 6000,
+      "caption": "あかるい いろを ならべて ぬるよ",
+      "description": "黄色、桃色、水色、黄緑を塗る。紙の下地は明るい色で埋まる。",
+      "actions": [
+        { "id": "enter", "type": "hand.enter", "tool": "oil-pastel", "t": 0, "dur": 300 },
+        { "id": "under", "type": "crayon.fill", "region": { "ref": "drawing" }, "colors": ["kiiro", "momo", "mizu", "kimidori"], "kind": "oil-pastel", "pattern": "stripes", "pressure": 0.9, "layer": "under", "t": 400, "dur": 4500 },
+        { "id": "label", "type": "note.label", "at": [500, 575], "text": "どの いろが でるかな？", "t": 4900, "dur": 900 }
+      ]
+    },
+    {
+      "id": "black-cover", "durationMs": 6000,
+      "caption": "うえから くろを かさねよう",
+      "description": "明るい色の上に、黒いオイルパステルを重ねて隠す。",
+      "actions": [
+        { "id": "black", "type": "scratch.cover", "region": { "ref": "drawing" }, "color": "kuro", "t": 200, "dur": 4400 },
+        { "id": "label", "type": "note.label", "at": [500, 575], "text": "したの いろは かくれているよ", "t": 4700, "dur": 1000 }
+      ]
+    },
+    {
+      "id": "scratch-rays", "durationMs": 6000,
+      "caption": "まるい ぼうで ひっかいてみよう",
+      "description": "先の丸い棒で、中心から外へ放射状の線をひっかく。上の黒だけが削れ、下の明るい色が見える。道具は人へ向けない。",
+      "actions": [
+        { "id": "enter", "type": "hand.enter", "tool": "waribashi", "t": 0, "dur": 300 },
+        { "id": "rays", "type": "scratch.stroke", "path": { "gen": "burst", "cx": 500, "cy": 300, "r": 170, "rays": 17 }, "width": 6, "t": 400, "dur": 4400 },
+        { "id": "label", "type": "note.label", "at": [500, 575], "text": "したの いろが みえた！", "t": 4900, "dur": 900 }
+      ]
+    },
+    {
+      "id": "scratch-curves", "durationMs": 6000,
+      "caption": "まがる せんも ためしてみよう",
+      "description": "左下と右上に曲線をひっかく。放射状の線とは異なる形ができる。形は自分で選べる。",
+      "actions": [
+        { "id": "curves", "type": "scratch.stroke", "path": { "d": "M 240 370 Q 170 410 230 465 Q 310 500 320 435 Q 330 365 240 370 M 730 145 C 645 125 645 235 720 230 C 810 220 810 130 730 145" }, "width": 7, "t": 200, "dur": 4000 },
+        { "id": "exit", "type": "hand.exit", "t": 4300, "dur": 300 },
+        { "id": "label", "type": "note.label", "at": [500, 575], "text": "どんな かたちに みえる？", "t": 4600, "dur": 1100 }
+      ]
+    }
+  ]
+}

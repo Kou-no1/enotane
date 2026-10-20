@@ -1,0 +1,220 @@
+{
+  "schemaVersion": 1,
+  "id": "O-05",
+  "seed": 47905,
+  "stage": {
+    "paper": "gayoushi",
+    "view": "top",
+    "mirror": "none"
+  },
+  "regions": {},
+  "steps": [
+    {
+      "id": "step-1",
+      "durationMs": 5000,
+      "caption": "{顔|かお}{全体|ぜんたい}の{形|かたち}を {見て|みて}みよう",
+      "description": "顔全体の楕円と中心の補助線を描く。",
+      "actions": [
+        {
+          "id": "enter",
+          "type": "hand.enter",
+          "tool": "pencil",
+          "t": 0,
+          "dur": 400
+        },
+        {
+          "id": "action-0",
+          "t": 400,
+          "dur": 3600,
+          "type": "pencil.stroke",
+          "path": {
+            "gen": "ellipse",
+            "cx": 360,
+            "cy": 310,
+            "rx": 145,
+            "ry": 190
+          },
+          "hardness": "2B",
+          "pressure": 0.65,
+          "width": 3
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 0,
+          "type": "grid.show",
+          "kind": "center"
+        },
+        {
+          "id": "action-2",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            150,
+            80
+          ],
+          "text": "ぜんたいの かたち"
+        },
+        {
+          "id": "exit",
+          "type": "hand.exit",
+          "t": 4100,
+          "dur": 400
+        }
+      ]
+    },
+    {
+      "id": "step-2",
+      "durationMs": 5000,
+      "caption": "{目|め}・{鼻|はな}・{口|くち}の{位置|いち}を くらべよう",
+      "description": "正面の位置関係を例として線と点で示す。",
+      "actions": [
+        {
+          "id": "enter",
+          "type": "hand.enter",
+          "tool": "pencil",
+          "t": 0,
+          "dur": 400
+        },
+        {
+          "id": "action-0",
+          "t": 400,
+          "dur": 3600,
+          "type": "pencil.stroke",
+          "path": {
+            "subpaths": [
+              [
+                [
+                  285,
+                  270
+                ],
+                [
+                  315,
+                  270
+                ]
+              ],
+              [
+                [
+                  405,
+                  270
+                ],
+                [
+                  435,
+                  270
+                ]
+              ],
+              [
+                [
+                  360,
+                  280
+                ],
+                [
+                  345,
+                  350
+                ],
+                [
+                  370,
+                  355
+                ]
+              ],
+              [
+                [
+                  305,
+                  405
+                ],
+                [
+                  360,
+                  415
+                ],
+                [
+                  415,
+                  405
+                ]
+              ]
+            ]
+          },
+          "hardness": "2B",
+          "pressure": 0.65,
+          "width": 3
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            150,
+            80
+          ],
+          "text": "いちの てがかり"
+        },
+        {
+          "id": "exit",
+          "type": "hand.exit",
+          "t": 4100,
+          "dur": 400
+        }
+      ]
+    },
+    {
+      "id": "step-3",
+      "durationMs": 5000,
+      "caption": "{向き|むき}を{変える|かえる}と どう{見える|みえる}？",
+      "description": "横向きに近い顔を置き、隠れや見える面を示す。",
+      "actions": [
+        {
+          "id": "action-0",
+          "t": 0,
+          "dur": 0,
+          "type": "scene.object",
+          "objectId": "side",
+          "sprite": "face",
+          "at": [
+            730,
+            320
+          ],
+          "scale": 2.1,
+          "color": "momo",
+          "rotation": 10
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 0,
+          "type": "grid.hide"
+        },
+        {
+          "id": "action-2",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            570,
+            80
+          ],
+          "text": "むきで かくれる ところ"
+        }
+      ]
+    },
+    {
+      "id": "step-4",
+      "durationMs": 5000,
+      "caption": "その{人|ひと}の{違い|ちがい}を {観察|かんさつ}しよう",
+      "description": "同じ比率を求めず個人差、年齢、向きを明示する。",
+      "actions": [
+        {
+          "id": "action-0",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            110,
+            570
+          ],
+          "text": "ひと・ねんれい・むきで ちがう"
+        }
+      ]
+    }
+  ]
+}

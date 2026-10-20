@@ -1,0 +1,215 @@
+{
+  "schemaVersion": 1,
+  "id": "C-08",
+  "seed": 46708,
+  "stage": {
+    "paper": "gayoushi",
+    "view": "top",
+    "mirror": "handedness"
+  },
+  "regions": {},
+  "steps": [
+    {
+      "id": "step-1",
+      "durationMs": 5000,
+      "caption": "{暗い|くらい}{色|いろ}の {丸|まる}をぬるよ",
+      "description": "青いパスで丸を塗り、白を重ねる準備をする。",
+      "actions": [
+        {
+          "id": "enter",
+          "type": "hand.enter",
+          "tool": "oil-pastel",
+          "t": 0,
+          "dur": 400
+        },
+        {
+          "id": "action-0",
+          "t": 400,
+          "dur": 3600,
+          "type": "crayon.fill",
+          "region": {
+            "shape": "circle",
+            "cx": 500,
+            "cy": 315,
+            "r": 175
+          },
+          "color": "ao",
+          "kind": "oil-pastel"
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            150,
+            80
+          ],
+          "text": "あおい めん"
+        },
+        {
+          "id": "exit",
+          "type": "hand.exit",
+          "t": 4100,
+          "dur": 400
+        }
+      ]
+    },
+    {
+      "id": "step-2",
+      "durationMs": 5000,
+      "caption": "{白|しろ}いパスを {重ね|かさね}てみよう",
+      "description": "左上へ白の厚い線を重ね、下色を明るく覆う。",
+      "actions": [
+        {
+          "id": "enter",
+          "type": "hand.enter",
+          "tool": "oil-pastel",
+          "t": 0,
+          "dur": 400
+        },
+        {
+          "id": "action-0",
+          "t": 400,
+          "dur": 3600,
+          "type": "crayon.stroke",
+          "path": {
+            "points": [
+              [
+                405,
+                260
+              ],
+              [
+                440,
+                225
+              ],
+              [
+                490,
+                205
+              ]
+            ]
+          },
+          "color": "shiro",
+          "width": 48,
+          "pressure": 0.9,
+          "kind": "oil-pastel"
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            150,
+            80
+          ],
+          "text": "しろい パス"
+        },
+        {
+          "id": "exit",
+          "type": "hand.exit",
+          "t": 4100,
+          "dur": 400
+        }
+      ]
+    },
+    {
+      "id": "step-3",
+      "durationMs": 5000,
+      "caption": "{白|しろ}の{量|りょう}を {変え|かえ}てみよう",
+      "description": "小さな白い反射を追加する。",
+      "actions": [
+        {
+          "id": "enter",
+          "type": "hand.enter",
+          "tool": "oil-pastel",
+          "t": 0,
+          "dur": 400
+        },
+        {
+          "id": "action-0",
+          "t": 400,
+          "dur": 3600,
+          "type": "crayon.stroke",
+          "path": {
+            "gen": "line",
+            "x1": 555,
+            "y1": 400,
+            "x2": 605,
+            "y2": 380
+          },
+          "color": "shiro",
+          "width": 18,
+          "pressure": 0.8,
+          "kind": "oil-pastel"
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            600,
+            500
+          ],
+          "text": "ちいさい ひかり"
+        },
+        {
+          "id": "exit",
+          "type": "hand.exit",
+          "t": 4100,
+          "dur": 400
+        }
+      ]
+    },
+    {
+      "id": "step-4",
+      "durationMs": 5000,
+      "caption": "どこに{光|ひかり}を {置き|おき}たい？",
+      "description": "光の場所と暗い面に注目する。",
+      "actions": [
+        {
+          "id": "action-0",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.arrow",
+          "at": [
+            230,
+            170
+          ],
+          "to": [
+            435,
+            245
+          ],
+          "text": "あかるい"
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.arrow",
+          "at": [
+            800,
+            440
+          ],
+          "to": [
+            620,
+            330
+          ],
+          "text": "くらい めん"
+        },
+        {
+          "id": "action-2",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            240,
+            80
+          ],
+          "text": "ひかりの ばしょを えらぼう"
+        }
+      ]
+    }
+  ]
+}

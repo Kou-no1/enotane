@@ -1,0 +1,202 @@
+{
+  "schemaVersion": 1,
+  "id": "P-06",
+  "seed": 48006,
+  "stage": {
+    "paper": "gayoushi",
+    "view": "top",
+    "mirror": "handedness"
+  },
+  "regions": {},
+  "steps": [
+    {
+      "id": "step-1",
+      "durationMs": 5000,
+      "caption": "{線の|せんの}{間|あいだ}を {広く|ひろく}してみよう",
+      "description": "左に広い間隔のハッチングを描く。",
+      "actions": [
+        {
+          "id": "enter",
+          "type": "hand.enter",
+          "tool": "pencil",
+          "t": 0,
+          "dur": 400
+        },
+        {
+          "id": "action-0",
+          "t": 400,
+          "dur": 3600,
+          "type": "pencil.hatch",
+          "region": {
+            "shape": "rect",
+            "x": 100,
+            "y": 150,
+            "w": 230,
+            "h": 300
+          },
+          "angle": 45,
+          "spacing": 24
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            100,
+            90
+          ],
+          "text": "ひろい あいだ"
+        },
+        {
+          "id": "exit",
+          "type": "hand.exit",
+          "t": 4100,
+          "dur": 400
+        }
+      ]
+    },
+    {
+      "id": "step-2",
+      "durationMs": 5000,
+      "caption": "{間|あいだ}をせまくすると どうなる？",
+      "description": "中央に細かい間隔のハッチングを描く。",
+      "actions": [
+        {
+          "id": "enter",
+          "type": "hand.enter",
+          "tool": "pencil",
+          "t": 0,
+          "dur": 400
+        },
+        {
+          "id": "action-0",
+          "t": 400,
+          "dur": 3600,
+          "type": "pencil.hatch",
+          "region": {
+            "shape": "rect",
+            "x": 385,
+            "y": 150,
+            "w": 230,
+            "h": 300
+          },
+          "angle": 45,
+          "spacing": 9
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            385,
+            90
+          ],
+          "text": "せまい あいだ"
+        },
+        {
+          "id": "exit",
+          "type": "hand.exit",
+          "t": 4100,
+          "dur": 400
+        }
+      ]
+    },
+    {
+      "id": "step-3",
+      "durationMs": 5000,
+      "caption": "{向き|むき}を{変え|かえ}て {重ね|かさね}よう",
+      "description": "右のハッチングを交差させる。",
+      "actions": [
+        {
+          "id": "enter",
+          "type": "hand.enter",
+          "tool": "pencil",
+          "t": 0,
+          "dur": 400
+        },
+        {
+          "id": "action-0",
+          "t": 400,
+          "dur": 3600,
+          "type": "pencil.hatch",
+          "region": {
+            "shape": "rect",
+            "x": 670,
+            "y": 150,
+            "w": 230,
+            "h": 300
+          },
+          "angle": 45,
+          "spacing": 10,
+          "cross": true
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            670,
+            90
+          ],
+          "text": "こうさする せん"
+        },
+        {
+          "id": "exit",
+          "type": "hand.exit",
+          "t": 4100,
+          "dur": 400
+        }
+      ]
+    },
+    {
+      "id": "step-4",
+      "durationMs": 5000,
+      "caption": "{暗さ|くらさ}と{感じ|かんじ}を くらべよう",
+      "description": "三つの線列を中立的に比較する。",
+      "actions": [
+        {
+          "id": "action-0",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            300,
+            540
+          ],
+          "text": "どんな めんに つかう？"
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.arrow",
+          "at": [
+            235,
+            500
+          ],
+          "to": [
+            225,
+            380
+          ]
+        },
+        {
+          "id": "action-2",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.arrow",
+          "at": [
+            790,
+            500
+          ],
+          "to": [
+            790,
+            380
+          ]
+        }
+      ]
+    }
+  ]
+}

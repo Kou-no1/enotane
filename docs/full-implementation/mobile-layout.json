@@ -1,0 +1,405 @@
+[
+  {
+    "path": "/?lesson=W-11",
+    "text": "100%",
+    "width": 360,
+    "scrollWidth": 360,
+    "outside": [
+      {
+        "tag": "BUTTON",
+        "classes": "",
+        "x": 276,
+        "right": 396,
+        "width": 120
+      },
+      {
+        "tag": "SPAN",
+        "classes": "",
+        "x": 287,
+        "right": 376.5,
+        "width": 89.5
+      },
+      {
+        "tag": "SPAN",
+        "classes": "",
+        "x": 307,
+        "right": 377,
+        "width": 70
+      },
+      {
+        "tag": "BUTTON",
+        "classes": "",
+        "x": 402,
+        "right": 522,
+        "width": 120
+      },
+      {
+        "tag": "SPAN",
+        "classes": "",
+        "x": 413,
+        "right": 436,
+        "width": 23
+      },
+      {
+        "tag": "SPAN",
+        "classes": "",
+        "x": 413,
+        "right": 505.859375,
+        "width": 92.859375
+      }
+    ]
+  },
+  {
+    "path": "/?lesson=W-11",
+    "text": "100%",
+    "width": 390,
+    "scrollWidth": 390,
+    "outside": [
+      {
+        "tag": "BUTTON",
+        "classes": "",
+        "x": 276,
+        "right": 396,
+        "width": 120
+      },
+      {
+        "tag": "BUTTON",
+        "classes": "",
+        "x": 402,
+        "right": 522,
+        "width": 120
+      },
+      {
+        "tag": "SPAN",
+        "classes": "",
+        "x": 413,
+        "right": 436,
+        "width": 23
+      },
+      {
+        "tag": "SPAN",
+        "classes": "",
+        "x": 413,
+        "right": 505.859375,
+        "width": 92.859375
+      }
+    ]
+  },
+  {
+    "path": "/?lesson=W-11",
+    "text": "100%",
+    "width": 480,
+    "scrollWidth": 480,
+    "outside": [
+      {
+        "tag": "BUTTON",
+        "classes": "",
+        "x": 402,
+        "right": 522,
+        "width": 120
+      },
+      {
+        "tag": "SPAN",
+        "classes": "",
+        "x": 413,
+        "right": 505.859375,
+        "width": 92.859375
+      }
+    ]
+  },
+  {
+    "path": "/?lesson=W-11",
+    "text": "100%",
+    "width": 640,
+    "scrollWidth": 640,
+    "outside": []
+  },
+  {
+    "path": "/?lesson=W-11",
+    "text": "100%",
+    "width": 768,
+    "scrollWidth": 768,
+    "outside": []
+  },
+  {
+    "path": "/?lesson=W-11",
+    "text": "100%",
+    "width": 1024,
+    "scrollWidth": 1024,
+    "outside": []
+  },
+  {
+    "path": "/?lesson=W-11",
+    "text": "200%",
+    "width": 360,
+    "scrollWidth": 360,
+    "outside": [
+      {
+        "tag": "BUTTON",
+        "classes": "",
+        "x": 270,
+        "right": 510,
+        "width": 240
+      },
+      {
+        "tag": "SPAN",
+        "classes": "",
+        "x": 317,
+        "right": 377,
+        "width": 60
+      },
+      {
+        "tag": "RUBY",
+        "classes": "",
+        "x": 377,
+        "right": 397,
+        "width": 20
+      },
+      {
+        "tag": "RT",
+        "classes": "",
+        "x": 376.203125,
+        "right": 397.8125,
+        "width": 21.609375
+      },
+      {
+        "tag": "SPAN",
+        "classes": "",
+        "x": 397,
+        "right": 417,
+        "width": 20
+      },
+      {
+        "tag": "RUBY",
+        "classes": "",
+        "x": 417,
+        "right": 437,
+        "width": 20
+      },
+      {
+        "tag": "RT",
+        "classes": "",
+        "x": 416.203125,
+        "right": 437.8125,
+        "width": 21.609375
+      },
+      {
+        "tag": "SPAN",
+        "classes": "",
+        "x": 281,
+        "right": 497,
+        "width": 216
+      },
+      {
+        "tag": "BUTTON",
+        "classes": "",
+        "x": 516,
+        "right": 756,
+        "width": 240
+      },
+      {
+        "tag": "SPAN",
+        "classes": "",
+        "x": 527,
+        "right": 550,
+        "width": 23
+      },
+      {
+        "tag": "SPAN",
+        "classes": "",
+        "x": 563,
+        "right": 703,
+        "width": 140
+      },
+      {
+        "tag": "RUBY",
+        "classes": "",
+        "x": 703,
+        "right": 723,
+        "width": 20
+      },
+      {
+        "tag": "RT",
+        "classes": "",
+        "x": 702.203125,
+        "right": 723.8125,
+        "width": 21.609375
+      },
+      {
+        "tag": "SPAN",
+        "classes": "",
+        "x": 527,
+        "right": 743,
+        "width": 216
+      },
+      {
+        "tag": "BUTTON",
+        "classes": "",
+        "x": 762,
+        "right": 1002,
+        "width": 240
+      },
+      {
+        "tag": "SPAN",
+        "classes": "",
+        "x": 773,
+        "right": 796,
+        "width": 23
+      },
+      {
+        "tag": "SPAN",
+        "classes": "",
+        "x": 773,
+        "right": 988.703125,
+        "width": 215.703125
+      }
+    ]
+  },
+  {
+    "path": "/?view=settings",
+    "text": "100%",
+    "width": 360,
+    "scrollWidth": 360,
+    "outside": []
+  },
+  {
+    "path": "/?view=settings",
+    "text": "100%",
+    "width": 390,
+    "scrollWidth": 390,
+    "outside": []
+  },
+  {
+    "path": "/?view=settings",
+    "text": "100%",
+    "width": 480,
+    "scrollWidth": 480,
+    "outside": []
+  },
+  {
+    "path": "/?view=settings",
+    "text": "100%",
+    "width": 640,
+    "scrollWidth": 640,
+    "outside": []
+  },
+  {
+    "path": "/?view=settings",
+    "text": "100%",
+    "width": 768,
+    "scrollWidth": 768,
+    "outside": []
+  },
+  {
+    "path": "/?view=settings",
+    "text": "100%",
+    "width": 1024,
+    "scrollWidth": 1024,
+    "outside": []
+  },
+  {
+    "path": "/?view=settings",
+    "text": "200%",
+    "width": 360,
+    "scrollWidth": 360,
+    "outside": []
+  },
+  {
+    "path": "/?view=teacher&mode=teacher",
+    "text": "100%",
+    "width": 360,
+    "scrollWidth": 360,
+    "outside": []
+  },
+  {
+    "path": "/?view=teacher&mode=teacher",
+    "text": "100%",
+    "width": 390,
+    "scrollWidth": 390,
+    "outside": []
+  },
+  {
+    "path": "/?view=teacher&mode=teacher",
+    "text": "100%",
+    "width": 480,
+    "scrollWidth": 480,
+    "outside": []
+  },
+  {
+    "path": "/?view=teacher&mode=teacher",
+    "text": "100%",
+    "width": 640,
+    "scrollWidth": 640,
+    "outside": []
+  },
+  {
+    "path": "/?view=teacher&mode=teacher",
+    "text": "100%",
+    "width": 768,
+    "scrollWidth": 768,
+    "outside": []
+  },
+  {
+    "path": "/?view=teacher&mode=teacher",
+    "text": "100%",
+    "width": 1024,
+    "scrollWidth": 1024,
+    "outside": []
+  },
+  {
+    "path": "/?view=teacher&mode=teacher",
+    "text": "200%",
+    "width": 360,
+    "scrollWidth": 360,
+    "outside": []
+  },
+  {
+    "path": "/?view=compare",
+    "text": "100%",
+    "width": 360,
+    "scrollWidth": 360,
+    "outside": []
+  },
+  {
+    "path": "/?view=compare",
+    "text": "100%",
+    "width": 390,
+    "scrollWidth": 390,
+    "outside": []
+  },
+  {
+    "path": "/?view=compare",
+    "text": "100%",
+    "width": 480,
+    "scrollWidth": 480,
+    "outside": []
+  },
+  {
+    "path": "/?view=compare",
+    "text": "100%",
+    "width": 640,
+    "scrollWidth": 640,
+    "outside": []
+  },
+  {
+    "path": "/?view=compare",
+    "text": "100%",
+    "width": 768,
+    "scrollWidth": 768,
+    "outside": []
+  },
+  {
+    "path": "/?view=compare",
+    "text": "100%",
+    "width": 1024,
+    "scrollWidth": 1024,
+    "outside": []
+  },
+  {
+    "path": "/?view=compare",
+    "text": "200%",
+    "width": 360,
+    "scrollWidth": 360,
+    "outside": []
+  }
+]

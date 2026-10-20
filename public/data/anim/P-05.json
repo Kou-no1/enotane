@@ -1,0 +1,283 @@
+{
+  "schemaVersion": 1,
+  "id": "P-05",
+  "seed": 48005,
+  "stage": {
+    "paper": "gayoushi",
+    "view": "top",
+    "mirror": "handedness"
+  },
+  "regions": {},
+  "steps": [
+    {
+      "id": "step-1",
+      "durationMs": 5000,
+      "caption": "{丸|まる}から りんごを{見つけ|みつけ}よう",
+      "description": "丸い輪郭と軸を重ね、りんごの形の手掛かりを示す。",
+      "actions": [
+        {
+          "id": "enter",
+          "type": "hand.enter",
+          "tool": "pencil",
+          "t": 0,
+          "dur": 400
+        },
+        {
+          "id": "action-0",
+          "t": 400,
+          "dur": 1800,
+          "type": "pencil.stroke",
+          "path": {
+            "gen": "ellipse",
+            "cx": 310,
+            "cy": 300,
+            "rx": 135,
+            "ry": 130
+          },
+          "hardness": "2B",
+          "pressure": 0.65,
+          "width": 3
+        },
+        {
+          "id": "action-1",
+          "t": 2200,
+          "dur": 1800,
+          "type": "pencil.stroke",
+          "path": {
+            "points": [
+              [
+                310,
+                170
+              ],
+              [
+                310,
+                135
+              ],
+              [
+                345,
+                120
+              ]
+            ]
+          },
+          "hardness": "2B",
+          "pressure": 0.65,
+          "width": 3
+        },
+        {
+          "id": "action-2",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            150,
+            80
+          ],
+          "text": "まる"
+        },
+        {
+          "id": "exit",
+          "type": "hand.exit",
+          "t": 4100,
+          "dur": 400
+        }
+      ]
+    },
+    {
+      "id": "step-2",
+      "durationMs": 5000,
+      "caption": "{三角|さんかく}と{丸|まる}で {犬|いぬ}もできるね",
+      "description": "犬の顔を丸、耳を三角で組み合わせる。",
+      "actions": [
+        {
+          "id": "enter",
+          "type": "hand.enter",
+          "tool": "pencil",
+          "t": 0,
+          "dur": 400
+        },
+        {
+          "id": "action-0",
+          "t": 400,
+          "dur": 1800,
+          "type": "pencil.stroke",
+          "path": {
+            "gen": "ellipse",
+            "cx": 700,
+            "cy": 300,
+            "rx": 115,
+            "ry": 110
+          },
+          "hardness": "2B",
+          "pressure": 0.65,
+          "width": 3
+        },
+        {
+          "id": "action-1",
+          "t": 2200,
+          "dur": 1800,
+          "type": "pencil.stroke",
+          "path": {
+            "subpaths": [
+              [
+                [
+                  600,
+                  240
+                ],
+                [
+                  545,
+                  150
+                ],
+                [
+                  650,
+                  200
+                ]
+              ],
+              [
+                [
+                  750,
+                  200
+                ],
+                [
+                  850,
+                  150
+                ],
+                [
+                  800,
+                  250
+                ]
+              ]
+            ]
+          },
+          "hardness": "2B",
+          "pressure": 0.65,
+          "width": 3
+        },
+        {
+          "id": "action-2",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            560,
+            90
+          ],
+          "text": "まると さんかく"
+        },
+        {
+          "id": "exit",
+          "type": "hand.exit",
+          "t": 4100,
+          "dur": 400
+        }
+      ]
+    },
+    {
+      "id": "step-3",
+      "durationMs": 5000,
+      "caption": "{見た|みた}ものに{合わせ|あわせ}て {変え|かえ}よう",
+      "description": "基礎図形から個別の形へ変える例を表示する。",
+      "actions": [
+        {
+          "id": "action-0",
+          "t": 0,
+          "dur": 0,
+          "type": "scene.object",
+          "objectId": "apple",
+          "sprite": "apple",
+          "at": [
+            310,
+            310
+          ],
+          "scale": 1.8,
+          "color": "aka"
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 0,
+          "type": "scene.object",
+          "objectId": "dog",
+          "sprite": "dog",
+          "at": [
+            700,
+            320
+          ],
+          "scale": 1.7,
+          "color": "chairo"
+        },
+        {
+          "id": "action-2",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            150,
+            80
+          ],
+          "text": "かたちは へんこうできる"
+        }
+      ]
+    },
+    {
+      "id": "step-4",
+      "durationMs": 5000,
+      "caption": "どんな{組み合わせ|くみあわせ}に しよう？",
+      "description": "丸三角四角を異なる配置へ置き、自由な組み合わせを促す。",
+      "actions": [
+        {
+          "id": "action-0",
+          "t": 0,
+          "dur": 0,
+          "type": "scene.object",
+          "objectId": "round",
+          "sprite": "circle",
+          "at": [
+            180,
+            510
+          ],
+          "scale": 0.65,
+          "color": "momo"
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 0,
+          "type": "scene.object",
+          "objectId": "tri",
+          "sprite": "triangle",
+          "at": [
+            450,
+            510
+          ],
+          "scale": 0.7,
+          "color": "ao"
+        },
+        {
+          "id": "action-2",
+          "t": 0,
+          "dur": 0,
+          "type": "scene.object",
+          "objectId": "square",
+          "sprite": "square",
+          "at": [
+            700,
+            510
+          ],
+          "scale": 0.65,
+          "color": "kiiro"
+        },
+        {
+          "id": "action-3",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            330,
+            70
+          ],
+          "text": "じぶんの くみあわせ"
+        }
+      ]
+    }
+  ]
+}

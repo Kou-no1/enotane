@@ -1,0 +1,186 @@
+{
+  "schemaVersion": 1,
+  "id": "W-12",
+  "seed": 48712,
+  "stage": {
+    "paper": "gayoushi",
+    "view": "top",
+    "mirror": "handedness"
+  },
+  "regions": {},
+  "steps": [
+    {
+      "id": "step-1",
+      "durationMs": 5000,
+      "caption": "{下|した}の{色|いろ}を ぬっておこう",
+      "description": "黄色を濡れた層へ置く。",
+      "actions": [
+        {
+          "id": "enter",
+          "type": "hand.enter",
+          "tool": "brush-round",
+          "t": 0,
+          "dur": 400
+        },
+        {
+          "id": "action-0",
+          "t": 400,
+          "dur": 3600,
+          "type": "paint.wash",
+          "region": {
+            "shape": "rect",
+            "x": 170,
+            "y": 150,
+            "w": 660,
+            "h": 330
+          },
+          "color": "kiiro",
+          "water": 0.55,
+          "layer": "wet"
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            150,
+            80
+          ],
+          "text": "したの きいろ"
+        },
+        {
+          "id": "exit",
+          "type": "hand.exit",
+          "t": 4100,
+          "dur": 400
+        }
+      ]
+    },
+    {
+      "id": "step-2",
+      "durationMs": 5000,
+      "caption": "かわくまで {待つ|まつ}よ",
+      "description": "指定領域を乾燥定着し、短縮表示を明示する。",
+      "actions": [
+        {
+          "id": "action-0",
+          "t": 400,
+          "dur": 3600,
+          "type": "paint.dry",
+          "region": {
+            "shape": "rect",
+            "x": 170,
+            "y": 150,
+            "w": 660,
+            "h": 330
+          }
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            150,
+            80
+          ],
+          "text": "ここでは はやく みせているよ"
+        }
+      ]
+    },
+    {
+      "id": "step-3",
+      "durationMs": 5000,
+      "caption": "{薄い|うすい}{青|あお}と {濃い|こい}{青|あお}を{重ね|かさね}るよ",
+      "description": "乾燥した黄色の左へ透明調、右へ不透明調の青を重ねる。",
+      "actions": [
+        {
+          "id": "enter",
+          "type": "hand.enter",
+          "tool": "brush-round",
+          "t": 0,
+          "dur": 400
+        },
+        {
+          "id": "action-0",
+          "t": 400,
+          "dur": 1800,
+          "type": "paint.wash",
+          "region": {
+            "shape": "rect",
+            "x": 210,
+            "y": 220,
+            "w": 250,
+            "h": 200
+          },
+          "color": "ao",
+          "water": 0.85
+        },
+        {
+          "id": "action-1",
+          "t": 2200,
+          "dur": 1800,
+          "type": "paint.wash",
+          "region": {
+            "shape": "rect",
+            "x": 540,
+            "y": 220,
+            "w": 250,
+            "h": 200
+          },
+          "color": "ao",
+          "water": 0.1,
+          "mode": "opaque"
+        },
+        {
+          "id": "action-2",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            210,
+            100
+          ],
+          "text": "うすい あお"
+        },
+        {
+          "id": "action-3",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            560,
+            100
+          ],
+          "text": "こい あお"
+        },
+        {
+          "id": "exit",
+          "type": "hand.exit",
+          "t": 4100,
+          "dur": 400
+        }
+      ]
+    },
+    {
+      "id": "step-4",
+      "durationMs": 5000,
+      "caption": "{下|した}の{色|いろ}は どのくらい{見える|みえる}？",
+      "description": "透ける場合と覆う場合の違いを示す。",
+      "actions": [
+        {
+          "id": "action-0",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            190,
+            540
+          ],
+          "text": "えのぐの せいひんでも かわる"
+        }
+      ]
+    }
+  ]
+}

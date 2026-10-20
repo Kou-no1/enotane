@@ -1,0 +1,332 @@
+{
+  "schemaVersion": 1,
+  "id": "O-03",
+  "seed": 47903,
+  "stage": {
+    "paper": "gayoushi",
+    "view": "top",
+    "mirror": "none"
+  },
+  "regions": {},
+  "steps": [
+    {
+      "id": "step-1",
+      "durationMs": 5000,
+      "caption": "{頭|あたま}と{胴|どう}の つながりを{見|み}よう",
+      "description": "人物の頭と胴を抽象図形で示し、手の絵は描かない。",
+      "actions": [
+        {
+          "id": "action-0",
+          "t": 0,
+          "dur": 0,
+          "type": "scene.object",
+          "objectId": "head",
+          "sprite": "ellipse",
+          "at": [
+            330,
+            180
+          ],
+          "scale": 0.9,
+          "color": "momo"
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 0,
+          "type": "scene.object",
+          "objectId": "body",
+          "sprite": "rect",
+          "at": [
+            330,
+            345
+          ],
+          "scale": 1.4,
+          "color": "ao"
+        },
+        {
+          "id": "action-2",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            150,
+            80
+          ],
+          "text": "あたまと どう"
+        }
+      ]
+    },
+    {
+      "id": "step-2",
+      "durationMs": 5000,
+      "caption": "{曲がる所|まがるところ}を {見つけ|みつけ}よう",
+      "description": "肘や膝の位置を円の注記、腕・脚は線のみで示す。",
+      "actions": [
+        {
+          "id": "enter",
+          "type": "hand.enter",
+          "tool": "pencil",
+          "t": 0,
+          "dur": 400
+        },
+        {
+          "id": "action-0",
+          "t": 400,
+          "dur": 3600,
+          "type": "pencil.stroke",
+          "path": {
+            "subpaths": [
+              [
+                [
+                  265,
+                  290
+                ],
+                [
+                  205,
+                  360
+                ],
+                [
+                  240,
+                  420
+                ]
+              ],
+              [
+                [
+                  395,
+                  290
+                ],
+                [
+                  450,
+                  350
+                ],
+                [
+                  430,
+                  430
+                ]
+              ],
+              [
+                [
+                  290,
+                  410
+                ],
+                [
+                  265,
+                  475
+                ],
+                [
+                  280,
+                  550
+                ]
+              ],
+              [
+                [
+                  370,
+                  410
+                ],
+                [
+                  395,
+                  475
+                ],
+                [
+                  380,
+                  550
+                ]
+              ]
+            ]
+          },
+          "hardness": "2B",
+          "pressure": 0.65,
+          "width": 3
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.circle",
+          "at": [
+            205,
+            360
+          ],
+          "r": 18
+        },
+        {
+          "id": "action-2",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.circle",
+          "at": [
+            395,
+            475
+          ],
+          "r": 18
+        },
+        {
+          "id": "action-3",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            150,
+            80
+          ],
+          "text": "かんせつ"
+        },
+        {
+          "id": "exit",
+          "type": "hand.exit",
+          "t": 4100,
+          "dur": 400
+        }
+      ]
+    },
+    {
+      "id": "step-3",
+      "durationMs": 5000,
+      "caption": "{姿勢|しせい}で {見える|みえる}{長さ|ながさ}が{変わる|かわる}ね",
+      "description": "別の姿勢を線と胴の矩形で示す。",
+      "actions": [
+        {
+          "id": "enter",
+          "type": "hand.enter",
+          "tool": "pencil",
+          "t": 0,
+          "dur": 400
+        },
+        {
+          "id": "action-0",
+          "t": 0,
+          "dur": 0,
+          "type": "scene.object",
+          "objectId": "head2",
+          "sprite": "ellipse",
+          "at": [
+            720,
+            225
+          ],
+          "scale": 0.9,
+          "color": "momo"
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 0,
+          "type": "scene.object",
+          "objectId": "body2",
+          "sprite": "rect",
+          "at": [
+            710,
+            355
+          ],
+          "scale": 1.2,
+          "color": "midori",
+          "rotation": 18
+        },
+        {
+          "id": "action-2",
+          "t": 400,
+          "dur": 3600,
+          "type": "pencil.stroke",
+          "path": {
+            "subpaths": [
+              [
+                [
+                  675,
+                  400
+                ],
+                [
+                  625,
+                  455
+                ],
+                [
+                  650,
+                  535
+                ]
+              ],
+              [
+                [
+                  740,
+                  400
+                ],
+                [
+                  800,
+                  415
+                ],
+                [
+                  860,
+                  450
+                ]
+              ],
+              [
+                [
+                  655,
+                  295
+                ],
+                [
+                  600,
+                  260
+                ],
+                [
+                  575,
+                  320
+                ]
+              ],
+              [
+                [
+                  760,
+                  310
+                ],
+                [
+                  810,
+                  350
+                ],
+                [
+                  835,
+                  320
+                ]
+              ]
+            ]
+          },
+          "hardness": "2B",
+          "pressure": 0.65,
+          "width": 3
+        },
+        {
+          "id": "action-3",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            500,
+            90
+          ],
+          "text": "ひとや しせいで ちがう"
+        },
+        {
+          "id": "exit",
+          "type": "hand.exit",
+          "t": 4100,
+          "dur": 400
+        }
+      ]
+    },
+    {
+      "id": "step-4",
+      "durationMs": 5000,
+      "caption": "その{人|ひと}らしい {姿勢|しせい}を{見|み}よう",
+      "description": "比率の固定解を作らない説明を置く。",
+      "actions": [
+        {
+          "id": "action-0",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            210,
+            585
+          ],
+          "text": "ひとの ちがいを だいじに"
+        }
+      ]
+    }
+  ]
+}

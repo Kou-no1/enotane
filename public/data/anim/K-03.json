@@ -1,0 +1,237 @@
+{
+  "schemaVersion": 1,
+  "id": "K-03",
+  "seed": 47503,
+  "stage": {
+    "paper": "gayoushi",
+    "view": "top",
+    "mirror": "none"
+  },
+  "regions": {},
+  "steps": [
+    {
+      "id": "step-1",
+      "durationMs": 5000,
+      "caption": "{元|もと}の{色|いろ}を ぬってみよう",
+      "description": "中央に元の青を置く。",
+      "actions": [
+        {
+          "id": "enter",
+          "type": "hand.enter",
+          "tool": "brush-round",
+          "t": 0,
+          "dur": 400
+        },
+        {
+          "id": "action-0",
+          "t": 400,
+          "dur": 3600,
+          "type": "paint.mix",
+          "region": {
+            "shape": "circle",
+            "cx": 500,
+            "cy": 310,
+            "r": 85
+          },
+          "colors": [
+            "ao"
+          ],
+          "amounts": [
+            1
+          ]
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            380,
+            180
+          ],
+          "text": "もとの あお"
+        },
+        {
+          "id": "exit",
+          "type": "hand.exit",
+          "t": 4100,
+          "dur": 400
+        }
+      ]
+    },
+    {
+      "id": "step-2",
+      "durationMs": 5000,
+      "caption": "{白|しろ}を{少し|すこし}ずつ {足|あし}そう",
+      "description": "左へ白の量が違う二つの明るい青を置く。",
+      "actions": [
+        {
+          "id": "enter",
+          "type": "hand.enter",
+          "tool": "brush-round",
+          "t": 0,
+          "dur": 400
+        },
+        {
+          "id": "action-0",
+          "t": 400,
+          "dur": 1800,
+          "type": "paint.mix",
+          "region": {
+            "shape": "circle",
+            "cx": 300,
+            "cy": 310,
+            "r": 75
+          },
+          "colors": [
+            "ao",
+            "shiro"
+          ],
+          "amounts": [
+            1,
+            1
+          ]
+        },
+        {
+          "id": "action-1",
+          "t": 2200,
+          "dur": 1800,
+          "type": "paint.mix",
+          "region": {
+            "shape": "circle",
+            "cx": 130,
+            "cy": 310,
+            "r": 60
+          },
+          "colors": [
+            "ao",
+            "shiro"
+          ],
+          "amounts": [
+            1,
+            3
+          ]
+        },
+        {
+          "id": "action-2",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            100,
+            100
+          ],
+          "text": "しろを ふやす"
+        },
+        {
+          "id": "exit",
+          "type": "hand.exit",
+          "t": 4100,
+          "dur": 400
+        }
+      ]
+    },
+    {
+      "id": "step-3",
+      "durationMs": 5000,
+      "caption": "{黒|くろ}も{少し|すこし}ずつ {足し|たし}てみよう",
+      "description": "右へ黒の量が違う二つの暗い青を置く。",
+      "actions": [
+        {
+          "id": "enter",
+          "type": "hand.enter",
+          "tool": "brush-round",
+          "t": 0,
+          "dur": 400
+        },
+        {
+          "id": "action-0",
+          "t": 400,
+          "dur": 1800,
+          "type": "paint.mix",
+          "region": {
+            "shape": "circle",
+            "cx": 700,
+            "cy": 310,
+            "r": 75
+          },
+          "colors": [
+            "ao",
+            "kuro"
+          ],
+          "amounts": [
+            1,
+            0.25
+          ]
+        },
+        {
+          "id": "action-1",
+          "t": 2200,
+          "dur": 1800,
+          "type": "paint.mix",
+          "region": {
+            "shape": "circle",
+            "cx": 870,
+            "cy": 310,
+            "r": 60
+          },
+          "colors": [
+            "ao",
+            "kuro"
+          ],
+          "amounts": [
+            1,
+            0.7
+          ]
+        },
+        {
+          "id": "action-2",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            620,
+            100
+          ],
+          "text": "くろを ふやす"
+        },
+        {
+          "id": "exit",
+          "type": "hand.exit",
+          "t": 4100,
+          "dur": 400
+        }
+      ]
+    },
+    {
+      "id": "step-4",
+      "durationMs": 5000,
+      "caption": "どんな{明るさ|あかるさ}を {使い|つかい}たい？",
+      "description": "明るさは比較として扱い、用途を問う。",
+      "actions": [
+        {
+          "id": "action-0",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            200,
+            510
+          ],
+          "text": "みずで うすめるのとは ちがう"
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            300,
+            570
+          ],
+          "text": "あかるさの めやす"
+        }
+      ]
+    }
+  ]
+}

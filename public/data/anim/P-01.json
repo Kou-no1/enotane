@@ -1,0 +1,394 @@
+{
+  "schemaVersion": 1,
+  "id": "P-01",
+  "seed": 48001,
+  "stage": {
+    "paper": "gayoushi",
+    "view": "top",
+    "mirror": "handedness"
+  },
+  "regions": {},
+  "steps": [
+    {
+      "id": "step-1",
+      "durationMs": 5000,
+      "caption": "たてると ねかせるを くらべよう",
+      "description": "立てた細い線と寝かせた広い線を独立した二つの紙で比較する。",
+      "actions": [
+        {
+          "id": "action-0",
+          "t": 0,
+          "dur": 5000,
+          "type": "compare",
+          "left": {
+            "schemaVersion": 1,
+            "id": "P-01",
+            "seed": 48004,
+            "stage": {
+              "paper": "gayoushi",
+              "view": "top",
+              "mirror": "handedness"
+            },
+            "regions": {},
+            "steps": [
+              {
+                "id": "step-1",
+                "durationMs": 5000,
+                "caption": "たてる",
+                "description": "たてる",
+                "actions": [
+                  {
+                    "id": "enter",
+                    "type": "hand.enter",
+                    "tool": "pencil",
+                    "t": 0,
+                    "dur": 400
+                  },
+                  {
+                    "id": "action-0",
+                    "t": 400,
+                    "dur": 3600,
+                    "type": "pencil.stroke",
+                    "path": {
+                      "gen": "line",
+                      "x1": 180,
+                      "y1": 260,
+                      "x2": 820,
+                      "y2": 260
+                    },
+                    "hardness": "2B",
+                    "pressure": 0.65,
+                    "width": 3,
+                    "mode": "stand"
+                  },
+                  {
+                    "id": "exit",
+                    "type": "hand.exit",
+                    "t": 4100,
+                    "dur": 400
+                  }
+                ]
+              }
+            ]
+          },
+          "right": {
+            "schemaVersion": 1,
+            "id": "P-01",
+            "seed": 48005,
+            "stage": {
+              "paper": "gayoushi",
+              "view": "top",
+              "mirror": "handedness"
+            },
+            "regions": {},
+            "steps": [
+              {
+                "id": "step-1",
+                "durationMs": 5000,
+                "caption": "ねかせる",
+                "description": "ねかせる",
+                "actions": [
+                  {
+                    "id": "enter",
+                    "type": "hand.enter",
+                    "tool": "pencil",
+                    "t": 0,
+                    "dur": 400
+                  },
+                  {
+                    "id": "action-0",
+                    "t": 400,
+                    "dur": 3600,
+                    "type": "pencil.stroke",
+                    "path": {
+                      "gen": "line",
+                      "x1": 180,
+                      "y1": 260,
+                      "x2": 820,
+                      "y2": 260
+                    },
+                    "hardness": "2B",
+                    "pressure": 0.65,
+                    "width": 20,
+                    "mode": "lay"
+                  },
+                  {
+                    "id": "exit",
+                    "type": "hand.exit",
+                    "t": 4100,
+                    "dur": 400
+                  }
+                ]
+              }
+            ]
+          },
+          "labels": [
+            "たてる",
+            "ねかせる"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "step-2",
+      "durationMs": 5000,
+      "caption": "はばは どう かわる？",
+      "description": "同じ曲線の幅を比較する。",
+      "actions": [
+        {
+          "id": "action-0",
+          "t": 0,
+          "dur": 5000,
+          "type": "compare",
+          "left": {
+            "schemaVersion": 1,
+            "id": "P-01",
+            "seed": 48003,
+            "stage": {
+              "paper": "gayoushi",
+              "view": "top",
+              "mirror": "handedness"
+            },
+            "regions": {},
+            "steps": [
+              {
+                "id": "step-1",
+                "durationMs": 5000,
+                "caption": "せん",
+                "description": "せん",
+                "actions": [
+                  {
+                    "id": "enter",
+                    "type": "hand.enter",
+                    "tool": "pencil",
+                    "t": 0,
+                    "dur": 400
+                  },
+                  {
+                    "id": "action-0",
+                    "t": 400,
+                    "dur": 3600,
+                    "type": "pencil.stroke",
+                    "path": {
+                      "gen": "wave",
+                      "x": 150,
+                      "y": 300,
+                      "w": 670,
+                      "amplitude": 55,
+                      "cycles": 3
+                    },
+                    "hardness": "2B",
+                    "pressure": 0.65,
+                    "width": 3
+                  },
+                  {
+                    "id": "exit",
+                    "type": "hand.exit",
+                    "t": 4100,
+                    "dur": 400
+                  }
+                ]
+              }
+            ]
+          },
+          "right": {
+            "schemaVersion": 1,
+            "id": "P-01",
+            "seed": 48007,
+            "stage": {
+              "paper": "gayoushi",
+              "view": "top",
+              "mirror": "handedness"
+            },
+            "regions": {},
+            "steps": [
+              {
+                "id": "step-1",
+                "durationMs": 5000,
+                "caption": "ひろい あと",
+                "description": "ひろい あと",
+                "actions": [
+                  {
+                    "id": "enter",
+                    "type": "hand.enter",
+                    "tool": "pencil",
+                    "t": 0,
+                    "dur": 400
+                  },
+                  {
+                    "id": "action-0",
+                    "t": 400,
+                    "dur": 3600,
+                    "type": "pencil.stroke",
+                    "path": {
+                      "gen": "wave",
+                      "x": 150,
+                      "y": 300,
+                      "w": 670,
+                      "amplitude": 55,
+                      "cycles": 3
+                    },
+                    "hardness": "2B",
+                    "pressure": 0.65,
+                    "width": 22,
+                    "mode": "lay"
+                  },
+                  {
+                    "id": "exit",
+                    "type": "hand.exit",
+                    "t": 4100,
+                    "dur": 400
+                  }
+                ]
+              }
+            ]
+          },
+          "labels": [
+            "せん",
+            "ひろい あと"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "step-3",
+      "durationMs": 5000,
+      "caption": "こまかい せんに つかえるね",
+      "description": "立てた線で葉のすじを描く。",
+      "actions": [
+        {
+          "id": "enter",
+          "type": "hand.enter",
+          "tool": "pencil",
+          "t": 0,
+          "dur": 400
+        },
+        {
+          "id": "action-0",
+          "t": 400,
+          "dur": 1800,
+          "type": "pencil.stroke",
+          "path": {
+            "gen": "ellipse",
+            "cx": 500,
+            "cy": 320,
+            "rx": 210,
+            "ry": 110
+          },
+          "hardness": "2B",
+          "pressure": 0.65,
+          "width": 3
+        },
+        {
+          "id": "action-1",
+          "t": 2200,
+          "dur": 1800,
+          "type": "pencil.stroke",
+          "path": {
+            "gen": "line",
+            "x1": 300,
+            "y1": 330,
+            "x2": 710,
+            "y2": 300
+          },
+          "hardness": "2B",
+          "pressure": 0.65,
+          "width": 3
+        },
+        {
+          "id": "action-2",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            150,
+            80
+          ],
+          "text": "こまかい せん"
+        },
+        {
+          "id": "exit",
+          "type": "hand.exit",
+          "t": 4100,
+          "dur": 400
+        }
+      ]
+    },
+    {
+      "id": "step-4",
+      "durationMs": 5000,
+      "caption": "ひろい かげも ためそう",
+      "description": "寝かせた鉛筆で広い影を塗る。",
+      "actions": [
+        {
+          "id": "enter",
+          "type": "hand.enter",
+          "tool": "pencil",
+          "t": 0,
+          "dur": 400
+        },
+        {
+          "id": "action-0",
+          "t": 400,
+          "dur": 3600,
+          "type": "pencil.stroke",
+          "path": {
+            "subpaths": [
+              [
+                [
+                  220,
+                  270
+                ],
+                [
+                  740,
+                  270
+                ]
+              ],
+              [
+                [
+                  220,
+                  300
+                ],
+                [
+                  740,
+                  300
+                ]
+              ],
+              [
+                [
+                  220,
+                  330
+                ],
+                [
+                  740,
+                  330
+                ]
+              ]
+            ]
+          },
+          "hardness": "2B",
+          "pressure": 0.65,
+          "width": 34,
+          "mode": "lay"
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            150,
+            80
+          ],
+          "text": "えらんで つかおう"
+        },
+        {
+          "id": "exit",
+          "type": "hand.exit",
+          "t": 4100,
+          "dur": 400
+        }
+      ]
+    }
+  ]
+}

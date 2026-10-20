@@ -1,0 +1,31 @@
+{
+  "name": "enotane-animation-prototype",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1 --port 5186 --strictPort --open /",
+    "dev:quiet": "vite --host 127.0.0.1 --port 5186 --strictPort",
+    "validate": "node --experimental-strip-types scripts/validate-anim.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "build": "vite build",
+    "build:dev": "vite build --mode gallery",
+    "preview:dev": "vite preview --outDir dist-dev --host 127.0.0.1 --port 5186 --strictPort --open /dev.html",
+    "preview": "vite preview --host 127.0.0.1 --port 5187 --strictPort",
+    "test:e2e": "playwright test"
+  },
+  "dependencies": {
+    "react": "19.2.6",
+    "react-dom": "19.2.6"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.64.0",
+    "@types/node": "24.12.4",
+    "@types/react": "19.2.14",
+    "@types/react-dom": "19.2.3",
+    "typescript": "5.9.3",
+    "vite": "7.3.6",
+    "vitest": "4.1.11"
+  }
+}

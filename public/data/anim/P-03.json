@@ -1,0 +1,269 @@
+{
+  "schemaVersion": 1,
+  "id": "P-03",
+  "seed": 48003,
+  "stage": {
+    "paper": "gayoushi",
+    "view": "top",
+    "mirror": "handedness"
+  },
+  "regions": {},
+  "steps": [
+    {
+      "id": "step-1",
+      "durationMs": 5000,
+      "caption": "やさしく ひくと どうなる？",
+      "description": "弱い力のメーターと薄い線を同じ時間で表示する。",
+      "actions": [
+        {
+          "id": "enter",
+          "type": "hand.enter",
+          "tool": "pencil",
+          "t": 0,
+          "dur": 400
+        },
+        {
+          "id": "action-0",
+          "t": 400,
+          "dur": 3600,
+          "type": "pencil.stroke",
+          "path": {
+            "gen": "line",
+            "x1": 180,
+            "y1": 180,
+            "x2": 830,
+            "y2": 180
+          },
+          "hardness": "2B",
+          "pressure": 0.15,
+          "width": 3
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.meter",
+          "label": "ちから",
+          "value": 0.15,
+          "at": [
+            170,
+            500
+          ]
+        },
+        {
+          "id": "action-2",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            150,
+            80
+          ],
+          "text": "よわめ"
+        },
+        {
+          "id": "exit",
+          "type": "hand.exit",
+          "t": 4100,
+          "dur": 400
+        }
+      ]
+    },
+    {
+      "id": "step-2",
+      "durationMs": 5000,
+      "caption": "すこし ちからを いれてみよう",
+      "description": "中くらいの力で前より濃い線を引く。",
+      "actions": [
+        {
+          "id": "enter",
+          "type": "hand.enter",
+          "tool": "pencil",
+          "t": 0,
+          "dur": 400
+        },
+        {
+          "id": "action-0",
+          "t": 400,
+          "dur": 3600,
+          "type": "pencil.stroke",
+          "path": {
+            "gen": "line",
+            "x1": 180,
+            "y1": 300,
+            "x2": 830,
+            "y2": 300
+          },
+          "hardness": "2B",
+          "pressure": 0.55,
+          "width": 3
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.meter",
+          "label": "ちから",
+          "value": 0.55,
+          "at": [
+            170,
+            500
+          ]
+        },
+        {
+          "id": "action-2",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            150,
+            80
+          ],
+          "text": "すこし つよめ"
+        },
+        {
+          "id": "exit",
+          "type": "hand.exit",
+          "t": 4100,
+          "dur": 400
+        }
+      ]
+    },
+    {
+      "id": "step-3",
+      "durationMs": 5000,
+      "caption": "こい せんも ためしてみよう",
+      "description": "強めの筆圧と濃い線を比較する。",
+      "actions": [
+        {
+          "id": "enter",
+          "type": "hand.enter",
+          "tool": "pencil",
+          "t": 0,
+          "dur": 400
+        },
+        {
+          "id": "action-0",
+          "t": 400,
+          "dur": 3600,
+          "type": "pencil.stroke",
+          "path": {
+            "gen": "line",
+            "x1": 180,
+            "y1": 420,
+            "x2": 830,
+            "y2": 420
+          },
+          "hardness": "2B",
+          "pressure": 0.9,
+          "width": 3
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.meter",
+          "label": "ちから",
+          "value": 0.9,
+          "at": [
+            170,
+            500
+          ]
+        },
+        {
+          "id": "action-2",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            150,
+            80
+          ],
+          "text": "かみが やぶれない つよさ"
+        },
+        {
+          "id": "exit",
+          "type": "hand.exit",
+          "t": 4100,
+          "dur": 400
+        }
+      ]
+    },
+    {
+      "id": "step-4",
+      "durationMs": 5000,
+      "caption": "とちゅうで ちからを かえるよ",
+      "description": "カーブの位置に合わせてメーターと筆圧が弱→強→弱と変わる。",
+      "actions": [
+        {
+          "id": "enter",
+          "type": "hand.enter",
+          "tool": "pencil",
+          "t": 0,
+          "dur": 400
+        },
+        {
+          "id": "action-0",
+          "t": 400,
+          "dur": 3600,
+          "type": "pencil.stroke",
+          "path": {
+            "gen": "wave",
+            "x": 180,
+            "y": 525,
+            "w": 640,
+            "amplitude": 25,
+            "cycles": 2
+          },
+          "hardness": "2B",
+          "pressure": [
+            [
+              0,
+              0.15
+            ],
+            [
+              0.5,
+              0.95
+            ],
+            [
+              1,
+              0.15
+            ]
+          ],
+          "width": 6
+        },
+        {
+          "id": "action-1",
+          "t": 400,
+          "dur": 3600,
+          "type": "note.meter",
+          "label": "ちから",
+          "value": [
+            [
+              0,
+              0.15
+            ],
+            [
+              0.5,
+              0.95
+            ],
+            [
+              1,
+              0.15
+            ]
+          ],
+          "at": [
+            170,
+            70
+          ]
+        },
+        {
+          "id": "exit",
+          "type": "hand.exit",
+          "t": 4100,
+          "dur": 400
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,247 @@
+{
+  "schemaVersion": 1,
+  "id": "C-04",
+  "seed": 46704,
+  "stage": {
+    "paper": "gayoushi",
+    "view": "top",
+    "mirror": "handedness"
+  },
+  "regions": {},
+  "steps": [
+    {
+      "id": "step-1",
+      "durationMs": 5000,
+      "caption": "こい ところから はじめるよ",
+      "description": "左の強い筆圧から右へ徐々に弱くなる青の線を描く。",
+      "actions": [
+        {
+          "id": "enter",
+          "type": "hand.enter",
+          "tool": "crayon",
+          "t": 0,
+          "dur": 400
+        },
+        {
+          "id": "action-0",
+          "t": 400,
+          "dur": 3600,
+          "type": "crayon.stroke",
+          "path": {
+            "gen": "line",
+            "x1": 160,
+            "y1": 250,
+            "x2": 840,
+            "y2": 250
+          },
+          "color": "ao",
+          "width": 70,
+          "pressure": [
+            [
+              0,
+              1
+            ],
+            [
+              0.4,
+              0.7
+            ],
+            [
+              1,
+              0.1
+            ]
+          ],
+          "mode": "lay"
+        },
+        {
+          "id": "action-1",
+          "t": 400,
+          "dur": 3600,
+          "type": "note.meter",
+          "label": "ちから",
+          "value": [
+            [
+              0,
+              1
+            ],
+            [
+              0.4,
+              0.7
+            ],
+            [
+              1,
+              0.1
+            ]
+          ],
+          "at": [
+            160,
+            480
+          ]
+        },
+        {
+          "id": "exit",
+          "type": "hand.exit",
+          "t": 4100,
+          "dur": 400
+        }
+      ]
+    },
+    {
+      "id": "step-2",
+      "durationMs": 5000,
+      "caption": "べつの いろでも ためそう",
+      "description": "赤も同じ方向へ力を抜き、色に依らない変化を比べる。",
+      "actions": [
+        {
+          "id": "enter",
+          "type": "hand.enter",
+          "tool": "crayon",
+          "t": 0,
+          "dur": 400
+        },
+        {
+          "id": "action-0",
+          "t": 400,
+          "dur": 3600,
+          "type": "crayon.stroke",
+          "path": {
+            "gen": "line",
+            "x1": 160,
+            "y1": 370,
+            "x2": 840,
+            "y2": 370
+          },
+          "color": "aka",
+          "width": 70,
+          "pressure": [
+            [
+              0,
+              1
+            ],
+            [
+              0.5,
+              0.5
+            ],
+            [
+              1,
+              0.1
+            ]
+          ],
+          "mode": "lay"
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            150,
+            80
+          ],
+          "text": "あかでも ためす"
+        },
+        {
+          "id": "exit",
+          "type": "hand.exit",
+          "t": 4100,
+          "dur": 400
+        }
+      ]
+    },
+    {
+      "id": "step-3",
+      "durationMs": 5000,
+      "caption": "はんたいから ぬってみよう",
+      "description": "下に逆方向の変化を描く。",
+      "actions": [
+        {
+          "id": "enter",
+          "type": "hand.enter",
+          "tool": "crayon",
+          "t": 0,
+          "dur": 400
+        },
+        {
+          "id": "action-0",
+          "t": 400,
+          "dur": 3600,
+          "type": "crayon.stroke",
+          "path": {
+            "gen": "line",
+            "x1": 160,
+            "y1": 500,
+            "x2": 840,
+            "y2": 500
+          },
+          "color": "midori",
+          "width": 58,
+          "pressure": [
+            [
+              0,
+              0.1
+            ],
+            [
+              0.5,
+              0.55
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "mode": "lay"
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            200,
+            80
+          ],
+          "text": "よわい → つよい"
+        },
+        {
+          "id": "exit",
+          "type": "hand.exit",
+          "t": 4100,
+          "dur": 400
+        }
+      ]
+    },
+    {
+      "id": "step-4",
+      "durationMs": 5000,
+      "caption": "どんな かんじに つかう？",
+      "description": "筆圧の変化と紙の白が残る場所を示す。",
+      "actions": [
+        {
+          "id": "action-0",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.arrow",
+          "at": [
+            820,
+            150
+          ],
+          "to": [
+            820,
+            240
+          ],
+          "text": "うすい ところ"
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            310,
+            580
+          ],
+          "text": "だんだん かわる いろ"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,216 @@
+{
+  "schemaVersion": 1,
+  "id": "C-06",
+  "seed": 46706,
+  "stage": {
+    "paper": "gayoushi",
+    "view": "top",
+    "mirror": "handedness"
+  },
+  "regions": {},
+  "steps": [
+    {
+      "id": "step-1",
+      "durationMs": 5000,
+      "caption": "となりに 2いろを ぬるよ",
+      "description": "赤と黄色のパスを隣接して塗る。",
+      "actions": [
+        {
+          "id": "enter",
+          "type": "hand.enter",
+          "tool": "oil-pastel",
+          "t": 0,
+          "dur": 400
+        },
+        {
+          "id": "action-0",
+          "t": 400,
+          "dur": 1800,
+          "type": "crayon.fill",
+          "region": {
+            "shape": "rect",
+            "x": 180,
+            "y": 220,
+            "w": 320,
+            "h": 200
+          },
+          "color": "aka",
+          "kind": "oil-pastel"
+        },
+        {
+          "id": "action-1",
+          "t": 2200,
+          "dur": 1800,
+          "type": "crayon.fill",
+          "region": {
+            "shape": "rect",
+            "x": 500,
+            "y": 220,
+            "w": 320,
+            "h": 200
+          },
+          "color": "kiiro",
+          "kind": "oil-pastel"
+        },
+        {
+          "id": "action-2",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            210,
+            170
+          ],
+          "text": "あか"
+        },
+        {
+          "id": "action-3",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            660,
+            170
+          ],
+          "text": "きいろ"
+        },
+        {
+          "id": "exit",
+          "type": "hand.exit",
+          "t": 4100,
+          "dur": 400
+        }
+      ]
+    },
+    {
+      "id": "step-2",
+      "durationMs": 5000,
+      "caption": "さかいを すこし こするよ",
+      "description": "指の代わりに白い半透明の接点円を表示し、境界をこする。",
+      "actions": [
+        {
+          "id": "enter",
+          "type": "hand.enter",
+          "tool": "finger",
+          "t": 0,
+          "dur": 400
+        },
+        {
+          "id": "action-0",
+          "t": 400,
+          "dur": 3600,
+          "type": "smudge",
+          "path": {
+            "gen": "line",
+            "x1": 470,
+            "y1": 250,
+            "x2": 530,
+            "y2": 390
+          },
+          "tool": "finger",
+          "strength": 0.8,
+          "width": 70
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            150,
+            80
+          ],
+          "text": "さかいを こする"
+        },
+        {
+          "id": "exit",
+          "type": "hand.exit",
+          "t": 4100,
+          "dur": 400
+        }
+      ]
+    },
+    {
+      "id": "step-3",
+      "durationMs": 5000,
+      "caption": "はばを かえると どうなる？",
+      "description": "境界の上下へ追加のぼかしを入れ、広がる範囲を変える。",
+      "actions": [
+        {
+          "id": "enter",
+          "type": "hand.enter",
+          "tool": "tissue",
+          "t": 0,
+          "dur": 400
+        },
+        {
+          "id": "action-0",
+          "t": 400,
+          "dur": 3600,
+          "type": "smudge",
+          "path": {
+            "gen": "line",
+            "x1": 450,
+            "y1": 300,
+            "x2": 550,
+            "y2": 300
+          },
+          "tool": "tissue",
+          "strength": 0.65,
+          "width": 85
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            150,
+            80
+          ],
+          "text": "ティッシュでも ためせる"
+        },
+        {
+          "id": "exit",
+          "type": "hand.exit",
+          "t": 4100,
+          "dur": 400
+        }
+      ]
+    },
+    {
+      "id": "step-4",
+      "durationMs": 5000,
+      "caption": "こする まえと あとを みよう",
+      "description": "元の赤、黄色と境界を区別して示す。",
+      "actions": [
+        {
+          "id": "action-0",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.arrow",
+          "at": [
+            350,
+            500
+          ],
+          "to": [
+            500,
+            320
+          ],
+          "text": "まんなかの いろ"
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            190,
+            80
+          ],
+          "text": "ふちを のこす ことも できるよ"
+        }
+      ]
+    }
+  ]
+}

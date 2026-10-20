@@ -1,0 +1,212 @@
+{
+  "schemaVersion": 1,
+  "id": "C-11",
+  "seed": 46711,
+  "stage": {
+    "paper": "gayoushi",
+    "view": "top",
+    "mirror": "handedness"
+  },
+  "regions": {},
+  "steps": [
+    {
+      "id": "step-1",
+      "durationMs": 5000,
+      "caption": "クレヨンで {線|せん}をかこう",
+      "description": "白と黄色のクレヨンに抵抗マスクを記録する。",
+      "actions": [
+        {
+          "id": "enter",
+          "type": "hand.enter",
+          "tool": "crayon",
+          "t": 0,
+          "dur": 400
+        },
+        {
+          "id": "action-0",
+          "t": 400,
+          "dur": 1800,
+          "type": "crayon.stroke",
+          "path": {
+            "gen": "wave",
+            "x": 180,
+            "y": 270,
+            "w": 650,
+            "amplitude": 55,
+            "cycles": 3
+          },
+          "color": "shiro",
+          "width": 25,
+          "pressure": 0.9,
+          "resist": true
+        },
+        {
+          "id": "action-1",
+          "t": 2200,
+          "dur": 1800,
+          "type": "crayon.stroke",
+          "path": {
+            "gen": "dots",
+            "x": 200,
+            "y": 400,
+            "w": 600,
+            "count": 14
+          },
+          "color": "kiiro",
+          "width": 18,
+          "pressure": 0.65,
+          "resist": true
+        },
+        {
+          "id": "action-2",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            150,
+            80
+          ],
+          "text": "しろと きいろの クレヨン"
+        },
+        {
+          "id": "exit",
+          "type": "hand.exit",
+          "t": 4100,
+          "dur": 400
+        }
+      ]
+    },
+    {
+      "id": "step-2",
+      "durationMs": 5000,
+      "caption": "{上から|うえから} うすい{水彩|すいさい}をぬるよ",
+      "description": "青い水彩は抵抗マスク部分で弱まり、クレヨンの線が残る。",
+      "actions": [
+        {
+          "id": "enter",
+          "type": "hand.enter",
+          "tool": "brush-round",
+          "t": 0,
+          "dur": 400
+        },
+        {
+          "id": "action-0",
+          "t": 400,
+          "dur": 3600,
+          "type": "paint.wash",
+          "region": {
+            "shape": "rect",
+            "x": 130,
+            "y": 160,
+            "w": 740,
+            "h": 340
+          },
+          "color": "ao",
+          "water": 0.85
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            150,
+            80
+          ],
+          "text": "うすい すいさい"
+        },
+        {
+          "id": "exit",
+          "type": "hand.exit",
+          "t": 4100,
+          "dur": 400
+        }
+      ]
+    },
+    {
+      "id": "step-3",
+      "durationMs": 5000,
+      "caption": "クレヨンの{線|せん}は どう{見える|みえる}？",
+      "description": "残る線と水彩の場所を区別する。",
+      "actions": [
+        {
+          "id": "action-0",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.arrow",
+          "at": [
+            210,
+            80
+          ],
+          "to": [
+            330,
+            270
+          ],
+          "text": "クレヨンの あと"
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.arrow",
+          "at": [
+            760,
+            550
+          ],
+          "to": [
+            760,
+            450
+          ],
+          "text": "すいさいの めん"
+        }
+      ]
+    },
+    {
+      "id": "step-4",
+      "durationMs": 5000,
+      "caption": "{量|りょう}や{紙|かみ}でも {変わる|かわる}よ",
+      "description": "別の小領域で濃い水彩を重ね、残り方の選択を促す。",
+      "actions": [
+        {
+          "id": "enter",
+          "type": "hand.enter",
+          "tool": "brush-round",
+          "t": 0,
+          "dur": 400
+        },
+        {
+          "id": "action-0",
+          "t": 400,
+          "dur": 3600,
+          "type": "paint.wash",
+          "region": {
+            "shape": "rect",
+            "x": 600,
+            "y": 200,
+            "w": 200,
+            "h": 250
+          },
+          "color": "murasaki",
+          "water": 0.25
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            200,
+            550
+          ],
+          "text": "のこりかたを ためそう"
+        },
+        {
+          "id": "exit",
+          "type": "hand.exit",
+          "t": 4100,
+          "dur": 400
+        }
+      ]
+    }
+  ]
+}

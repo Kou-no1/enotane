@@ -1,0 +1,210 @@
+{
+  "schemaVersion": 1,
+  "id": "K-04",
+  "seed": 47504,
+  "stage": {
+    "paper": "gayoushi",
+    "view": "top",
+    "mirror": "none"
+  },
+  "regions": {},
+  "steps": [
+    {
+      "id": "step-1",
+      "durationMs": 5000,
+      "caption": "{白|しろ}と{黒|くろ}で {灰色|はいいろ}を{作|つく}ろう",
+      "description": "左上に灰色の混色を置く。",
+      "actions": [
+        {
+          "id": "enter",
+          "type": "hand.enter",
+          "tool": "brush-round",
+          "t": 0,
+          "dur": 400
+        },
+        {
+          "id": "action-0",
+          "t": 400,
+          "dur": 3600,
+          "type": "paint.mix",
+          "region": {
+            "shape": "circle",
+            "cx": 250,
+            "cy": 190,
+            "r": 75
+          },
+          "colors": [
+            "shiro",
+            "kuro"
+          ],
+          "amounts": [
+            2,
+            1
+          ]
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            150,
+            80
+          ],
+          "text": "はいろを つくる"
+        },
+        {
+          "id": "exit",
+          "type": "hand.exit",
+          "t": 4100,
+          "dur": 400
+        }
+      ]
+    },
+    {
+      "id": "step-2",
+      "durationMs": 5000,
+      "caption": "{元|もと}の{色|いろ}へ {少し|すこし}{混ぜ|まぜ}てみよう",
+      "description": "赤の元色と少量の白黒を含む落ち着いた色を並べる。",
+      "actions": [
+        {
+          "id": "enter",
+          "type": "hand.enter",
+          "tool": "brush-round",
+          "t": 0,
+          "dur": 400
+        },
+        {
+          "id": "action-0",
+          "t": 400,
+          "dur": 1800,
+          "type": "paint.mix",
+          "region": {
+            "shape": "circle",
+            "cx": 220,
+            "cy": 400,
+            "r": 90
+          },
+          "colors": [
+            "aka"
+          ],
+          "amounts": [
+            1
+          ]
+        },
+        {
+          "id": "action-1",
+          "t": 2200,
+          "dur": 1800,
+          "type": "paint.mix",
+          "region": {
+            "shape": "circle",
+            "cx": 490,
+            "cy": 400,
+            "r": 90
+          },
+          "colors": [
+            "aka",
+            "shiro",
+            "kuro"
+          ],
+          "amounts": [
+            1,
+            0.3,
+            0.15
+          ]
+        },
+        {
+          "id": "action-2",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            380,
+            290
+          ],
+          "text": "すこし まぜる"
+        },
+        {
+          "id": "exit",
+          "type": "hand.exit",
+          "t": 4100,
+          "dur": 400
+        }
+      ]
+    },
+    {
+      "id": "step-3",
+      "durationMs": 5000,
+      "caption": "{量|りょう}をふやすと どう{感じる|かんじる}？",
+      "description": "さらに灰色を多くした赤を右へ置く。",
+      "actions": [
+        {
+          "id": "enter",
+          "type": "hand.enter",
+          "tool": "brush-round",
+          "t": 0,
+          "dur": 400
+        },
+        {
+          "id": "action-0",
+          "t": 400,
+          "dur": 3600,
+          "type": "paint.mix",
+          "region": {
+            "shape": "circle",
+            "cx": 760,
+            "cy": 400,
+            "r": 90
+          },
+          "colors": [
+            "aka",
+            "shiro",
+            "kuro"
+          ],
+          "amounts": [
+            1,
+            1,
+            0.5
+          ]
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            630,
+            290
+          ],
+          "text": "はいろが おおい"
+        },
+        {
+          "id": "exit",
+          "type": "hand.exit",
+          "t": 4100,
+          "dur": 400
+        }
+      ]
+    },
+    {
+      "id": "step-4",
+      "durationMs": 5000,
+      "caption": "しずかな{色|いろ}も {選べ|えらべ}るね",
+      "description": "落ち着く色を劣った色と扱わず活用を促す。",
+      "actions": [
+        {
+          "id": "action-0",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            170,
+            560
+          ],
+          "text": "どんな ばしょや じかんに つかう？"
+        }
+      ]
+    }
+  ]
+}

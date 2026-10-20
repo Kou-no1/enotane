@@ -1,0 +1,227 @@
+{
+  "schemaVersion": 1,
+  "id": "Z-10",
+  "seed": 49010,
+  "stage": {
+    "paper": "gayoushi",
+    "view": "top",
+    "mirror": "none"
+  },
+  "regions": {},
+  "steps": [
+    {
+      "id": "step-1",
+      "durationMs": 5000,
+      "caption": "{正面|しょうめん}に{近い|ちかい}{道|みち}を {見て|みて}みよう",
+      "description": "一点へ向かう道の左右の線を描く。",
+      "actions": [
+        {
+          "id": "enter",
+          "type": "hand.enter",
+          "tool": "pencil",
+          "t": 0,
+          "dur": 400
+        },
+        {
+          "id": "action-0",
+          "t": 400,
+          "dur": 3600,
+          "type": "pencil.stroke",
+          "path": {
+            "points": [
+              [
+                100,
+                560
+              ],
+              [
+                500,
+                250
+              ],
+              [
+                900,
+                560
+              ]
+            ]
+          },
+          "hardness": "2B",
+          "pressure": 0.65,
+          "width": 3
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            150,
+            80
+          ],
+          "text": "おくへ のびる みち"
+        },
+        {
+          "id": "exit",
+          "type": "hand.exit",
+          "t": 4100,
+          "dur": 400
+        }
+      ]
+    },
+    {
+      "id": "step-2",
+      "durationMs": 5000,
+      "caption": "{線|せん}を{延ばす|のばす}と {一つ|ひとつ}の{点|てん}へ",
+      "description": "消失点の補助線を表示する。",
+      "actions": [
+        {
+          "id": "action-0",
+          "t": 0,
+          "dur": 0,
+          "type": "grid.show",
+          "kind": "perspective",
+          "vanishing": [
+            500,
+            250
+          ]
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.circle",
+          "at": [
+            500,
+            250
+          ],
+          "r": 24
+        },
+        {
+          "id": "action-2",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            545,
+            230
+          ],
+          "text": "あつまる てん"
+        }
+      ]
+    },
+    {
+      "id": "step-3",
+      "durationMs": 5000,
+      "caption": "{建物|たてもの}も {線|せん}を{手がかり|てがかり}にするよ",
+      "description": "近い家と遠い家を道の両側へ置く。",
+      "actions": [
+        {
+          "id": "enter",
+          "type": "hand.enter",
+          "tool": "pencil",
+          "t": 0,
+          "dur": 400
+        },
+        {
+          "id": "action-0",
+          "t": 0,
+          "dur": 0,
+          "type": "scene.object",
+          "objectId": "near",
+          "sprite": "house",
+          "at": [
+            200,
+            450
+          ],
+          "scale": 1.3,
+          "color": "chairo"
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 0,
+          "type": "scene.object",
+          "objectId": "far",
+          "sprite": "house",
+          "at": [
+            615,
+            315
+          ],
+          "scale": 0.5,
+          "color": "chairo"
+        },
+        {
+          "id": "action-2",
+          "t": 400,
+          "dur": 3600,
+          "type": "pencil.stroke",
+          "path": {
+            "gen": "line",
+            "x1": 220,
+            "y1": 390,
+            "x2": 500,
+            "y2": 250
+          },
+          "hardness": "2B",
+          "pressure": 0.65,
+          "width": 3
+        },
+        {
+          "id": "action-3",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            150,
+            80
+          ],
+          "text": "おくへ むかう せん"
+        },
+        {
+          "id": "exit",
+          "type": "hand.exit",
+          "t": 4100,
+          "dur": 400
+        }
+      ]
+    },
+    {
+      "id": "step-4",
+      "durationMs": 5000,
+      "caption": "{全部|ぜんぶ}の{線|せん}が {集まる|あつまる}わけではないよ",
+      "description": "縦横の線はそのまま、一点へ向かう方向を限定する。",
+      "actions": [
+        {
+          "id": "action-0",
+          "t": 0,
+          "dur": 0,
+          "type": "grid.hide"
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            150,
+            80
+          ],
+          "text": "たてや よこの せんは べつ"
+        },
+        {
+          "id": "action-2",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.arrow",
+          "at": [
+            150,
+            190
+          ],
+          "to": [
+            170,
+            430
+          ],
+          "text": "たての せん"
+        }
+      ]
+    }
+  ]
+}

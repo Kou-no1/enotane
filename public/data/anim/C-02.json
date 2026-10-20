@@ -1,0 +1,292 @@
+{
+  "schemaVersion": 1,
+  "id": "C-02",
+  "seed": 46702,
+  "stage": {
+    "paper": "gayoushi",
+    "view": "top",
+    "mirror": "handedness"
+  },
+  "regions": {},
+  "steps": [
+    {
+      "id": "step-1",
+      "durationMs": 5000,
+      "caption": "たてると ねかせるを くらべよう",
+      "description": "包み紙のある立てた線と、紙をはがした横持ちの広い線を比べる。",
+      "actions": [
+        {
+          "id": "action-0",
+          "t": 0,
+          "dur": 5000,
+          "type": "compare",
+          "left": {
+            "schemaVersion": 1,
+            "id": "C-02",
+            "seed": 46705,
+            "stage": {
+              "paper": "gayoushi",
+              "view": "top",
+              "mirror": "handedness"
+            },
+            "regions": {},
+            "steps": [
+              {
+                "id": "step-1",
+                "durationMs": 5000,
+                "caption": "たてる",
+                "description": "たてる",
+                "actions": [
+                  {
+                    "id": "enter",
+                    "type": "hand.enter",
+                    "tool": "crayon",
+                    "t": 0,
+                    "dur": 400
+                  },
+                  {
+                    "id": "action-0",
+                    "t": 400,
+                    "dur": 3600,
+                    "type": "crayon.stroke",
+                    "path": {
+                      "gen": "line",
+                      "x1": 170,
+                      "y1": 310,
+                      "x2": 820,
+                      "y2": 310
+                    },
+                    "color": "aka",
+                    "width": 12,
+                    "pressure": 0.65,
+                    "mode": "stand"
+                  },
+                  {
+                    "id": "exit",
+                    "type": "hand.exit",
+                    "t": 4100,
+                    "dur": 400
+                  }
+                ]
+              }
+            ]
+          },
+          "right": {
+            "schemaVersion": 1,
+            "id": "C-02",
+            "seed": 46706,
+            "stage": {
+              "paper": "gayoushi",
+              "view": "top",
+              "mirror": "handedness"
+            },
+            "regions": {},
+            "steps": [
+              {
+                "id": "step-1",
+                "durationMs": 5000,
+                "caption": "ねかせる",
+                "description": "ねかせる",
+                "actions": [
+                  {
+                    "id": "enter",
+                    "type": "hand.enter",
+                    "tool": "crayon",
+                    "t": 0,
+                    "dur": 400
+                  },
+                  {
+                    "id": "action-0",
+                    "t": 400,
+                    "dur": 3600,
+                    "type": "crayon.stroke",
+                    "path": {
+                      "gen": "line",
+                      "x1": 170,
+                      "y1": 310,
+                      "x2": 820,
+                      "y2": 310
+                    },
+                    "color": "aka",
+                    "width": 25,
+                    "pressure": 0.65,
+                    "mode": "lay"
+                  },
+                  {
+                    "id": "exit",
+                    "type": "hand.exit",
+                    "t": 4100,
+                    "dur": 400
+                  }
+                ]
+              }
+            ]
+          },
+          "labels": [
+            "たてる",
+            "ねかせる"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "step-2",
+      "durationMs": 5000,
+      "caption": "たてると こまかい せん",
+      "description": "立てたクレヨンで葉の輪郭とすじを描く。",
+      "actions": [
+        {
+          "id": "enter",
+          "type": "hand.enter",
+          "tool": "crayon",
+          "t": 0,
+          "dur": 400
+        },
+        {
+          "id": "action-0",
+          "t": 400,
+          "dur": 1800,
+          "type": "crayon.stroke",
+          "path": {
+            "gen": "ellipse",
+            "cx": 320,
+            "cy": 280,
+            "rx": 160,
+            "ry": 90
+          },
+          "color": "midori",
+          "width": 10,
+          "pressure": 0.65
+        },
+        {
+          "id": "action-1",
+          "t": 2200,
+          "dur": 1800,
+          "type": "crayon.stroke",
+          "path": {
+            "gen": "line",
+            "x1": 170,
+            "y1": 290,
+            "x2": 465,
+            "y2": 265
+          },
+          "color": "midori",
+          "width": 10,
+          "pressure": 0.65
+        },
+        {
+          "id": "action-2",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            150,
+            80
+          ],
+          "text": "ほそい せん"
+        },
+        {
+          "id": "exit",
+          "type": "hand.exit",
+          "t": 4100,
+          "dur": 400
+        }
+      ]
+    },
+    {
+      "id": "step-3",
+      "durationMs": 5000,
+      "caption": "よこで ひろく ぬれるね",
+      "description": "紙をはがしたクレヨンを塗る向きの直角へ寝かせて面を描く。",
+      "actions": [
+        {
+          "id": "enter",
+          "type": "hand.enter",
+          "tool": "crayon",
+          "t": 0,
+          "dur": 400
+        },
+        {
+          "id": "action-0",
+          "t": 400,
+          "dur": 3600,
+          "type": "crayon.stroke",
+          "path": {
+            "subpaths": [
+              [
+                [
+                  560,
+                  210
+                ],
+                [
+                  810,
+                  210
+                ]
+              ],
+              [
+                [
+                  560,
+                  260
+                ],
+                [
+                  810,
+                  260
+                ]
+              ],
+              [
+                [
+                  560,
+                  310
+                ],
+                [
+                  810,
+                  310
+                ]
+              ]
+            ]
+          },
+          "color": "mizu",
+          "width": 30,
+          "pressure": 0.65,
+          "mode": "lay"
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            550,
+            100
+          ],
+          "text": "ひろい めん"
+        },
+        {
+          "id": "exit",
+          "type": "hand.exit",
+          "t": 4100,
+          "dur": 400
+        }
+      ]
+    },
+    {
+      "id": "step-4",
+      "durationMs": 5000,
+      "caption": "はばを えらんで つかおう",
+      "description": "細い線と広い面を優劣なく示す。",
+      "actions": [
+        {
+          "id": "action-0",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            320,
+            510
+          ],
+          "text": "どこに つかいたい？"
+        }
+      ]
+    }
+  ]
+}

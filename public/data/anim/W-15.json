@@ -1,0 +1,200 @@
+{
+  "schemaVersion": 1,
+  "id": "W-15",
+  "seed": 48715,
+  "stage": {
+    "paper": "gayoushi",
+    "view": "top",
+    "mirror": "handedness"
+  },
+  "regions": {},
+  "steps": [
+    {
+      "id": "step-1",
+      "durationMs": 5000,
+      "caption": "パレットの{残|のこ}りを ふくよ",
+      "description": "汚れたパレットとぞうきんを図示する。",
+      "actions": [
+        {
+          "id": "action-0",
+          "t": 0,
+          "dur": 0,
+          "type": "tool.place",
+          "item": "palette",
+          "to": [
+            300,
+            290
+          ],
+          "scale": 1.9
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 0,
+          "type": "tool.place",
+          "item": "cloth",
+          "to": [
+            370,
+            325
+          ],
+          "scale": 1.2
+        },
+        {
+          "id": "action-2",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            150,
+            80
+          ],
+          "text": "のこりを ふく"
+        }
+      ]
+    },
+    {
+      "id": "step-2",
+      "durationMs": 5000,
+      "caption": "{筆|ふで}を{洗|あら}って {穂先|ほさき}を{整え|ととのえ}よう",
+      "description": "筆洗、洗う筆、整えた筆を示す。",
+      "actions": [
+        {
+          "id": "action-0",
+          "t": 0,
+          "dur": 0,
+          "type": "tool.place",
+          "item": "water-cup",
+          "to": [
+            630,
+            300
+          ],
+          "scale": 1.7
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 0,
+          "type": "tool.place",
+          "item": "brush-round",
+          "to": [
+            625,
+            290
+          ],
+          "scale": 0.9
+        },
+        {
+          "id": "action-2",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            570,
+            100
+          ],
+          "text": "ふでを あらう"
+        }
+      ]
+    },
+    {
+      "id": "step-3",
+      "durationMs": 5000,
+      "caption": "{水|みず}は {決め|きめ}た{場所|ばしょ}へ{捨て|すて}るよ",
+      "description": "流しではなく指定回収容器を表示する。",
+      "actions": [
+        {
+          "id": "action-0",
+          "t": 0,
+          "dur": 0,
+          "type": "tool.place",
+          "item": "tray",
+          "to": [
+            800,
+            485
+          ],
+          "scale": 1.3
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.arrow",
+          "at": [
+            650,
+            370
+          ],
+          "to": [
+            795,
+            470
+          ],
+          "text": "きめた かいしゅう ばしょ"
+        },
+        {
+          "id": "action-2",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            190,
+            80
+          ],
+          "text": "がっこうの ルールを きこう"
+        }
+      ]
+    },
+    {
+      "id": "step-4",
+      "durationMs": 5000,
+      "caption": "{道具|どうぐ}を{戻|もど}して {手|て}を{洗|あら}おう",
+      "description": "道具を収納位置へ配置し、手洗いは文字説明だけにする。",
+      "actions": [
+        {
+          "id": "action-0",
+          "t": 0,
+          "dur": 0,
+          "type": "tool.place",
+          "item": "palette",
+          "to": [
+            260,
+            500
+          ],
+          "scale": 1
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 0,
+          "type": "tool.place",
+          "item": "brush-round",
+          "to": [
+            470,
+            500
+          ],
+          "scale": 0.8
+        },
+        {
+          "id": "action-2",
+          "t": 0,
+          "dur": 0,
+          "type": "tool.place",
+          "item": "cloth",
+          "to": [
+            620,
+            500
+          ],
+          "scale": 1
+        },
+        {
+          "id": "action-3",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            200,
+            150
+          ],
+          "text": "つぎに つかいやすく もどそう"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,269 @@
+{
+  "schemaVersion": 1,
+  "id": "W-04",
+  "seed": 48704,
+  "stage": {
+    "paper": "gayoushi",
+    "view": "top",
+    "mirror": "handedness"
+  },
+  "regions": {},
+  "steps": [
+    {
+      "id": "step-1",
+      "durationMs": 5000,
+      "caption": "{筆|ふで}へ {水|みず}を{含ませ|ふくませ}るよ",
+      "description": "筆洗と筆を表示して水を含ませる場面を図示する。",
+      "actions": [
+        {
+          "id": "action-0",
+          "t": 0,
+          "dur": 0,
+          "type": "tool.place",
+          "item": "water-cup",
+          "to": [
+            260,
+            300
+          ],
+          "scale": 1.7
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 0,
+          "type": "tool.place",
+          "item": "brush-round",
+          "to": [
+            250,
+            280
+          ],
+          "scale": 1
+        },
+        {
+          "id": "action-2",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            150,
+            80
+          ],
+          "text": "みずを ふくませる"
+        }
+      ]
+    },
+    {
+      "id": "step-2",
+      "durationMs": 5000,
+      "caption": "ぞうきんへ {軽く|かるく}{当て|あて}るよ",
+      "description": "筆をぞうきんの上へ移して、水を吸わせる場面を示す。",
+      "actions": [
+        {
+          "id": "action-0",
+          "t": 0,
+          "dur": 0,
+          "type": "tool.place",
+          "item": "cloth",
+          "to": [
+            560,
+            350
+          ],
+          "scale": 1.9
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 0,
+          "type": "tool.place",
+          "item": "brush-round",
+          "to": [
+            570,
+            315
+          ],
+          "scale": 1
+        },
+        {
+          "id": "action-2",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.arrow",
+          "at": [
+            720,
+            200
+          ],
+          "to": [
+            590,
+            340
+          ],
+          "text": "かるく あてる"
+        }
+      ]
+    },
+    {
+      "id": "step-3",
+      "durationMs": 5000,
+      "caption": "{水|みず}の{量|りょう}で {線|せん}をくらべよう",
+      "description": "水が多い線と調整した線を比較する。",
+      "actions": [
+        {
+          "id": "action-0",
+          "t": 0,
+          "dur": 5000,
+          "type": "compare",
+          "left": {
+            "schemaVersion": 1,
+            "id": "W-04",
+            "seed": 48711,
+            "stage": {
+              "paper": "gayoushi",
+              "view": "top",
+              "mirror": "handedness"
+            },
+            "regions": {},
+            "steps": [
+              {
+                "id": "step-1",
+                "durationMs": 5000,
+                "caption": "みずが おおい",
+                "description": "みずが おおい",
+                "actions": [
+                  {
+                    "id": "enter",
+                    "type": "hand.enter",
+                    "tool": "brush-round",
+                    "t": 0,
+                    "dur": 400
+                  },
+                  {
+                    "id": "action-0",
+                    "t": 400,
+                    "dur": 3600,
+                    "type": "paint.stroke",
+                    "path": {
+                      "gen": "line",
+                      "x1": 180,
+                      "y1": 300,
+                      "x2": 820,
+                      "y2": 300
+                    },
+                    "color": "ao",
+                    "width": 26,
+                    "water": 0.95
+                  },
+                  {
+                    "id": "exit",
+                    "type": "hand.exit",
+                    "t": 4100,
+                    "dur": 400
+                  }
+                ]
+              }
+            ]
+          },
+          "right": {
+            "schemaVersion": 1,
+            "id": "W-04",
+            "seed": 48715,
+            "stage": {
+              "paper": "gayoushi",
+              "view": "top",
+              "mirror": "handedness"
+            },
+            "regions": {},
+            "steps": [
+              {
+                "id": "step-1",
+                "durationMs": 5000,
+                "caption": "みずを すこし へらす",
+                "description": "みずを すこし へらす",
+                "actions": [
+                  {
+                    "id": "enter",
+                    "type": "hand.enter",
+                    "tool": "brush-round",
+                    "t": 0,
+                    "dur": 400
+                  },
+                  {
+                    "id": "action-0",
+                    "t": 400,
+                    "dur": 3600,
+                    "type": "paint.stroke",
+                    "path": {
+                      "gen": "line",
+                      "x1": 180,
+                      "y1": 300,
+                      "x2": 820,
+                      "y2": 300
+                    },
+                    "color": "ao",
+                    "width": 26,
+                    "water": 0.25
+                  },
+                  {
+                    "id": "exit",
+                    "type": "hand.exit",
+                    "t": 4100,
+                    "dur": 400
+                  }
+                ]
+              }
+            ]
+          },
+          "labels": [
+            "みずが おおい",
+            "みずを すこし へらす"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "step-4",
+      "durationMs": 5000,
+      "caption": "かきたい{線|せん}に {合わせ|あわせ}てみよう",
+      "description": "細い線と広い面の使い分けを示す。",
+      "actions": [
+        {
+          "id": "enter",
+          "type": "hand.enter",
+          "tool": "brush-round",
+          "t": 0,
+          "dur": 400
+        },
+        {
+          "id": "action-0",
+          "t": 400,
+          "dur": 3600,
+          "type": "paint.stroke",
+          "path": {
+            "gen": "line",
+            "x1": 180,
+            "y1": 470,
+            "x2": 820,
+            "y2": 470
+          },
+          "color": "ao",
+          "width": 8,
+          "water": 0.25
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            210,
+            80
+          ],
+          "text": "どんな せんを かきたい？"
+        },
+        {
+          "id": "exit",
+          "type": "hand.exit",
+          "t": 4100,
+          "dur": 400
+        }
+      ]
+    }
+  ]
+}

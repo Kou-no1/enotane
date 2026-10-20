@@ -1,0 +1,386 @@
+{
+  "schemaVersion": 1,
+  "id": "C-05",
+  "seed": 46705,
+  "stage": {
+    "paper": "gayoushi",
+    "view": "top",
+    "mirror": "handedness"
+  },
+  "regions": {},
+  "steps": [
+    {
+      "id": "step-1",
+      "durationMs": 5000,
+      "caption": "はじめの いろを ぬるよ",
+      "description": "左黄色、右青の下地を同じ領域へ塗る。",
+      "actions": [
+        {
+          "id": "action-0",
+          "t": 0,
+          "dur": 5000,
+          "type": "compare",
+          "left": {
+            "schemaVersion": 1,
+            "id": "C-05",
+            "seed": 46710,
+            "stage": {
+              "paper": "gayoushi",
+              "view": "top",
+              "mirror": "handedness"
+            },
+            "regions": {},
+            "steps": [
+              {
+                "id": "step-1",
+                "durationMs": 5000,
+                "caption": "きいろから",
+                "description": "きいろから",
+                "actions": [
+                  {
+                    "id": "enter",
+                    "type": "hand.enter",
+                    "tool": "oil-pastel",
+                    "t": 0,
+                    "dur": 400
+                  },
+                  {
+                    "id": "action-0",
+                    "t": 400,
+                    "dur": 3600,
+                    "type": "crayon.fill",
+                    "region": {
+                      "shape": "rect",
+                      "x": 180,
+                      "y": 180,
+                      "w": 640,
+                      "h": 280
+                    },
+                    "color": "kiiro",
+                    "kind": "oil-pastel"
+                  },
+                  {
+                    "id": "exit",
+                    "type": "hand.exit",
+                    "t": 4100,
+                    "dur": 400
+                  }
+                ]
+              }
+            ]
+          },
+          "right": {
+            "schemaVersion": 1,
+            "id": "C-05",
+            "seed": 46709,
+            "stage": {
+              "paper": "gayoushi",
+              "view": "top",
+              "mirror": "handedness"
+            },
+            "regions": {},
+            "steps": [
+              {
+                "id": "step-1",
+                "durationMs": 5000,
+                "caption": "あおから",
+                "description": "あおから",
+                "actions": [
+                  {
+                    "id": "enter",
+                    "type": "hand.enter",
+                    "tool": "oil-pastel",
+                    "t": 0,
+                    "dur": 400
+                  },
+                  {
+                    "id": "action-0",
+                    "t": 400,
+                    "dur": 3600,
+                    "type": "crayon.fill",
+                    "region": {
+                      "shape": "rect",
+                      "x": 180,
+                      "y": 180,
+                      "w": 640,
+                      "h": 280
+                    },
+                    "color": "ao",
+                    "kind": "oil-pastel"
+                  },
+                  {
+                    "id": "exit",
+                    "type": "hand.exit",
+                    "t": 4100,
+                    "dur": 400
+                  }
+                ]
+              }
+            ]
+          },
+          "labels": [
+            "きいろから",
+            "あおから"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "step-2",
+      "durationMs": 5000,
+      "caption": "じゅんばんを かえて かさねよう",
+      "description": "黄色→青と青→黄色を子台本で独立比較する。",
+      "actions": [
+        {
+          "id": "action-0",
+          "t": 0,
+          "dur": 5000,
+          "type": "compare",
+          "left": {
+            "schemaVersion": 1,
+            "id": "C-05",
+            "seed": 46713,
+            "stage": {
+              "paper": "gayoushi",
+              "view": "top",
+              "mirror": "handedness"
+            },
+            "regions": {},
+            "steps": [
+              {
+                "id": "step-1",
+                "durationMs": 5000,
+                "caption": "きいろ → あお",
+                "description": "きいろ → あお",
+                "actions": [
+                  {
+                    "id": "enter",
+                    "type": "hand.enter",
+                    "tool": "oil-pastel",
+                    "t": 0,
+                    "dur": 400
+                  },
+                  {
+                    "id": "action-0",
+                    "t": 400,
+                    "dur": 1800,
+                    "type": "crayon.fill",
+                    "region": {
+                      "shape": "rect",
+                      "x": 180,
+                      "y": 180,
+                      "w": 640,
+                      "h": 280
+                    },
+                    "color": "kiiro",
+                    "kind": "oil-pastel"
+                  },
+                  {
+                    "id": "action-1",
+                    "t": 2200,
+                    "dur": 1800,
+                    "type": "crayon.fill",
+                    "region": {
+                      "shape": "rect",
+                      "x": 260,
+                      "y": 230,
+                      "w": 480,
+                      "h": 170
+                    },
+                    "color": "ao",
+                    "kind": "oil-pastel"
+                  },
+                  {
+                    "id": "exit",
+                    "type": "hand.exit",
+                    "t": 4100,
+                    "dur": 400
+                  }
+                ]
+              }
+            ]
+          },
+          "right": {
+            "schemaVersion": 1,
+            "id": "C-05",
+            "seed": 46713,
+            "stage": {
+              "paper": "gayoushi",
+              "view": "top",
+              "mirror": "handedness"
+            },
+            "regions": {},
+            "steps": [
+              {
+                "id": "step-1",
+                "durationMs": 5000,
+                "caption": "あお → きいろ",
+                "description": "あお → きいろ",
+                "actions": [
+                  {
+                    "id": "enter",
+                    "type": "hand.enter",
+                    "tool": "oil-pastel",
+                    "t": 0,
+                    "dur": 400
+                  },
+                  {
+                    "id": "action-0",
+                    "t": 400,
+                    "dur": 1800,
+                    "type": "crayon.fill",
+                    "region": {
+                      "shape": "rect",
+                      "x": 180,
+                      "y": 180,
+                      "w": 640,
+                      "h": 280
+                    },
+                    "color": "ao",
+                    "kind": "oil-pastel"
+                  },
+                  {
+                    "id": "action-1",
+                    "t": 2200,
+                    "dur": 1800,
+                    "type": "crayon.fill",
+                    "region": {
+                      "shape": "rect",
+                      "x": 260,
+                      "y": 230,
+                      "w": 480,
+                      "h": 170
+                    },
+                    "color": "kiiro",
+                    "kind": "oil-pastel"
+                  },
+                  {
+                    "id": "exit",
+                    "type": "hand.exit",
+                    "t": 4100,
+                    "dur": 400
+                  }
+                ]
+              }
+            ]
+          },
+          "labels": [
+            "きいろ → あお",
+            "あお → きいろ"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "step-3",
+      "durationMs": 5000,
+      "caption": "したの いろは どこに みえる？",
+      "description": "二つの順序の重なりを紙の上にも並べる。",
+      "actions": [
+        {
+          "id": "enter",
+          "type": "hand.enter",
+          "tool": "oil-pastel",
+          "t": 0,
+          "dur": 400
+        },
+        {
+          "id": "action-0",
+          "t": 400,
+          "dur": 900,
+          "type": "crayon.fill",
+          "region": {
+            "shape": "rect",
+            "x": 100,
+            "y": 230,
+            "w": 300,
+            "h": 200
+          },
+          "color": "kiiro",
+          "kind": "oil-pastel"
+        },
+        {
+          "id": "action-1",
+          "t": 1300,
+          "dur": 900,
+          "type": "crayon.fill",
+          "region": {
+            "shape": "rect",
+            "x": 145,
+            "y": 260,
+            "w": 210,
+            "h": 130
+          },
+          "color": "ao",
+          "kind": "oil-pastel"
+        },
+        {
+          "id": "action-2",
+          "t": 2200,
+          "dur": 900,
+          "type": "crayon.fill",
+          "region": {
+            "shape": "rect",
+            "x": 600,
+            "y": 230,
+            "w": 300,
+            "h": 200
+          },
+          "color": "ao",
+          "kind": "oil-pastel"
+        },
+        {
+          "id": "action-3",
+          "t": 3100,
+          "dur": 900,
+          "type": "crayon.fill",
+          "region": {
+            "shape": "rect",
+            "x": 645,
+            "y": 260,
+            "w": 210,
+            "h": 130
+          },
+          "color": "kiiro",
+          "kind": "oil-pastel"
+        },
+        {
+          "id": "action-4",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            150,
+            80
+          ],
+          "text": "したの いろと うえの いろ"
+        },
+        {
+          "id": "exit",
+          "type": "hand.exit",
+          "t": 4100,
+          "dur": 400
+        }
+      ]
+    },
+    {
+      "id": "step-4",
+      "durationMs": 5000,
+      "caption": "どちらも えらんで つかえるね",
+      "description": "製品・力で変わることと使う選択を促す。",
+      "actions": [
+        {
+          "id": "action-0",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            180,
+            530
+          ],
+          "text": "ちからや ざいりょうでも かわるよ"
+        }
+      ]
+    }
+  ]
+}

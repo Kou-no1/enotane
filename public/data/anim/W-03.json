@@ -1,0 +1,231 @@
+{
+  "schemaVersion": 1,
+  "id": "W-03",
+  "seed": 48703,
+  "stage": {
+    "paper": "gayoushi",
+    "view": "top",
+    "mirror": "handedness"
+  },
+  "regions": {},
+  "steps": [
+    {
+      "id": "step-1",
+      "durationMs": 5000,
+      "caption": "{色|いろ}のついた{筆|ふで}を {洗う|あらう}よ",
+      "description": "筆洗と色のついた筆の配置、洗う部屋を注記する。",
+      "actions": [
+        {
+          "id": "enter",
+          "type": "hand.enter",
+          "tool": "brush-round",
+          "t": 0,
+          "dur": 400
+        },
+        {
+          "id": "action-0",
+          "t": 0,
+          "dur": 0,
+          "type": "scene.object",
+          "objectId": "wash-cup",
+          "sprite": "water-cup",
+          "at": [
+            300,
+            340
+          ],
+          "scale": 2,
+          "color": "mizu"
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 0,
+          "type": "tool.place",
+          "item": "brush-round",
+          "to": [
+            300,
+            290
+          ],
+          "scale": 1
+        },
+        {
+          "id": "action-2",
+          "t": 400,
+          "dur": 3600,
+          "type": "paint.wash",
+          "region": {
+            "shape": "circle",
+            "cx": 300,
+            "cy": 340,
+            "r": 70
+          },
+          "color": "chairo",
+          "water": 0.9
+        },
+        {
+          "id": "action-3",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            225,
+            165
+          ],
+          "text": "あらう"
+        },
+        {
+          "id": "exit",
+          "type": "hand.exit",
+          "t": 4100,
+          "dur": 400
+        }
+      ]
+    },
+    {
+      "id": "step-2",
+      "durationMs": 5000,
+      "caption": "{別|べつ}の{水|みず}で すすぐよ",
+      "description": "すすぐ用の筆洗を分けて配置し、筆を移す。",
+      "actions": [
+        {
+          "id": "action-0",
+          "t": 0,
+          "dur": 0,
+          "type": "scene.object",
+          "objectId": "rinse-cup",
+          "sprite": "water-cup",
+          "at": [
+            550,
+            340
+          ],
+          "scale": 2,
+          "color": "mizu"
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 0,
+          "type": "tool.place",
+          "item": "brush-round",
+          "to": [
+            550,
+            290
+          ],
+          "scale": 1
+        },
+        {
+          "id": "action-2",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            480,
+            165
+          ],
+          "text": "すすぐ"
+        },
+        {
+          "id": "action-3",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.arrow",
+          "at": [
+            350,
+            420
+          ],
+          "to": [
+            480,
+            420
+          ]
+        }
+      ]
+    },
+    {
+      "id": "step-3",
+      "durationMs": 5000,
+      "caption": "きれいな{水|みず}で {色|いろ}をとくよ",
+      "description": "色を溶く用の水とパレットを置く。",
+      "actions": [
+        {
+          "id": "action-0",
+          "t": 0,
+          "dur": 0,
+          "type": "scene.object",
+          "objectId": "clean-cup",
+          "sprite": "water-cup",
+          "at": [
+            800,
+            340
+          ],
+          "scale": 2,
+          "color": "mizu"
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 0,
+          "type": "tool.place",
+          "item": "palette",
+          "to": [
+            600,
+            510
+          ],
+          "scale": 1.1
+        },
+        {
+          "id": "action-2",
+          "t": 0,
+          "dur": 0,
+          "type": "tool.place",
+          "item": "brush-round",
+          "to": [
+            800,
+            290
+          ],
+          "scale": 1
+        },
+        {
+          "id": "action-3",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            685,
+            165
+          ],
+          "text": "いろを とく みず"
+        }
+      ]
+    },
+    {
+      "id": "step-4",
+      "durationMs": 5000,
+      "caption": "{用具|ようぐ}の{部屋|へや}に {合わせ|あわせ}て{使|つか}おう",
+      "description": "三つの使い分けは例であり、学校の道具に合わせると注記。",
+      "actions": [
+        {
+          "id": "action-0",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            210,
+            80
+          ],
+          "text": "へやの かずは どうぐで ちがう"
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            340,
+            590
+          ],
+          "text": "みずは のまない"
+        }
+      ]
+    }
+  ]
+}

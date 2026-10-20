@@ -1,0 +1,197 @@
+{
+  "schemaVersion": 1,
+  "id": "M-02",
+  "seed": 47702,
+  "stage": {
+    "paper": "gayoushi",
+    "view": "top",
+    "mirror": "handedness"
+  },
+  "regions": {},
+  "steps": [
+    {
+      "id": "step-1",
+      "durationMs": 5000,
+      "caption": "やさいの あとを おしてみよう",
+      "description": "準備済みの野菜断面の跡を左へ押す。",
+      "actions": [
+        {
+          "id": "enter",
+          "type": "hand.enter",
+          "tool": "brush-round",
+          "t": 0,
+          "dur": 400
+        },
+        {
+          "id": "action-0",
+          "t": 400,
+          "dur": 3600,
+          "type": "stamp.press",
+          "at": [
+            230,
+            300
+          ],
+          "color": "aka",
+          "shape": "vegetable",
+          "size": 130,
+          "count": 3
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            160,
+            100
+          ],
+          "text": "やさい"
+        },
+        {
+          "id": "exit",
+          "type": "hand.exit",
+          "t": 4100,
+          "dur": 400
+        }
+      ]
+    },
+    {
+      "id": "step-2",
+      "durationMs": 5000,
+      "caption": "スポンジなら どうなる？",
+      "description": "中央へスポンジの四角い跡を押す。",
+      "actions": [
+        {
+          "id": "enter",
+          "type": "hand.enter",
+          "tool": "brush-round",
+          "t": 0,
+          "dur": 400
+        },
+        {
+          "id": "action-0",
+          "t": 400,
+          "dur": 3600,
+          "type": "stamp.press",
+          "at": [
+            500,
+            300
+          ],
+          "color": "ao",
+          "shape": "square",
+          "size": 105,
+          "count": 3
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            420,
+            100
+          ],
+          "text": "スポンジ"
+        },
+        {
+          "id": "exit",
+          "type": "hand.exit",
+          "t": 4100,
+          "dur": 400
+        }
+      ]
+    },
+    {
+      "id": "step-3",
+      "durationMs": 5000,
+      "caption": "だんボールの すじも みえるね",
+      "description": "右へ段ボールの筋の跡を押す。",
+      "actions": [
+        {
+          "id": "enter",
+          "type": "hand.enter",
+          "tool": "brush-round",
+          "t": 0,
+          "dur": 400
+        },
+        {
+          "id": "action-0",
+          "t": 400,
+          "dur": 3600,
+          "type": "stamp.press",
+          "at": [
+            770,
+            300
+          ],
+          "color": "midori",
+          "shape": "cardboard",
+          "size": 125,
+          "count": 3
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            665,
+            100
+          ],
+          "text": "だんボール"
+        },
+        {
+          "id": "exit",
+          "type": "hand.exit",
+          "t": 4100,
+          "dur": 400
+        }
+      ]
+    },
+    {
+      "id": "step-4",
+      "durationMs": 5000,
+      "caption": "むきや かさなりを かえてみよう",
+      "description": "下に葉の跡を追加して組み合わせの選択を示す。",
+      "actions": [
+        {
+          "id": "enter",
+          "type": "hand.enter",
+          "tool": "brush-round",
+          "t": 0,
+          "dur": 400
+        },
+        {
+          "id": "action-0",
+          "t": 400,
+          "dur": 3600,
+          "type": "stamp.press",
+          "at": [
+            380,
+            490
+          ],
+          "color": "kiiro",
+          "shape": "leaf",
+          "size": 90,
+          "count": 4
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            210,
+            580
+          ],
+          "text": "がざいの やさいは たべない"
+        },
+        {
+          "id": "exit",
+          "type": "hand.exit",
+          "t": 4100,
+          "dur": 400
+        }
+      ]
+    }
+  ]
+}

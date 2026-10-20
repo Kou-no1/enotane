@@ -1,0 +1,229 @@
+{
+  "schemaVersion": 1,
+  "id": "K-01",
+  "seed": 47501,
+  "stage": {
+    "paper": "gayoushi",
+    "view": "top",
+    "mirror": "none"
+  },
+  "regions": {},
+  "steps": [
+    {
+      "id": "step-1",
+      "durationMs": 5000,
+      "caption": "いろを ならべてみよう",
+      "description": "赤、黄、青、水色の四つの色を同じ形で置く。",
+      "actions": [
+        {
+          "id": "enter",
+          "type": "hand.enter",
+          "tool": "oil-pastel",
+          "t": 0,
+          "dur": 400
+        },
+        {
+          "id": "action-0",
+          "t": 400,
+          "dur": 900,
+          "type": "crayon.fill",
+          "region": {
+            "shape": "circle",
+            "cx": 170,
+            "cy": 320,
+            "r": 75
+          },
+          "color": "aka",
+          "kind": "oil-pastel"
+        },
+        {
+          "id": "action-1",
+          "t": 1300,
+          "dur": 900,
+          "type": "crayon.fill",
+          "region": {
+            "shape": "circle",
+            "cx": 390,
+            "cy": 320,
+            "r": 75
+          },
+          "color": "kiiro",
+          "kind": "oil-pastel"
+        },
+        {
+          "id": "action-2",
+          "t": 2200,
+          "dur": 900,
+          "type": "crayon.fill",
+          "region": {
+            "shape": "circle",
+            "cx": 610,
+            "cy": 320,
+            "r": 75
+          },
+          "color": "ao",
+          "kind": "oil-pastel"
+        },
+        {
+          "id": "action-3",
+          "t": 3100,
+          "dur": 900,
+          "type": "crayon.fill",
+          "region": {
+            "shape": "circle",
+            "cx": 830,
+            "cy": 320,
+            "r": 75
+          },
+          "color": "mizu",
+          "kind": "oil-pastel"
+        },
+        {
+          "id": "action-4",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            150,
+            80
+          ],
+          "text": "いろの かんじを はなそう"
+        },
+        {
+          "id": "exit",
+          "type": "hand.exit",
+          "t": 4100,
+          "dur": 400
+        }
+      ]
+    },
+    {
+      "id": "step-2",
+      "durationMs": 5000,
+      "caption": "あたたかく かんじる いろは？",
+      "description": "暖色の代表例を注記し、正解にしない。",
+      "actions": [
+        {
+          "id": "action-0",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.circle",
+          "at": [
+            170,
+            320
+          ],
+          "r": 90
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.circle",
+          "at": [
+            390,
+            320
+          ],
+          "r": 90
+        },
+        {
+          "id": "action-2",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            150,
+            80
+          ],
+          "text": "ひとによって ちがう"
+        }
+      ]
+    },
+    {
+      "id": "step-3",
+      "durationMs": 5000,
+      "caption": "つめたく かんじる いろは？",
+      "description": "寒色の代表例を注記する。",
+      "actions": [
+        {
+          "id": "action-0",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.circle",
+          "at": [
+            610,
+            320
+          ],
+          "r": 90
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.circle",
+          "at": [
+            830,
+            320
+          ],
+          "r": 90
+        },
+        {
+          "id": "action-2",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            150,
+            80
+          ],
+          "text": "どんな ばしょを おもいだす？"
+        }
+      ]
+    },
+    {
+      "id": "step-4",
+      "durationMs": 5000,
+      "caption": "ちがう かんじかたも きこう",
+      "description": "中間色も追加し一意分類を避ける。",
+      "actions": [
+        {
+          "id": "enter",
+          "type": "hand.enter",
+          "tool": "oil-pastel",
+          "t": 0,
+          "dur": 400
+        },
+        {
+          "id": "action-0",
+          "t": 400,
+          "dur": 3600,
+          "type": "crayon.fill",
+          "region": {
+            "shape": "circle",
+            "cx": 500,
+            "cy": 515,
+            "r": 65
+          },
+          "color": "murasaki",
+          "kind": "oil-pastel"
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            210,
+            80
+          ],
+          "text": "じぶんの かんじを だいじに"
+        },
+        {
+          "id": "exit",
+          "type": "hand.exit",
+          "t": 4100,
+          "dur": 400
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "id": "Z-07",
+  "seed": 49007,
+  "stage": {
+    "paper": "gayoushi",
+    "view": "top",
+    "mirror": "none"
+  },
+  "regions": {},
+  "steps": [
+    {
+      "id": "step-1",
+      "durationMs": 5000,
+      "caption": "{昼|ひる}の{遠い|とおい}{山|やま}を {見て|みて}みよう",
+      "description": "遠い淡青の山を後ろのzへ置く。",
+      "actions": [
+        {
+          "id": "action-0",
+          "t": 0,
+          "dur": 0,
+          "type": "scene.object",
+          "objectId": "far",
+          "sprite": "mountain",
+          "at": [
+            580,
+            270
+          ],
+          "scale": 2.6,
+          "color": "mizu",
+          "z": 0,
+          "opacity": 0.45
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            150,
+            80
+          ],
+          "text": "ひるまの やまの いちれい"
+        }
+      ]
+    },
+    {
+      "id": "step-2",
+      "durationMs": 5000,
+      "caption": "{近い|ちかい}{山|やま}と {色|いろ}をくらべよう",
+      "description": "手前の濃い緑の山を重ねる。",
+      "actions": [
+        {
+          "id": "action-0",
+          "t": 0,
+          "dur": 0,
+          "type": "scene.object",
+          "objectId": "near",
+          "sprite": "mountain",
+          "at": [
+            370,
+            415
+          ],
+          "scale": 3.2,
+          "color": "midori",
+          "z": 2
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            140,
+            550
+          ],
+          "text": "ちかい やま"
+        }
+      ]
+    },
+    {
+      "id": "step-3",
+      "durationMs": 5000,
+      "caption": "{遠い|とおい}{色|いろ}は うすく{青|あお}{寄り|より}の{例|れい}だよ",
+      "description": "遠山へ注目の矢印を表示する。",
+      "actions": [
+        {
+          "id": "action-0",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.arrow",
+          "at": [
+            830,
+            110
+          ],
+          "to": [
+            670,
+            255
+          ],
+          "text": "とおい やま"
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            150,
+            70
+          ],
+          "text": "じかんや てんきで かわる"
+        }
+      ]
+    },
+    {
+      "id": "step-4",
+      "durationMs": 5000,
+      "caption": "{見た|みた}{景色|けしき}の{色|いろ}を {選ん|えらん}でいいよ",
+      "description": "夕方の変化例として淡紫へ更新する。",
+      "actions": [
+        {
+          "id": "action-0",
+          "t": 0,
+          "dur": 0,
+          "type": "scene.object",
+          "objectId": "far",
+          "sprite": "mountain",
+          "at": [
+            580,
+            270
+          ],
+          "scale": 2.6,
+          "color": "murasaki",
+          "z": 0,
+          "opacity": 0.45
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            170,
+            580
+          ],
+          "text": "じぶんが みた いろを つかおう"
+        }
+      ]
+    }
+  ]
+}

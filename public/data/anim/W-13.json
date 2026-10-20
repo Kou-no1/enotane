@@ -1,0 +1,211 @@
+{
+  "schemaVersion": 1,
+  "id": "W-13",
+  "seed": 48713,
+  "stage": {
+    "paper": "gayoushi",
+    "view": "top",
+    "mirror": "handedness"
+  },
+  "regions": {},
+  "steps": [
+    {
+      "id": "step-1",
+      "durationMs": 5000,
+      "caption": "{水|みず}{多|おお}めの{色|いろ}を ぬるよ",
+      "description": "黄色の濡れた領域を作る。",
+      "actions": [
+        {
+          "id": "enter",
+          "type": "hand.enter",
+          "tool": "brush-round",
+          "t": 0,
+          "dur": 400
+        },
+        {
+          "id": "action-0",
+          "t": 400,
+          "dur": 3600,
+          "type": "paint.wash",
+          "region": {
+            "shape": "ellipse",
+            "cx": 500,
+            "cy": 310,
+            "rx": 300,
+            "ry": 165
+          },
+          "color": "kiiro",
+          "water": 0.85,
+          "layer": "wet"
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            150,
+            80
+          ],
+          "text": "ぬれた きいろ"
+        },
+        {
+          "id": "exit",
+          "type": "hand.exit",
+          "t": 4100,
+          "dur": 400
+        }
+      ]
+    },
+    {
+      "id": "step-2",
+      "durationMs": 5000,
+      "caption": "{赤|あか}を ちょんとたらすよ",
+      "description": "黄色の濡れた領域内へ赤を置き、領域外へはにじませない。",
+      "actions": [
+        {
+          "id": "enter",
+          "type": "hand.enter",
+          "tool": "brush-round",
+          "t": 0,
+          "dur": 400
+        },
+        {
+          "id": "action-0",
+          "t": 400,
+          "dur": 300,
+          "type": "paint.drop",
+          "at": [
+            405,
+            305
+          ],
+          "color": "aka",
+          "size": 34
+        },
+        {
+          "id": "action-1",
+          "t": 700,
+          "dur": 3100,
+          "type": "paint.bleed",
+          "source": "action-0",
+          "region": {
+            "shape": "ellipse",
+            "cx": 500,
+            "cy": 310,
+            "rx": 300,
+            "ry": 165
+          },
+          "radius": 145
+        },
+        {
+          "id": "action-2",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            150,
+            80
+          ],
+          "text": "かわく まえに おく"
+        },
+        {
+          "id": "exit",
+          "type": "hand.exit",
+          "t": 4100,
+          "dur": 400
+        }
+      ]
+    },
+    {
+      "id": "step-3",
+      "durationMs": 5000,
+      "caption": "{別|べつ}の{場所|ばしょ}へ {青|あお}も{置い|おい}てみよう",
+      "description": "隣の青も濡れたマスク内へ広げる。",
+      "actions": [
+        {
+          "id": "enter",
+          "type": "hand.enter",
+          "tool": "brush-round",
+          "t": 0,
+          "dur": 400
+        },
+        {
+          "id": "action-0",
+          "t": 400,
+          "dur": 300,
+          "type": "paint.drop",
+          "at": [
+            610,
+            330
+          ],
+          "color": "ao",
+          "size": 30
+        },
+        {
+          "id": "action-1",
+          "t": 700,
+          "dur": 3100,
+          "type": "paint.bleed",
+          "source": "action-0",
+          "region": {
+            "shape": "ellipse",
+            "cx": 500,
+            "cy": 310,
+            "rx": 300,
+            "ry": 165
+          },
+          "radius": 125
+        },
+        {
+          "id": "action-2",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            150,
+            80
+          ],
+          "text": "かさなる ところを みよう"
+        },
+        {
+          "id": "exit",
+          "type": "hand.exit",
+          "t": 4100,
+          "dur": 400
+        }
+      ]
+    },
+    {
+      "id": "step-4",
+      "durationMs": 5000,
+      "caption": "{広がり|ひろがり}を{見て|みて} かわかそう",
+      "description": "乾燥して模様を定着する。",
+      "actions": [
+        {
+          "id": "action-0",
+          "t": 400,
+          "dur": 3600,
+          "type": "paint.dry",
+          "region": {
+            "shape": "ellipse",
+            "cx": 500,
+            "cy": 310,
+            "rx": 300,
+            "ry": 165
+          }
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            150,
+            80
+          ],
+          "text": "かわく じかんは はやく みせている"
+        }
+      ]
+    }
+  ]
+}

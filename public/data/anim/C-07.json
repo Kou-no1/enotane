@@ -1,0 +1,197 @@
+{
+  "schemaVersion": 1,
+  "id": "C-07",
+  "seed": 46707,
+  "stage": {
+    "paper": "gayoushi",
+    "view": "top",
+    "mirror": "handedness"
+  },
+  "regions": {},
+  "steps": [
+    {
+      "id": "step-1",
+      "durationMs": 5000,
+      "caption": "2{色|いろ}の{点|てん}を はなしてかくよ",
+      "description": "赤と黄色の点を別々の点として並べる。",
+      "actions": [
+        {
+          "id": "enter",
+          "type": "hand.enter",
+          "tool": "crayon",
+          "t": 0,
+          "dur": 400
+        },
+        {
+          "id": "action-0",
+          "t": 400,
+          "dur": 1800,
+          "type": "crayon.fill",
+          "region": {
+            "shape": "rect",
+            "x": 240,
+            "y": 170,
+            "w": 520,
+            "h": 300
+          },
+          "color": "aka",
+          "kind": "crayon",
+          "pattern": "dots"
+        },
+        {
+          "id": "action-1",
+          "t": 2200,
+          "dur": 1800,
+          "type": "crayon.stroke",
+          "path": {
+            "gen": "dots",
+            "x": 260,
+            "y": 260,
+            "w": 450,
+            "count": 18
+          },
+          "color": "kiiro",
+          "width": 12,
+          "pressure": 0.65
+        },
+        {
+          "id": "action-2",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            150,
+            80
+          ],
+          "text": "あかと きいろの てん"
+        },
+        {
+          "id": "exit",
+          "type": "hand.exit",
+          "t": 4100,
+          "dur": 400
+        }
+      ]
+    },
+    {
+      "id": "step-2",
+      "durationMs": 5000,
+      "caption": "{近く|ちかく}で{見る|みる}と {点|てん}が{見える|みえる}ね",
+      "description": "カメラを点の一部へ寄せる。",
+      "actions": [
+        {
+          "id": "action-0",
+          "t": 0,
+          "dur": 1100,
+          "type": "zoom.to",
+          "rect": [
+            340,
+            240,
+            160,
+            100
+          ]
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            380,
+            250
+          ],
+          "text": "ひとつずつの てん"
+        }
+      ]
+    },
+    {
+      "id": "step-3",
+      "durationMs": 5000,
+      "caption": "{離れ|はなれ}て{見る|みる}と どう{感じる|かんじる}？",
+      "description": "カメラを全体へ戻し色の感じの比較を促す。",
+      "actions": [
+        {
+          "id": "action-0",
+          "t": 0,
+          "dur": 1200,
+          "type": "zoom.reset"
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            220,
+            520
+          ],
+          "text": "いろが まざって みえる？"
+        }
+      ]
+    },
+    {
+      "id": "step-4",
+      "durationMs": 5000,
+      "caption": "{点|てん}の{間|あいだ}を かえてみよう",
+      "description": "離れた青と黄色の点も加え、点密度の選択を示す。",
+      "actions": [
+        {
+          "id": "enter",
+          "type": "hand.enter",
+          "tool": "crayon",
+          "t": 0,
+          "dur": 400
+        },
+        {
+          "id": "action-0",
+          "t": 400,
+          "dur": 1800,
+          "type": "crayon.stroke",
+          "path": {
+            "gen": "dots",
+            "x": 200,
+            "y": 540,
+            "w": 600,
+            "count": 12
+          },
+          "color": "ao",
+          "width": 18,
+          "pressure": 0.65
+        },
+        {
+          "id": "action-1",
+          "t": 2200,
+          "dur": 1800,
+          "type": "crayon.stroke",
+          "path": {
+            "gen": "dots",
+            "x": 225,
+            "y": 540,
+            "w": 540,
+            "count": 12
+          },
+          "color": "kiiro",
+          "width": 18,
+          "pressure": 0.65
+        },
+        {
+          "id": "action-2",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            220,
+            80
+          ],
+          "text": "みる きょりでも かわるよ"
+        },
+        {
+          "id": "exit",
+          "type": "hand.exit",
+          "t": 4100,
+          "dur": 400
+        }
+      ]
+    }
+  ]
+}

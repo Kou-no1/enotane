@@ -1,0 +1,221 @@
+{
+  "schemaVersion": 1,
+  "id": "W-18",
+  "seed": 48718,
+  "stage": {
+    "paper": "gayoushi",
+    "view": "top",
+    "mirror": "handedness"
+  },
+  "regions": {},
+  "steps": [
+    {
+      "id": "step-1",
+      "durationMs": 5000,
+      "caption": "{白|しろ}を{残す|のこす}{形|かたち}を {決め|きめ}てみよう",
+      "description": "雲にする中央の白い領域を注記する。",
+      "actions": [
+        {
+          "id": "action-0",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            150,
+            80
+          ],
+          "text": "ここを ぬらずに のこす"
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.circle",
+          "at": [
+            500,
+            270
+          ],
+          "r": 130
+        }
+      ]
+    },
+    {
+      "id": "step-2",
+      "durationMs": 5000,
+      "caption": "{周り|まわり}へ {色|いろ}をぬるよ",
+      "description": "雲の白い形を避けた四つの多角形の水彩を描く。",
+      "actions": [
+        {
+          "id": "enter",
+          "type": "hand.enter",
+          "tool": "brush-round",
+          "t": 0,
+          "dur": 400
+        },
+        {
+          "id": "action-0",
+          "t": 400,
+          "dur": 900,
+          "type": "paint.wash",
+          "region": {
+            "shape": "rect",
+            "x": 120,
+            "y": 120,
+            "w": 760,
+            "h": 100
+          },
+          "color": "ao",
+          "water": 0.7
+        },
+        {
+          "id": "action-1",
+          "t": 1300,
+          "dur": 900,
+          "type": "paint.wash",
+          "region": {
+            "shape": "rect",
+            "x": 120,
+            "y": 380,
+            "w": 760,
+            "h": 130
+          },
+          "color": "mizu",
+          "water": 0.7
+        },
+        {
+          "id": "action-2",
+          "t": 2200,
+          "dur": 900,
+          "type": "paint.wash",
+          "region": {
+            "shape": "polygon",
+            "points": [
+              [
+                120,
+                220
+              ],
+              [
+                360,
+                220
+              ],
+              [
+                340,
+                270
+              ],
+              [
+                355,
+                325
+              ],
+              [
+                390,
+                380
+              ],
+              [
+                120,
+                380
+              ]
+            ]
+          },
+          "color": "ao",
+          "water": 0.7
+        },
+        {
+          "id": "action-3",
+          "t": 3100,
+          "dur": 900,
+          "type": "paint.wash",
+          "region": {
+            "shape": "polygon",
+            "points": [
+              [
+                640,
+                220
+              ],
+              [
+                880,
+                220
+              ],
+              [
+                880,
+                380
+              ],
+              [
+                610,
+                380
+              ],
+              [
+                660,
+                325
+              ],
+              [
+                650,
+                270
+              ]
+            ]
+          },
+          "color": "ao",
+          "water": 0.7
+        },
+        {
+          "id": "exit",
+          "type": "hand.exit",
+          "t": 4100,
+          "dur": 400
+        }
+      ]
+    },
+    {
+      "id": "step-3",
+      "durationMs": 5000,
+      "caption": "ぬらない{紙|かみ}が {雲|くも}に{見える|みえる}ね",
+      "description": "紙の白と色の境界を示す。",
+      "actions": [
+        {
+          "id": "action-0",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.arrow",
+          "at": [
+            260,
+            560
+          ],
+          "to": [
+            485,
+            300
+          ],
+          "text": "かみの しろ"
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            150,
+            80
+          ],
+          "text": "しろい えのぐとは べつの ほうほう"
+        }
+      ]
+    },
+    {
+      "id": "step-4",
+      "durationMs": 5000,
+      "caption": "どんな{白|しろ}を {残し|のこし}たい？",
+      "description": "小さい白の光として未塗装の隙間も示す。",
+      "actions": [
+        {
+          "id": "action-0",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            210,
+            560
+          ],
+          "text": "ひかりや はなにも つかえる"
+        }
+      ]
+    }
+  ]
+}

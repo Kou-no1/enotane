@@ -1,0 +1,12 @@
+{
+  "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0",
+  "viewport": [
+    1440,
+    1000
+  ],
+  "dpr": 1,
+  "samples": 120,
+  "averageFps": 12.507426284356335,
+  "p95FrameMs": 108.59999999999854,
+  "physicalDeviceVerified": false
+}

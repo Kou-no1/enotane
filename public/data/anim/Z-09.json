@@ -1,0 +1,189 @@
+{
+  "schemaVersion": 1,
+  "id": "Z-09",
+  "seed": 49009,
+  "stage": {
+    "paper": "gayoushi",
+    "view": "top",
+    "mirror": "none"
+  },
+  "regions": {},
+  "steps": [
+    {
+      "id": "step-1",
+      "durationMs": 5000,
+      "caption": "まっすぐな {配置|はいち}を{見|み}よう",
+      "description": "同じ木と三角をまっすぐ置く。",
+      "actions": [
+        {
+          "id": "action-0",
+          "t": 0,
+          "dur": 0,
+          "type": "scene.object",
+          "objectId": "tree",
+          "sprite": "tree",
+          "at": [
+            350,
+            350
+          ],
+          "scale": 2,
+          "color": "midori"
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 0,
+          "type": "scene.object",
+          "objectId": "triangle",
+          "sprite": "triangle",
+          "at": [
+            680,
+            350
+          ],
+          "scale": 1.8,
+          "color": "aka"
+        },
+        {
+          "id": "action-2",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            150,
+            80
+          ],
+          "text": "まっすぐ"
+        }
+      ]
+    },
+    {
+      "id": "step-2",
+      "durationMs": 5000,
+      "caption": "ななめにすると どう{感じる|かんじる}？",
+      "description": "木と三角を傾ける。",
+      "actions": [
+        {
+          "id": "action-0",
+          "t": 0,
+          "dur": 0,
+          "type": "scene.object",
+          "objectId": "tree",
+          "sprite": "tree",
+          "at": [
+            350,
+            350
+          ],
+          "scale": 2,
+          "color": "midori",
+          "rotation": -25
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 0,
+          "type": "scene.object",
+          "objectId": "triangle",
+          "sprite": "triangle",
+          "at": [
+            680,
+            350
+          ],
+          "scale": 1.8,
+          "color": "aka",
+          "rotation": 30
+        },
+        {
+          "id": "action-2",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            150,
+            80
+          ],
+          "text": "ななめに かたむける"
+        }
+      ]
+    },
+    {
+      "id": "step-3",
+      "durationMs": 5000,
+      "caption": "{三角|さんかく}の{並び|ならび}も ためしてみよう",
+      "description": "三つの花を三角配置する。",
+      "actions": [
+        {
+          "id": "action-0",
+          "t": 0,
+          "dur": 0,
+          "type": "scene.object",
+          "objectId": "one",
+          "sprite": "flower",
+          "at": [
+            230,
+            510
+          ],
+          "scale": 0.8,
+          "color": "kiiro"
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 0,
+          "type": "scene.object",
+          "objectId": "two",
+          "sprite": "flower",
+          "at": [
+            500,
+            200
+          ],
+          "scale": 0.8,
+          "color": "kiiro"
+        },
+        {
+          "id": "action-2",
+          "t": 0,
+          "dur": 0,
+          "type": "scene.object",
+          "objectId": "three",
+          "sprite": "flower",
+          "at": [
+            790,
+            510
+          ],
+          "scale": 0.8,
+          "color": "kiiro"
+        },
+        {
+          "id": "action-3",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            150,
+            80
+          ],
+          "text": "どちらへ うごきそう？"
+        }
+      ]
+    },
+    {
+      "id": "step-4",
+      "durationMs": 5000,
+      "caption": "{動き|うごき}も{静けさ|しずけさ}も {選べ|えらべ}るね",
+      "description": "動きの印象は人によることを含め用途を問う。",
+      "actions": [
+        {
+          "id": "action-0",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            210,
+            580
+          ],
+          "text": "みせたい うごきを えらぼう"
+        }
+      ]
+    }
+  ]
+}

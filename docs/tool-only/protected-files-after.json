@@ -1,0 +1,52 @@
+[
+  {
+    "path": "src/engine/brushes/materials.ts",
+    "hash": "F08FF121D8C60E8E887D1274A95483B03200D8A4E26CBFCB29E486E83A13C6CA",
+    "unchanged": true
+  },
+  {
+    "path": "src/engine/textures.ts",
+    "hash": "E03B755293D9DFCD0517BA895A4DFDA5B9FB50AD1B456BE8204F2C8D750E9FE4",
+    "unchanged": true
+  },
+  {
+    "path": "src/engine/shapes.ts",
+    "hash": "42F3E8D5019CEFBD5D776D1FB1B8D4A0D87431984CE97633C12570485069BA89",
+    "unchanged": true
+  },
+  {
+    "path": "src/engine/compiler.ts",
+    "hash": "EAF0AB24DD94EBA653248D27B55055CD6EC22E5D0628326EEF8308D8B5B9CD33",
+    "unchanged": true
+  },
+  {
+    "path": "src/engine/player.ts",
+    "hash": "D9960C502D06A52DAE822BB95A51300A71A299346663D8992483B77CAB8B21B5",
+    "unchanged": true
+  },
+  {
+    "path": "src/dev/style.css",
+    "hash": "1CA01ADCB812509277F32BCADD24D438418DAE5926DAFD9340DDDD43C7A2BCDA",
+    "unchanged": true
+  },
+  {
+    "path": "public/data\\dev-manifest.json",
+    "hash": "F988AB6E7CBD4CC031E531572D662CCF5F9D6835532D53DE498A78AB952B492F",
+    "unchanged": true
+  },
+  {
+    "path": "public/data\\anim\\W-11.json",
+    "hash": "2436A83DE68B943DBA3944B1479D0D5AD8326F94AB0DE4F8EB692141C6C1CF96",
+    "unchanged": true
+  },
+  {
+    "path": "public/data\\anim\\P-02.json",
+    "hash": "AE390D85263884AFE439E669B5C1756D7AA5F2EAC406346DE1CB4ECAB0151102",
+    "unchanged": true
+  },
+  {
+    "path": "public/data\\anim\\C-09.json",
+    "hash": "2AD9E1069F39C39100DE0A066B0FBF9A76CF93CF679D5817A8844523767F6B08",
+    "unchanged": true
+  }
+]

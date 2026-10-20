@@ -1,0 +1,190 @@
+{
+  "schemaVersion": 1,
+  "id": "Z-06",
+  "seed": 49006,
+  "stage": {
+    "paper": "gayoushi",
+    "view": "top",
+    "mirror": "none"
+  },
+  "regions": {},
+  "steps": [
+    {
+      "id": "step-1",
+      "durationMs": 5000,
+      "caption": "{平らな|たいらな}{地面|じめん}と {地平線|ちへいせん}を{見る|みる}よ",
+      "description": "平らな地面と地平線を示す。",
+      "actions": [
+        {
+          "id": "enter",
+          "type": "hand.enter",
+          "tool": "brush-round",
+          "t": 0,
+          "dur": 400
+        },
+        {
+          "id": "action-0",
+          "t": 400,
+          "dur": 1800,
+          "type": "paint.wash",
+          "region": {
+            "shape": "rect",
+            "x": 100,
+            "y": 300,
+            "w": 800,
+            "h": 260
+          },
+          "color": "kimidori",
+          "water": 0.8
+        },
+        {
+          "id": "action-1",
+          "t": 2200,
+          "dur": 1800,
+          "type": "pencil.stroke",
+          "path": {
+            "gen": "line",
+            "x1": 100,
+            "y1": 300,
+            "x2": 900,
+            "y2": 300
+          },
+          "hardness": "2B",
+          "pressure": 0.65,
+          "width": 3
+        },
+        {
+          "id": "action-2",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            700,
+            280
+          ],
+          "text": "ちへいせん"
+        },
+        {
+          "id": "exit",
+          "type": "hand.exit",
+          "t": 4100,
+          "dur": 400
+        }
+      ]
+    },
+    {
+      "id": "step-2",
+      "durationMs": 5000,
+      "caption": "{近い|ちかい}{木|き}を {見て|みて}みよう",
+      "description": "手前の大きな木を地面へ配置する。",
+      "actions": [
+        {
+          "id": "action-0",
+          "t": 0,
+          "dur": 0,
+          "type": "scene.object",
+          "objectId": "near",
+          "sprite": "tree",
+          "at": [
+            260,
+            460
+          ],
+          "scale": 2.2,
+          "color": "midori"
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            130,
+            180
+          ],
+          "text": "ちかい き"
+        }
+      ]
+    },
+    {
+      "id": "step-3",
+      "durationMs": 5000,
+      "caption": "{遠い|とおい}{木の|きの} {大きさ|おおきさ}と{位置|いち}は？",
+      "description": "遠い木を地平線へ近く小さく置く。",
+      "actions": [
+        {
+          "id": "action-0",
+          "t": 0,
+          "dur": 0,
+          "type": "scene.object",
+          "objectId": "far",
+          "sprite": "tree",
+          "at": [
+            730,
+            330
+          ],
+          "scale": 0.65,
+          "color": "midori"
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 0,
+          "type": "scene.object",
+          "objectId": "middle",
+          "sprite": "tree",
+          "at": [
+            530,
+            390
+          ],
+          "scale": 1.2,
+          "color": "midori"
+        },
+        {
+          "id": "action-2",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            660,
+            200
+          ],
+          "text": "とおい き"
+        }
+      ]
+    },
+    {
+      "id": "step-4",
+      "durationMs": 5000,
+      "caption": "{同じ|おなじ}{場所|ばしょ}から {見る|みる}{一例|いちれい}だよ",
+      "description": "条件を明記して、いつでも上へ置くという断定を避ける。",
+      "actions": [
+        {
+          "id": "action-0",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            170,
+            80
+          ],
+          "text": "おなじ たいらな じめんの れい"
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.arrow",
+          "at": [
+            820,
+            540
+          ],
+          "to": [
+            730,
+            335
+          ],
+          "text": "おおきさと いち"
+        }
+      ]
+    }
+  ]
+}

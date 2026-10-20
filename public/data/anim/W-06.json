@@ -1,0 +1,243 @@
+{
+  "schemaVersion": 1,
+  "id": "W-06",
+  "seed": 48706,
+  "stage": {
+    "paper": "gayoushi",
+    "view": "top",
+    "mirror": "handedness"
+  },
+  "regions": {},
+  "steps": [
+    {
+      "id": "step-1",
+      "durationMs": 5000,
+      "caption": "{筆先|ふでさき}で {細い|ほそい}{線|せん}をひこう",
+      "description": "上段へ筆先の細い線を描く。",
+      "actions": [
+        {
+          "id": "enter",
+          "type": "hand.enter",
+          "tool": "brush-round",
+          "t": 0,
+          "dur": 400
+        },
+        {
+          "id": "action-0",
+          "t": 400,
+          "dur": 3600,
+          "type": "paint.stroke",
+          "path": {
+            "gen": "line",
+            "x1": 160,
+            "y1": 150,
+            "x2": 840,
+            "y2": 150
+          },
+          "color": "midori",
+          "width": 8,
+          "part": "tip"
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            150,
+            100
+          ],
+          "text": "ふでさき"
+        },
+        {
+          "id": "exit",
+          "type": "hand.exit",
+          "t": 4100,
+          "dur": 400
+        }
+      ]
+    },
+    {
+      "id": "step-2",
+      "durationMs": 5000,
+      "caption": "{筆|ふで}の{腹|はら}で {広い|ひろい}{面|めん}もできるね",
+      "description": "中央へ筆の腹を使った広い線を描く。",
+      "actions": [
+        {
+          "id": "enter",
+          "type": "hand.enter",
+          "tool": "brush-round",
+          "t": 0,
+          "dur": 400
+        },
+        {
+          "id": "action-0",
+          "t": 400,
+          "dur": 3600,
+          "type": "paint.stroke",
+          "path": {
+            "gen": "line",
+            "x1": 160,
+            "y1": 285,
+            "x2": 840,
+            "y2": 285
+          },
+          "color": "midori",
+          "width": 48,
+          "part": "belly",
+          "brush": "flat"
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            150,
+            230
+          ],
+          "text": "ふでの はら"
+        },
+        {
+          "id": "exit",
+          "type": "hand.exit",
+          "t": 4100,
+          "dur": 400
+        }
+      ]
+    },
+    {
+      "id": "step-3",
+      "durationMs": 5000,
+      "caption": "とんとん {点|てん}を{置い|おい}てみよう",
+      "description": "点を叩く描画アクションで領域へ点を配置する。",
+      "actions": [
+        {
+          "id": "enter",
+          "type": "hand.enter",
+          "tool": "brush-round",
+          "t": 0,
+          "dur": 400
+        },
+        {
+          "id": "action-0",
+          "t": 400,
+          "dur": 3600,
+          "type": "paint.dab",
+          "region": {
+            "shape": "rect",
+            "x": 160,
+            "y": 365,
+            "w": 680,
+            "h": 95
+          },
+          "color": "midori",
+          "tool": "brush",
+          "count": 36
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            150,
+            335
+          ],
+          "text": "とんとん"
+        },
+        {
+          "id": "exit",
+          "type": "hand.exit",
+          "t": 4100,
+          "dur": 400
+        }
+      ]
+    },
+    {
+      "id": "step-4",
+      "durationMs": 5000,
+      "caption": "{水|みず}が{少ない|すくない} {跡|あと}もためそう",
+      "description": "かすれを筆の水量と疎な線として描く。",
+      "actions": [
+        {
+          "id": "enter",
+          "type": "hand.enter",
+          "tool": "brush-round",
+          "t": 0,
+          "dur": 400
+        },
+        {
+          "id": "action-0",
+          "t": 400,
+          "dur": 3600,
+          "type": "paint.stroke",
+          "path": {
+            "subpaths": [
+              [
+                [
+                  160,
+                  535
+                ],
+                [
+                  280,
+                  535
+                ]
+              ],
+              [
+                [
+                  315,
+                  535
+                ],
+                [
+                  430,
+                  532
+                ]
+              ],
+              [
+                [
+                  485,
+                  534
+                ],
+                [
+                  610,
+                  534
+                ]
+              ],
+              [
+                [
+                  660,
+                  535
+                ],
+                [
+                  840,
+                  532
+                ]
+              ]
+            ]
+          },
+          "color": "midori",
+          "width": 25,
+          "water": 0.05
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            150,
+            490
+          ],
+          "text": "かすれも ひょうげん"
+        },
+        {
+          "id": "exit",
+          "type": "hand.exit",
+          "t": 4100,
+          "dur": 400
+        }
+      ]
+    }
+  ]
+}

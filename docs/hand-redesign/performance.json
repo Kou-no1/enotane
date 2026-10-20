@@ -1,0 +1,38 @@
+{
+  "environment": "Windows / Codex in-app browser; Safariではない",
+  "viewport": {
+    "width": 947,
+    "height": 884
+  },
+  "measurement": "hand-only; 10 warm-up + 120 requestAnimationFrame samples; fixed geometry sizes; 3 poses × 8 directions × 2 handedness",
+  "averageFps": 59.9,
+  "p95FrameIntervalMs": 16.8,
+  "averageHandDrawMs": 0.312,
+  "measuredFrames": 120,
+  "observedWholeAnimationDisplay": [
+    {
+      "lesson": "P-02",
+      "step": 1,
+      "logicalTimeSeconds": 1.5,
+      "fps": 59
+    },
+    {
+      "lesson": "C-09",
+      "step": 3,
+      "logicalTimeSeconds": 2.13,
+      "fps": 21
+    },
+    {
+      "lesson": "W-11",
+      "step": 2,
+      "logicalTimeSeconds": 1.37,
+      "fps": 59
+    }
+  ],
+  "limitations": [
+    "No iPad or Safari measurement",
+    "Whole-animation display readings are point observations while browser automation is running, not sustained frame-time benchmarks",
+    "Hand-only measurement excludes painting, replay, zoom cache misses, gallery and PNG memory"
+  ],
+  "ctxFilterUsed": false
+}

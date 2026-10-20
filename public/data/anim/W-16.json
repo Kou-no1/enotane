@@ -1,0 +1,205 @@
+{
+  "schemaVersion": 1,
+  "id": "W-16",
+  "seed": 48716,
+  "stage": {
+    "paper": "gayoushi",
+    "view": "top",
+    "mirror": "handedness"
+  },
+  "regions": {},
+  "steps": [
+    {
+      "id": "step-1",
+      "durationMs": 5000,
+      "caption": "うすい{下|した}がきで {形|かたち}を{見|み}よう",
+      "description": "りんごの軽い鉛筆輪郭を置く。",
+      "actions": [
+        {
+          "id": "enter",
+          "type": "hand.enter",
+          "tool": "pencil",
+          "t": 0,
+          "dur": 400
+        },
+        {
+          "id": "action-0",
+          "t": 400,
+          "dur": 1800,
+          "type": "pencil.stroke",
+          "path": {
+            "gen": "ellipse",
+            "cx": 500,
+            "cy": 315,
+            "rx": 200,
+            "ry": 150
+          },
+          "hardness": "H",
+          "pressure": 0.2,
+          "width": 3
+        },
+        {
+          "id": "action-1",
+          "t": 2200,
+          "dur": 1800,
+          "type": "pencil.stroke",
+          "path": {
+            "gen": "line",
+            "x1": 500,
+            "y1": 165,
+            "x2": 520,
+            "y2": 125
+          },
+          "hardness": "H",
+          "pressure": 0.2,
+          "width": 3
+        },
+        {
+          "id": "action-2",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            150,
+            80
+          ],
+          "text": "うすい したがき"
+        },
+        {
+          "id": "exit",
+          "type": "hand.exit",
+          "t": 4100,
+          "dur": 400
+        }
+      ]
+    },
+    {
+      "id": "step-2",
+      "durationMs": 5000,
+      "caption": "{色|いろ}でも {形|かたち}ができるね",
+      "description": "線を全てなぞらず、内側に赤い面を置く。",
+      "actions": [
+        {
+          "id": "enter",
+          "type": "hand.enter",
+          "tool": "brush-round",
+          "t": 0,
+          "dur": 400
+        },
+        {
+          "id": "action-0",
+          "t": 400,
+          "dur": 3600,
+          "type": "paint.wash",
+          "region": {
+            "shape": "ellipse",
+            "cx": 500,
+            "cy": 330,
+            "rx": 190,
+            "ry": 135
+          },
+          "color": "aka",
+          "water": 0.5
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            150,
+            80
+          ],
+          "text": "いろの さかいで かたち"
+        },
+        {
+          "id": "exit",
+          "type": "hand.exit",
+          "t": 4100,
+          "dur": 400
+        }
+      ]
+    },
+    {
+      "id": "step-3",
+      "durationMs": 5000,
+      "caption": "{残し|のこし}たい{線|せん}も {選べ|えらべ}るよ",
+      "description": "一部だけ軸を色で示し、輪郭の線は残す。",
+      "actions": [
+        {
+          "id": "enter",
+          "type": "hand.enter",
+          "tool": "brush-round",
+          "t": 0,
+          "dur": 400
+        },
+        {
+          "id": "action-0",
+          "t": 400,
+          "dur": 3600,
+          "type": "paint.stroke",
+          "path": {
+            "gen": "line",
+            "x1": 500,
+            "y1": 195,
+            "x2": 520,
+            "y2": 135
+          },
+          "color": "chairo",
+          "width": 13
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            150,
+            80
+          ],
+          "text": "せんを のこす ところ"
+        },
+        {
+          "id": "exit",
+          "type": "hand.exit",
+          "t": 4100,
+          "dur": 400
+        }
+      ]
+    },
+    {
+      "id": "step-4",
+      "durationMs": 5000,
+      "caption": "{全部|ぜんぶ}を なぞらなくてもいいよ",
+      "description": "下描きと色の役割を注記する。",
+      "actions": [
+        {
+          "id": "action-0",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.arrow",
+          "at": [
+            270,
+            510
+          ],
+          "to": [
+            330,
+            325
+          ],
+          "text": "せんと いろ"
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            210,
+            80
+          ],
+          "text": "みせたい かたちを えらぼう"
+        }
+      ]
+    }
+  ]
+}

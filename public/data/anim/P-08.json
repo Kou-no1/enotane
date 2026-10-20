@@ -1,0 +1,272 @@
+{
+  "schemaVersion": 1,
+  "id": "P-08",
+  "seed": 48008,
+  "stage": {
+    "paper": "gayoushi",
+    "view": "top",
+    "mirror": "handedness"
+  },
+  "regions": {},
+  "steps": [
+    {
+      "id": "step-1",
+      "durationMs": 5000,
+      "caption": "{暗い|くらい}{面|めん}を つくるよ",
+      "description": "消す対象を鉛筆だけで塗る。",
+      "actions": [
+        {
+          "id": "enter",
+          "type": "hand.enter",
+          "tool": "pencil",
+          "t": 0,
+          "dur": 400
+        },
+        {
+          "id": "action-0",
+          "t": 400,
+          "dur": 3600,
+          "type": "pencil.stroke",
+          "path": {
+            "subpaths": [
+              [
+                [
+                  200,
+                  180
+                ],
+                [
+                  780,
+                  180
+                ]
+              ],
+              [
+                [
+                  200,
+                  215
+                ],
+                [
+                  780,
+                  215
+                ]
+              ],
+              [
+                [
+                  200,
+                  250
+                ],
+                [
+                  780,
+                  250
+                ]
+              ],
+              [
+                [
+                  200,
+                  285
+                ],
+                [
+                  780,
+                  285
+                ]
+              ],
+              [
+                [
+                  200,
+                  320
+                ],
+                [
+                  780,
+                  320
+                ]
+              ],
+              [
+                [
+                  200,
+                  355
+                ],
+                [
+                  780,
+                  355
+                ]
+              ],
+              [
+                [
+                  200,
+                  390
+                ],
+                [
+                  780,
+                  390
+                ]
+              ],
+              [
+                [
+                  200,
+                  425
+                ],
+                [
+                  780,
+                  425
+                ]
+              ]
+            ]
+          },
+          "hardness": "4B",
+          "pressure": 0.65,
+          "width": 65,
+          "mode": "lay"
+        },
+        {
+          "id": "exit",
+          "type": "hand.exit",
+          "t": 4100,
+          "dur": 400
+        }
+      ]
+    },
+    {
+      "id": "step-2",
+      "durationMs": 5000,
+      "caption": "{消しゴム|けしゴム}で {光|ひかり}の{線|せん}を{出す|だす}よ",
+      "description": "鉛筆面から波状の光を消し出す。",
+      "actions": [
+        {
+          "id": "enter",
+          "type": "hand.enter",
+          "tool": "eraser",
+          "t": 0,
+          "dur": 400
+        },
+        {
+          "id": "action-0",
+          "t": 400,
+          "dur": 3600,
+          "type": "eraser.stroke",
+          "path": {
+            "gen": "wave",
+            "x": 250,
+            "y": 280,
+            "w": 470,
+            "amplitude": 35,
+            "cycles": 2
+          },
+          "width": 24,
+          "layer": "paint"
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            150,
+            80
+          ],
+          "text": "ひかりの せん"
+        },
+        {
+          "id": "exit",
+          "type": "hand.exit",
+          "t": 4100,
+          "dur": 400
+        }
+      ]
+    },
+    {
+      "id": "step-3",
+      "durationMs": 5000,
+      "caption": "{丸い|まるい}{光|ひかり}も ためしてみよう",
+      "description": "異なる形を消し、光の位置の選択を示す。",
+      "actions": [
+        {
+          "id": "enter",
+          "type": "hand.enter",
+          "tool": "eraser",
+          "t": 0,
+          "dur": 400
+        },
+        {
+          "id": "action-0",
+          "t": 400,
+          "dur": 3600,
+          "type": "eraser.stroke",
+          "path": {
+            "gen": "ellipse",
+            "cx": 650,
+            "cy": 365,
+            "rx": 40,
+            "ry": 24
+          },
+          "width": 24,
+          "layer": "paint"
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            150,
+            80
+          ],
+          "text": "かたちを かえる"
+        },
+        {
+          "id": "exit",
+          "type": "hand.exit",
+          "t": 4100,
+          "dur": 400
+        }
+      ]
+    },
+    {
+      "id": "step-4",
+      "durationMs": 5000,
+      "caption": "{残っ|のこっ}た{暗さ|くらさ}も {表し|あらわし}{方|かた}にしよう",
+      "description": "消す前の暗い面と明るい部分の役割を注記する。",
+      "actions": [
+        {
+          "id": "action-0",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.arrow",
+          "at": [
+            300,
+            500
+          ],
+          "to": [
+            380,
+            260
+          ],
+          "text": "あかるい"
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.arrow",
+          "at": [
+            760,
+            500
+          ],
+          "to": [
+            750,
+            420
+          ],
+          "text": "くらい"
+        },
+        {
+          "id": "action-2",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            300,
+            80
+          ],
+          "text": "どんな ひかりに みえる？"
+        }
+      ]
+    }
+  ]
+}

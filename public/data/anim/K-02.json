@@ -1,0 +1,223 @@
+{
+  "schemaVersion": 1,
+  "id": "K-02",
+  "seed": 47502,
+  "stage": {
+    "paper": "gayoushi",
+    "view": "top",
+    "mirror": "none"
+  },
+  "regions": {},
+  "steps": [
+    {
+      "id": "step-1",
+      "durationMs": 5000,
+      "caption": "{色|いろ}を{輪|わ}に {並べ|ならべ}てみよう",
+      "description": "赤・橙・黄・緑・青・紫の六つの有彩色を代表的な色相の輪で置く。白黒茶を色相の位置へ含めない。",
+      "actions": [
+        {
+          "id": "enter",
+          "type": "hand.enter",
+          "tool": "oil-pastel",
+          "t": 0,
+          "dur": 400
+        },
+        {
+          "id": "action-0",
+          "t": 400,
+          "dur": 600,
+          "type": "crayon.fill",
+          "region": {
+            "shape": "circle",
+            "cx": 710,
+            "cy": 310,
+            "r": 42
+          },
+          "color": "aka",
+          "kind": "oil-pastel"
+        },
+        {
+          "id": "action-1",
+          "t": 1000,
+          "dur": 600,
+          "type": "crayon.fill",
+          "region": {
+            "shape": "circle",
+            "cx": 605,
+            "cy": 491.8653347947321,
+            "r": 42
+          },
+          "color": "daidai",
+          "kind": "oil-pastel"
+        },
+        {
+          "id": "action-2",
+          "t": 1600,
+          "dur": 600,
+          "type": "crayon.fill",
+          "region": {
+            "shape": "circle",
+            "cx": 395.00000000000006,
+            "cy": 491.8653347947321,
+            "r": 42
+          },
+          "color": "kiiro",
+          "kind": "oil-pastel"
+        },
+        {
+          "id": "action-3",
+          "t": 2200,
+          "dur": 600,
+          "type": "crayon.fill",
+          "region": {
+            "shape": "circle",
+            "cx": 290,
+            "cy": 310,
+            "r": 42
+          },
+          "color": "midori",
+          "kind": "oil-pastel"
+        },
+        {
+          "id": "action-4",
+          "t": 2800,
+          "dur": 600,
+          "type": "crayon.fill",
+          "region": {
+            "shape": "circle",
+            "cx": 394.9999999999999,
+            "cy": 128.1346652052679,
+            "r": 42
+          },
+          "color": "ao",
+          "kind": "oil-pastel"
+        },
+        {
+          "id": "action-5",
+          "t": 3400,
+          "dur": 600,
+          "type": "crayon.fill",
+          "region": {
+            "shape": "circle",
+            "cx": 605,
+            "cy": 128.1346652052679,
+            "r": 42
+          },
+          "color": "murasaki",
+          "kind": "oil-pastel"
+        },
+        {
+          "id": "action-6",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            190,
+            40
+          ],
+          "text": "だいひょうてきな いろの わ"
+        },
+        {
+          "id": "exit",
+          "type": "hand.exit",
+          "t": 4100,
+          "dur": 400
+        }
+      ]
+    },
+    {
+      "id": "step-2",
+      "durationMs": 5000,
+      "caption": "となりの{色|いろ}を くらべよう",
+      "description": "赤と橙へ注目する丸を置く。",
+      "actions": [
+        {
+          "id": "action-0",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.circle",
+          "at": [
+            710,
+            310
+          ],
+          "r": 53
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.circle",
+          "at": [
+            605,
+            492
+          ],
+          "r": 53
+        },
+        {
+          "id": "action-2",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            365,
+            310
+          ],
+          "text": "となりの いろ"
+        }
+      ]
+    },
+    {
+      "id": "step-3",
+      "durationMs": 5000,
+      "caption": "{向かい|むかい}の{色|いろ}を {並べ|ならべ}てみよう",
+      "description": "代表モデル上の赤と緑の位置を線で示す。",
+      "actions": [
+        {
+          "id": "action-0",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.arrow",
+          "at": [
+            710,
+            310
+          ],
+          "to": [
+            290,
+            310
+          ],
+          "text": "むかいの いろ"
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            190,
+            40
+          ],
+          "text": "いろの わの モデルで ちがう"
+        }
+      ]
+    },
+    {
+      "id": "step-4",
+      "durationMs": 5000,
+      "caption": "{配色|はいしょく}の{手がかり|てがかり}に {使|つか}えるね",
+      "description": "隣接する色と離れた色の組合せの選択を促す。",
+      "actions": [
+        {
+          "id": "action-0",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            220,
+            570
+          ],
+          "text": "どんな くみあわせを つかう？"
+        }
+      ]
+    }
+  ]
+}

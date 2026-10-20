@@ -1,0 +1,194 @@
+{
+  "schemaVersion": 1,
+  "id": "M-01",
+  "seed": 47701,
+  "stage": {
+    "paper": "gayoushi",
+    "view": "top",
+    "mirror": "handedness"
+  },
+  "regions": {},
+  "steps": [
+    {
+      "id": "step-1",
+      "durationMs": 5000,
+      "caption": "かみの はんぶんに いろを おくよ",
+      "description": "折る軸の左半分だけに赤と青の色を置く。",
+      "actions": [
+        {
+          "id": "enter",
+          "type": "hand.enter",
+          "tool": "brush-round",
+          "t": 0,
+          "dur": 400
+        },
+        {
+          "id": "action-0",
+          "t": 400,
+          "dur": 1800,
+          "type": "paint.wash",
+          "region": {
+            "shape": "ellipse",
+            "cx": 350,
+            "cy": 280,
+            "rx": 130,
+            "ry": 70
+          },
+          "color": "aka",
+          "water": 0.4
+        },
+        {
+          "id": "action-1",
+          "t": 2200,
+          "dur": 1800,
+          "type": "paint.wash",
+          "region": {
+            "shape": "ellipse",
+            "cx": 380,
+            "cy": 400,
+            "rx": 100,
+            "ry": 60
+          },
+          "color": "ao",
+          "water": 0.4
+        },
+        {
+          "id": "action-2",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            150,
+            80
+          ],
+          "text": "かわく まえに"
+        },
+        {
+          "id": "exit",
+          "type": "hand.exit",
+          "t": 4100,
+          "dur": 400
+        }
+      ]
+    },
+    {
+      "id": "step-2",
+      "durationMs": 5000,
+      "caption": "おって そっと おさえよう",
+      "description": "中央軸へ紙を合わせる転写アクション。",
+      "actions": [
+        {
+          "id": "action-0",
+          "t": 400,
+          "dur": 3600,
+          "type": "decal.fold",
+          "region": {
+            "shape": "rect",
+            "x": 120,
+            "y": 120,
+            "w": 760,
+            "h": 410
+          },
+          "axis": "vertical"
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            150,
+            80
+          ],
+          "text": "おって あわせる"
+        }
+      ]
+    },
+    {
+      "id": "step-3",
+      "durationMs": 5000,
+      "caption": "ひらくと にた かたちに なるね",
+      "description": "左右へ写った形の見え方を注記する。",
+      "actions": [
+        {
+          "id": "action-0",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.arrow",
+          "at": [
+            180,
+            100
+          ],
+          "to": [
+            350,
+            280
+          ],
+          "text": "はじめの かたち"
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.arrow",
+          "at": [
+            730,
+            100
+          ],
+          "to": [
+            650,
+            280
+          ],
+          "text": "うつった かたち"
+        }
+      ]
+    },
+    {
+      "id": "step-4",
+      "durationMs": 5000,
+      "caption": "なにに みえる？",
+      "description": "対称に近い偶然の形へ目と触角以外の抽象点を添え、見立てを促す。",
+      "actions": [
+        {
+          "id": "enter",
+          "type": "hand.enter",
+          "tool": "crayon",
+          "t": 0,
+          "dur": 400
+        },
+        {
+          "id": "action-0",
+          "t": 400,
+          "dur": 3600,
+          "type": "crayon.stroke",
+          "path": {
+            "gen": "dots",
+            "x": 430,
+            "y": 290,
+            "w": 140,
+            "count": 3
+          },
+          "color": "kiiro",
+          "width": 20,
+          "pressure": 0.65
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            210,
+            570
+          ],
+          "text": "じぶんの なまえを つけよう"
+        },
+        {
+          "id": "exit",
+          "type": "hand.exit",
+          "t": 4100,
+          "dur": 400
+        }
+      ]
+    }
+  ]
+}

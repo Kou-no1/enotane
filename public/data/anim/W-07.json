@@ -1,0 +1,201 @@
+{
+  "schemaVersion": 1,
+  "id": "W-07",
+  "seed": 48707,
+  "stage": {
+    "paper": "gayoushi",
+    "view": "top",
+    "mirror": "handedness"
+  },
+  "regions": {},
+  "steps": [
+    {
+      "id": "step-1",
+      "durationMs": 5000,
+      "caption": "{赤|あか}と{黄色|きいろ}を {少し|すこし}ずつ{混ぜ|まぜ}よう",
+      "description": "2色同量の混色を左の領域へ図示する。",
+      "actions": [
+        {
+          "id": "enter",
+          "type": "hand.enter",
+          "tool": "brush-round",
+          "t": 0,
+          "dur": 400
+        },
+        {
+          "id": "action-0",
+          "t": 400,
+          "dur": 3600,
+          "type": "paint.mix",
+          "region": {
+            "shape": "circle",
+            "cx": 260,
+            "cy": 300,
+            "r": 110
+          },
+          "colors": [
+            "aka",
+            "kiiro"
+          ],
+          "amounts": [
+            1,
+            1
+          ]
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            130,
+            100
+          ],
+          "text": "あか ＋ きいろ"
+        },
+        {
+          "id": "exit",
+          "type": "hand.exit",
+          "t": 4100,
+          "dur": 400
+        }
+      ]
+    },
+    {
+      "id": "step-2",
+      "durationMs": 5000,
+      "caption": "{量|りょう}を{変える|かえる}と どう{変わる|かわる}？",
+      "description": "赤が多い配合を中央へ置く。",
+      "actions": [
+        {
+          "id": "enter",
+          "type": "hand.enter",
+          "tool": "brush-round",
+          "t": 0,
+          "dur": 400
+        },
+        {
+          "id": "action-0",
+          "t": 400,
+          "dur": 3600,
+          "type": "paint.mix",
+          "region": {
+            "shape": "circle",
+            "cx": 520,
+            "cy": 300,
+            "r": 110
+          },
+          "colors": [
+            "aka",
+            "kiiro"
+          ],
+          "amounts": [
+            3,
+            1
+          ]
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            410,
+            100
+          ],
+          "text": "あかが おおい"
+        },
+        {
+          "id": "exit",
+          "type": "hand.exit",
+          "t": 4100,
+          "dur": 400
+        }
+      ]
+    },
+    {
+      "id": "step-3",
+      "durationMs": 5000,
+      "caption": "3{色|いろ}を{混ぜ|まぜ}た{色|いろ}も ためそう",
+      "description": "3色で落ち着く色を右へ図示する。",
+      "actions": [
+        {
+          "id": "enter",
+          "type": "hand.enter",
+          "tool": "brush-round",
+          "t": 0,
+          "dur": 400
+        },
+        {
+          "id": "action-0",
+          "t": 400,
+          "dur": 3600,
+          "type": "paint.mix",
+          "region": {
+            "shape": "circle",
+            "cx": 780,
+            "cy": 300,
+            "r": 110
+          },
+          "colors": [
+            "aka",
+            "kiiro",
+            "ao"
+          ],
+          "amounts": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            700,
+            100
+          ],
+          "text": "3しょく"
+        },
+        {
+          "id": "exit",
+          "type": "hand.exit",
+          "t": 4100,
+          "dur": 400
+        }
+      ]
+    },
+    {
+      "id": "step-4",
+      "durationMs": 5000,
+      "caption": "{落ち着|おちつ}いた{色|いろ}も {使|つか}えるよ",
+      "description": "混色は近似である注記と活用を表示する。",
+      "actions": [
+        {
+          "id": "action-0",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            220,
+            470
+          ],
+          "text": "いろの へんかの めやす"
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            240,
+            550
+          ],
+          "text": "どんな ものに つかいたい？"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,229 @@
+{
+  "schemaVersion": 1,
+  "id": "W-09",
+  "seed": 48709,
+  "stage": {
+    "paper": "gayoushi",
+    "view": "top",
+    "mirror": "handedness"
+  },
+  "regions": {},
+  "steps": [
+    {
+      "id": "step-1",
+      "durationMs": 5000,
+      "caption": "{同じ|おなじ}{向き|むき}へ {筆|ふで}を{動かす|うごかす}よ",
+      "description": "左の領域を横方向で塗り始める。",
+      "actions": [
+        {
+          "id": "enter",
+          "type": "hand.enter",
+          "tool": "brush-round",
+          "t": 0,
+          "dur": 400
+        },
+        {
+          "id": "action-0",
+          "t": 400,
+          "dur": 3600,
+          "type": "paint.stroke",
+          "path": {
+            "gen": "line",
+            "x1": 160,
+            "y1": 220,
+            "x2": 820,
+            "y2": 220
+          },
+          "color": "ao",
+          "width": 52,
+          "brush": "flat",
+          "part": "belly"
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            150,
+            80
+          ],
+          "text": "おなじ むき"
+        },
+        {
+          "id": "exit",
+          "type": "hand.exit",
+          "t": 4100,
+          "dur": 400
+        }
+      ]
+    },
+    {
+      "id": "step-2",
+      "durationMs": 5000,
+      "caption": "かわく{前|まえ}に となりをつなぐよ",
+      "description": "次の横線を重ねて広い面へつなぐ。",
+      "actions": [
+        {
+          "id": "enter",
+          "type": "hand.enter",
+          "tool": "brush-round",
+          "t": 0,
+          "dur": 400
+        },
+        {
+          "id": "action-0",
+          "t": 400,
+          "dur": 1800,
+          "type": "paint.stroke",
+          "path": {
+            "gen": "line",
+            "x1": 160,
+            "y1": 270,
+            "x2": 820,
+            "y2": 270
+          },
+          "color": "ao",
+          "width": 52,
+          "brush": "flat",
+          "part": "belly"
+        },
+        {
+          "id": "action-1",
+          "t": 2200,
+          "dur": 1800,
+          "type": "paint.stroke",
+          "path": {
+            "gen": "line",
+            "x1": 160,
+            "y1": 320,
+            "x2": 820,
+            "y2": 320
+          },
+          "color": "ao",
+          "width": 52,
+          "brush": "flat",
+          "part": "belly"
+        },
+        {
+          "id": "action-2",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            150,
+            80
+          ],
+          "text": "かわく まえに つなぐ"
+        },
+        {
+          "id": "exit",
+          "type": "hand.exit",
+          "t": 4100,
+          "dur": 400
+        }
+      ]
+    },
+    {
+      "id": "step-3",
+      "durationMs": 5000,
+      "caption": "{先|さき}に{色|いろ}を {作っ|つくっ}ておこう",
+      "description": "面の下部をつなぎ、用意した色の必要を示す。",
+      "actions": [
+        {
+          "id": "enter",
+          "type": "hand.enter",
+          "tool": "brush-round",
+          "t": 0,
+          "dur": 400
+        },
+        {
+          "id": "action-0",
+          "t": 400,
+          "dur": 1800,
+          "type": "paint.stroke",
+          "path": {
+            "gen": "line",
+            "x1": 160,
+            "y1": 370,
+            "x2": 820,
+            "y2": 370
+          },
+          "color": "ao",
+          "width": 52,
+          "brush": "flat",
+          "part": "belly"
+        },
+        {
+          "id": "action-1",
+          "t": 2200,
+          "dur": 1800,
+          "type": "paint.stroke",
+          "path": {
+            "gen": "line",
+            "x1": 160,
+            "y1": 420,
+            "x2": 820,
+            "y2": 420
+          },
+          "color": "ao",
+          "width": 52,
+          "brush": "flat",
+          "part": "belly"
+        },
+        {
+          "id": "action-2",
+          "t": 0,
+          "dur": 0,
+          "type": "tool.place",
+          "item": "palette",
+          "to": [
+            870,
+            540
+          ],
+          "scale": 0.65
+        },
+        {
+          "id": "exit",
+          "type": "hand.exit",
+          "t": 4100,
+          "dur": 400
+        }
+      ]
+    },
+    {
+      "id": "step-4",
+      "durationMs": 5000,
+      "caption": "むらも {表し|あらわし}{方|かた}にできるね",
+      "description": "均一な面と重なりの場所を観察する。",
+      "actions": [
+        {
+          "id": "action-0",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.arrow",
+          "at": [
+            840,
+            100
+          ],
+          "to": [
+            730,
+            270
+          ],
+          "text": "つないだ ところ"
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            210,
+            550
+          ],
+          "text": "めんの かんじを えらぼう"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,237 @@
+{
+  "schemaVersion": 1,
+  "id": "M-03",
+  "seed": 47703,
+  "stage": {
+    "paper": "gayoushi",
+    "view": "top",
+    "mirror": "handedness"
+  },
+  "regions": {},
+  "steps": [
+    {
+      "id": "step-1",
+      "durationMs": 5000,
+      "caption": "すこし いろを たらすよ",
+      "description": "上部に赤い色の始点を置く。",
+      "actions": [
+        {
+          "id": "enter",
+          "type": "hand.enter",
+          "tool": "brush-round",
+          "t": 0,
+          "dur": 400
+        },
+        {
+          "id": "action-0",
+          "t": 400,
+          "dur": 3600,
+          "type": "paint.drop",
+          "at": [
+            300,
+            170
+          ],
+          "color": "aka",
+          "size": 36
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            150,
+            80
+          ],
+          "text": "すこしずつ"
+        },
+        {
+          "id": "exit",
+          "type": "hand.exit",
+          "t": 4100,
+          "dur": 400
+        }
+      ]
+    },
+    {
+      "id": "step-2",
+      "durationMs": 5000,
+      "caption": "かたむけると ながれるよ",
+      "description": "上から下へ重力に沿う赤い道を描く。",
+      "actions": [
+        {
+          "id": "enter",
+          "type": "hand.enter",
+          "tool": "brush-round",
+          "t": 0,
+          "dur": 400
+        },
+        {
+          "id": "action-0",
+          "t": 400,
+          "dur": 3600,
+          "type": "drip",
+          "path": {
+            "points": [
+              [
+                300,
+                170
+              ],
+              [
+                310,
+                250
+              ],
+              [
+                335,
+                350
+              ],
+              [
+                345,
+                470
+              ]
+            ]
+          },
+          "color": "aka",
+          "width": 28
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.arrow",
+          "at": [
+            750,
+            170
+          ],
+          "to": [
+            750,
+            380
+          ],
+          "text": "かたむける むき"
+        },
+        {
+          "id": "exit",
+          "type": "hand.exit",
+          "t": 4100,
+          "dur": 400
+        }
+      ]
+    },
+    {
+      "id": "step-3",
+      "durationMs": 5000,
+      "caption": "むきを かえると どうなる？",
+      "description": "違う傾きで青が斜めへ流れる道を描く。",
+      "actions": [
+        {
+          "id": "enter",
+          "type": "hand.enter",
+          "tool": "brush-round",
+          "t": 0,
+          "dur": 400
+        },
+        {
+          "id": "action-0",
+          "t": 400,
+          "dur": 3600,
+          "type": "drip",
+          "path": {
+            "points": [
+              [
+                550,
+                160
+              ],
+              [
+                590,
+                255
+              ],
+              [
+                650,
+                365
+              ],
+              [
+                770,
+                490
+              ]
+            ]
+          },
+          "color": "ao",
+          "width": 24
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            150,
+            80
+          ],
+          "text": "むきを かえる"
+        },
+        {
+          "id": "exit",
+          "type": "hand.exit",
+          "t": 4100,
+          "dur": 400
+        }
+      ]
+    },
+    {
+      "id": "step-4",
+      "durationMs": 5000,
+      "caption": "いろの みちから みつけよう",
+      "description": "流れの分岐のような短い道を加える。",
+      "actions": [
+        {
+          "id": "enter",
+          "type": "hand.enter",
+          "tool": "brush-round",
+          "t": 0,
+          "dur": 400
+        },
+        {
+          "id": "action-0",
+          "t": 400,
+          "dur": 3600,
+          "type": "drip",
+          "path": {
+            "points": [
+              [
+                340,
+                370
+              ],
+              [
+                450,
+                430
+              ],
+              [
+                495,
+                485
+              ]
+            ]
+          },
+          "color": "aka",
+          "width": 14
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            350,
+            570
+          ],
+          "text": "なにに みえる？"
+        },
+        {
+          "id": "exit",
+          "type": "hand.exit",
+          "t": 4100,
+          "dur": 400
+        }
+      ]
+    }
+  ]
+}

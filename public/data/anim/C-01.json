@@ -1,0 +1,375 @@
+{
+  "schemaVersion": 1,
+  "id": "C-01",
+  "seed": 46701,
+  "stage": {
+    "paper": "gayoushi",
+    "view": "top",
+    "mirror": "handedness"
+  },
+  "regions": {},
+  "steps": [
+    {
+      "id": "step-1",
+      "durationMs": 5000,
+      "caption": "おなじ むきに ぬってみよう",
+      "description": "同じ紙、色、力でクレヨンとオイルパステルを比較する。",
+      "actions": [
+        {
+          "id": "action-0",
+          "t": 0,
+          "dur": 5000,
+          "type": "compare",
+          "left": {
+            "schemaVersion": 1,
+            "id": "C-01",
+            "seed": 46705,
+            "stage": {
+              "paper": "gayoushi",
+              "view": "top",
+              "mirror": "handedness"
+            },
+            "regions": {},
+            "steps": [
+              {
+                "id": "step-1",
+                "durationMs": 5000,
+                "caption": "クレヨン",
+                "description": "クレヨン",
+                "actions": [
+                  {
+                    "id": "enter",
+                    "type": "hand.enter",
+                    "tool": "crayon",
+                    "t": 0,
+                    "dur": 400
+                  },
+                  {
+                    "id": "action-0",
+                    "t": 400,
+                    "dur": 3600,
+                    "type": "crayon.fill",
+                    "region": {
+                      "shape": "rect",
+                      "x": 230,
+                      "y": 180,
+                      "w": 500,
+                      "h": 260
+                    },
+                    "color": "aka",
+                    "kind": "crayon"
+                  },
+                  {
+                    "id": "exit",
+                    "type": "hand.exit",
+                    "t": 4100,
+                    "dur": 400
+                  }
+                ]
+              }
+            ]
+          },
+          "right": {
+            "schemaVersion": 1,
+            "id": "C-01",
+            "seed": 46703,
+            "stage": {
+              "paper": "gayoushi",
+              "view": "top",
+              "mirror": "handedness"
+            },
+            "regions": {},
+            "steps": [
+              {
+                "id": "step-1",
+                "durationMs": 5000,
+                "caption": "パス",
+                "description": "パス",
+                "actions": [
+                  {
+                    "id": "enter",
+                    "type": "hand.enter",
+                    "tool": "oil-pastel",
+                    "t": 0,
+                    "dur": 400
+                  },
+                  {
+                    "id": "action-0",
+                    "t": 400,
+                    "dur": 3600,
+                    "type": "crayon.fill",
+                    "region": {
+                      "shape": "rect",
+                      "x": 230,
+                      "y": 180,
+                      "w": 500,
+                      "h": 260
+                    },
+                    "color": "aka",
+                    "kind": "oil-pastel"
+                  },
+                  {
+                    "id": "exit",
+                    "type": "hand.exit",
+                    "t": 4100,
+                    "dur": 400
+                  }
+                ]
+              }
+            ]
+          },
+          "labels": [
+            "クレヨン",
+            "パス"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "step-2",
+      "durationMs": 5000,
+      "caption": "かさねると どう ちがう？",
+      "description": "同じ黄色を重ねる。製品差の注記を両側で見られる。",
+      "actions": [
+        {
+          "id": "action-0",
+          "t": 0,
+          "dur": 5000,
+          "type": "compare",
+          "left": {
+            "schemaVersion": 1,
+            "id": "C-01",
+            "seed": 46711,
+            "stage": {
+              "paper": "gayoushi",
+              "view": "top",
+              "mirror": "handedness"
+            },
+            "regions": {},
+            "steps": [
+              {
+                "id": "step-1",
+                "durationMs": 5000,
+                "caption": "クレヨンの かさなり",
+                "description": "クレヨンの かさなり",
+                "actions": [
+                  {
+                    "id": "enter",
+                    "type": "hand.enter",
+                    "tool": "crayon",
+                    "t": 0,
+                    "dur": 400
+                  },
+                  {
+                    "id": "action-0",
+                    "t": 400,
+                    "dur": 1800,
+                    "type": "crayon.fill",
+                    "region": {
+                      "shape": "rect",
+                      "x": 230,
+                      "y": 180,
+                      "w": 500,
+                      "h": 260
+                    },
+                    "color": "ao",
+                    "kind": "crayon"
+                  },
+                  {
+                    "id": "action-1",
+                    "t": 2200,
+                    "dur": 1800,
+                    "type": "crayon.fill",
+                    "region": {
+                      "shape": "rect",
+                      "x": 280,
+                      "y": 230,
+                      "w": 400,
+                      "h": 150
+                    },
+                    "color": "kiiro",
+                    "kind": "crayon"
+                  },
+                  {
+                    "id": "exit",
+                    "type": "hand.exit",
+                    "t": 4100,
+                    "dur": 400
+                  }
+                ]
+              }
+            ]
+          },
+          "right": {
+            "schemaVersion": 1,
+            "id": "C-01",
+            "seed": 46709,
+            "stage": {
+              "paper": "gayoushi",
+              "view": "top",
+              "mirror": "handedness"
+            },
+            "regions": {},
+            "steps": [
+              {
+                "id": "step-1",
+                "durationMs": 5000,
+                "caption": "パスの かさなり",
+                "description": "パスの かさなり",
+                "actions": [
+                  {
+                    "id": "enter",
+                    "type": "hand.enter",
+                    "tool": "oil-pastel",
+                    "t": 0,
+                    "dur": 400
+                  },
+                  {
+                    "id": "action-0",
+                    "t": 400,
+                    "dur": 1800,
+                    "type": "crayon.fill",
+                    "region": {
+                      "shape": "rect",
+                      "x": 230,
+                      "y": 180,
+                      "w": 500,
+                      "h": 260
+                    },
+                    "color": "ao",
+                    "kind": "oil-pastel"
+                  },
+                  {
+                    "id": "action-1",
+                    "t": 2200,
+                    "dur": 1800,
+                    "type": "crayon.fill",
+                    "region": {
+                      "shape": "rect",
+                      "x": 280,
+                      "y": 230,
+                      "w": 400,
+                      "h": 150
+                    },
+                    "color": "kiiro",
+                    "kind": "oil-pastel"
+                  },
+                  {
+                    "id": "exit",
+                    "type": "hand.exit",
+                    "t": 4100,
+                    "dur": 400
+                  }
+                ]
+              }
+            ]
+          },
+          "labels": [
+            "クレヨンの かさなり",
+            "パスの かさなり"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "step-3",
+      "durationMs": 5000,
+      "caption": "せいひんや かみで かわるよ",
+      "description": "材料の特徴を一律に決めない注記を置く。",
+      "actions": [
+        {
+          "id": "enter",
+          "type": "hand.enter",
+          "tool": "crayon",
+          "t": 0,
+          "dur": 400
+        },
+        {
+          "id": "action-0",
+          "t": 400,
+          "dur": 1800,
+          "type": "crayon.fill",
+          "region": {
+            "shape": "rect",
+            "x": 120,
+            "y": 230,
+            "w": 280,
+            "h": 170
+          },
+          "color": "aka",
+          "kind": "crayon"
+        },
+        {
+          "id": "action-1",
+          "t": 2200,
+          "dur": 1800,
+          "type": "crayon.fill",
+          "region": {
+            "shape": "rect",
+            "x": 600,
+            "y": 230,
+            "w": 280,
+            "h": 170
+          },
+          "color": "aka",
+          "kind": "oil-pastel"
+        },
+        {
+          "id": "action-2",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            150,
+            80
+          ],
+          "text": "おなじ ざいりょうで ためそう"
+        },
+        {
+          "id": "exit",
+          "type": "hand.exit",
+          "t": 4100,
+          "dur": 400
+        }
+      ]
+    },
+    {
+      "id": "step-4",
+      "durationMs": 5000,
+      "caption": "どの かんじを つかう？",
+      "description": "紙の白とかすれ、濃い面に注目を向ける。",
+      "actions": [
+        {
+          "id": "action-0",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.arrow",
+          "at": [
+            270,
+            510
+          ],
+          "to": [
+            250,
+            330
+          ],
+          "text": "かみの しろ"
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.arrow",
+          "at": [
+            730,
+            510
+          ],
+          "to": [
+            750,
+            330
+          ],
+          "text": "こい めん"
+        }
+      ]
+    }
+  ]
+}

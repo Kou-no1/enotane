@@ -1,0 +1,8 @@
+{
+  "schemaVersion": 1,
+  "lessons": [
+    { "id": "P-02", "title": "いろいろな線", "anim": "anim/P-02.json", "description": "まっすぐ、くねくね、ぎざぎざ。線の感じを見くらべよう。", "color": "#7D9673" },
+    { "id": "C-09", "title": "ひっかき絵", "anim": "anim/C-09.json", "description": "色をかくして、ひっかく。どんな形が見えるかな。", "color": "#C3826F" },
+    { "id": "W-11", "title": "にじみ", "anim": "anim/W-11.json", "description": "ぬれた紙に色をおくと、ふわっと広がるよ。", "color": "#7C9AB2" }
+  ]
+}

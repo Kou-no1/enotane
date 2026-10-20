@@ -1,0 +1,260 @@
+{
+  "schemaVersion": 1,
+  "id": "P-07",
+  "seed": 48007,
+  "stage": {
+    "paper": "gayoushi",
+    "view": "top",
+    "mirror": "handedness"
+  },
+  "regions": {},
+  "steps": [
+    {
+      "id": "step-1",
+      "durationMs": 5000,
+      "caption": "{同じ|おなじ}くらいの{影|かげ}を ぬろう",
+      "description": "指、ティッシュ、綿棒用に三つの鉛筆面を用意する。",
+      "actions": [
+        {
+          "id": "enter",
+          "type": "hand.enter",
+          "tool": "pencil",
+          "t": 0,
+          "dur": 400
+        },
+        {
+          "id": "action-0",
+          "t": 400,
+          "dur": 1200,
+          "type": "pencil.stroke",
+          "path": {
+            "gen": "line",
+            "x1": 130,
+            "y1": 290,
+            "x2": 310,
+            "y2": 290
+          },
+          "hardness": "2B",
+          "pressure": 0.65,
+          "width": 48,
+          "mode": "lay"
+        },
+        {
+          "id": "action-1",
+          "t": 1600,
+          "dur": 1200,
+          "type": "pencil.stroke",
+          "path": {
+            "gen": "line",
+            "x1": 410,
+            "y1": 290,
+            "x2": 590,
+            "y2": 290
+          },
+          "hardness": "2B",
+          "pressure": 0.65,
+          "width": 48,
+          "mode": "lay"
+        },
+        {
+          "id": "action-2",
+          "t": 2800,
+          "dur": 1200,
+          "type": "pencil.stroke",
+          "path": {
+            "gen": "line",
+            "x1": 690,
+            "y1": 290,
+            "x2": 870,
+            "y2": 290
+          },
+          "hardness": "2B",
+          "pressure": 0.65,
+          "width": 48,
+          "mode": "lay"
+        },
+        {
+          "id": "exit",
+          "type": "hand.exit",
+          "t": 4100,
+          "dur": 400
+        }
+      ]
+    },
+    {
+      "id": "step-2",
+      "durationMs": 5000,
+      "caption": "{指|ゆび}とティッシュを くらべよう",
+      "description": "左は白い接点円で指ぼかし、中央はティッシュでぼかす。",
+      "actions": [
+        {
+          "id": "enter",
+          "type": "hand.enter",
+          "tool": "finger",
+          "t": 0,
+          "dur": 400
+        },
+        {
+          "id": "action-0",
+          "t": 400,
+          "dur": 1800,
+          "type": "smudge",
+          "path": {
+            "gen": "line",
+            "x1": 130,
+            "y1": 300,
+            "x2": 310,
+            "y2": 300
+          },
+          "tool": "finger",
+          "width": 52,
+          "strength": 0.55
+        },
+        {
+          "id": "action-1",
+          "t": 2200,
+          "dur": 1800,
+          "type": "smudge",
+          "path": {
+            "gen": "line",
+            "x1": 410,
+            "y1": 300,
+            "x2": 590,
+            "y2": 300
+          },
+          "tool": "tissue",
+          "width": 70,
+          "strength": 0.65
+        },
+        {
+          "id": "action-2",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            120,
+            170
+          ],
+          "text": "ゆび"
+        },
+        {
+          "id": "action-3",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            400,
+            170
+          ],
+          "text": "ティッシュ"
+        },
+        {
+          "id": "exit",
+          "type": "hand.exit",
+          "t": 4100,
+          "dur": 400
+        }
+      ]
+    },
+    {
+      "id": "step-3",
+      "durationMs": 5000,
+      "caption": "{綿棒|めんぼう}なら どうなる？",
+      "description": "右は小さめの綿棒で境界をぼかす。",
+      "actions": [
+        {
+          "id": "enter",
+          "type": "hand.enter",
+          "tool": "cotton",
+          "t": 0,
+          "dur": 400
+        },
+        {
+          "id": "action-0",
+          "t": 400,
+          "dur": 3600,
+          "type": "smudge",
+          "path": {
+            "gen": "line",
+            "x1": 690,
+            "y1": 300,
+            "x2": 870,
+            "y2": 300
+          },
+          "tool": "cotton",
+          "width": 26,
+          "strength": 0.45
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            680,
+            170
+          ],
+          "text": "めんぼう"
+        },
+        {
+          "id": "exit",
+          "type": "hand.exit",
+          "t": 4100,
+          "dur": 400
+        }
+      ]
+    },
+    {
+      "id": "step-4",
+      "durationMs": 5000,
+      "caption": "ふちの{感じ|かんじ}を {見て|みて}みよう",
+      "description": "三つの境界を円で示し、選択を促す。",
+      "actions": [
+        {
+          "id": "action-0",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.circle",
+          "at": [
+            220,
+            300
+          ],
+          "r": 90
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.circle",
+          "at": [
+            500,
+            300
+          ],
+          "r": 90
+        },
+        {
+          "id": "action-2",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.circle",
+          "at": [
+            780,
+            300
+          ],
+          "r": 90
+        },
+        {
+          "id": "action-3",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            290,
+            490
+          ],
+          "text": "どうぐで どう かわる？"
+        }
+      ]
+    }
+  ]
+}

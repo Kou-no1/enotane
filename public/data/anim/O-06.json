@@ -1,0 +1,255 @@
+{
+  "schemaVersion": 1,
+  "id": "O-06",
+  "seed": 47906,
+  "stage": {
+    "paper": "gayoushi",
+    "view": "top",
+    "mirror": "none"
+  },
+  "regions": {},
+  "steps": [
+    {
+      "id": "step-1",
+      "durationMs": 5000,
+      "caption": "{大きい|おおきい}{部分|ぶぶん}を {見つけ|みつけ}よう",
+      "description": "ユーザー方針により手のイラストは出さず、互いに離れた抽象的な丸・四角の観察ガイドを置く。",
+      "actions": [
+        {
+          "id": "action-0",
+          "t": 0,
+          "dur": 0,
+          "type": "scene.object",
+          "objectId": "guide-a",
+          "sprite": "ellipse",
+          "at": [
+            230,
+            320
+          ],
+          "scale": 1.8,
+          "color": "mizu"
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 0,
+          "type": "scene.object",
+          "objectId": "guide-b",
+          "sprite": "rect",
+          "at": [
+            740,
+            320
+          ],
+          "scale": 1.8,
+          "color": "kiiro"
+        },
+        {
+          "id": "action-2",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            150,
+            80
+          ],
+          "text": "じつぶつを みて くらべよう"
+        }
+      ]
+    },
+    {
+      "id": "step-2",
+      "durationMs": 5000,
+      "caption": "{細長い|ほそながい}{部分|ぶぶん}の {長さ|ながさ}をくらべよう",
+      "description": "互いに離した横棒三つを鉛筆で描き、構造の比較だけを示す。",
+      "actions": [
+        {
+          "id": "enter",
+          "type": "hand.enter",
+          "tool": "pencil",
+          "t": 0,
+          "dur": 400
+        },
+        {
+          "id": "action-0",
+          "t": 400,
+          "dur": 1200,
+          "type": "pencil.stroke",
+          "path": {
+            "gen": "line",
+            "x1": 120,
+            "y1": 190,
+            "x2": 370,
+            "y2": 190
+          },
+          "hardness": "2B",
+          "pressure": 0.65,
+          "width": 12
+        },
+        {
+          "id": "action-1",
+          "t": 1600,
+          "dur": 1200,
+          "type": "pencil.stroke",
+          "path": {
+            "gen": "line",
+            "x1": 420,
+            "y1": 330,
+            "x2": 770,
+            "y2": 330
+          },
+          "hardness": "2B",
+          "pressure": 0.65,
+          "width": 12
+        },
+        {
+          "id": "action-2",
+          "t": 2800,
+          "dur": 1200,
+          "type": "pencil.stroke",
+          "path": {
+            "gen": "line",
+            "x1": 250,
+            "y1": 490,
+            "x2": 450,
+            "y2": 490
+          },
+          "hardness": "2B",
+          "pressure": 0.65,
+          "width": 12
+        },
+        {
+          "id": "action-3",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            150,
+            80
+          ],
+          "text": "ながさは どう ちがう？"
+        },
+        {
+          "id": "exit",
+          "type": "hand.exit",
+          "t": 4100,
+          "dur": 400
+        }
+      ]
+    },
+    {
+      "id": "step-3",
+      "durationMs": 5000,
+      "caption": "{曲がる所|まがるところ}を {実物|じつぶつ}で{見つけ|みつけ}よう",
+      "description": "抽象的な折れ線の曲がり位置を円で注記する。手形や指、手袋を描かない。",
+      "actions": [
+        {
+          "id": "enter",
+          "type": "hand.enter",
+          "tool": "pencil",
+          "t": 0,
+          "dur": 400
+        },
+        {
+          "id": "action-0",
+          "t": 400,
+          "dur": 3600,
+          "type": "pencil.stroke",
+          "path": {
+            "points": [
+              [
+                700,
+                140
+              ],
+              [
+                800,
+                250
+              ],
+              [
+                720,
+                390
+              ]
+            ]
+          },
+          "hardness": "2B",
+          "pressure": 0.65,
+          "width": 3
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.circle",
+          "at": [
+            800,
+            250
+          ],
+          "r": 30
+        },
+        {
+          "id": "action-2",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            150,
+            80
+          ],
+          "text": "まがる ところの てがかり"
+        },
+        {
+          "id": "exit",
+          "type": "hand.exit",
+          "t": 4100,
+          "dur": 400
+        }
+      ]
+    },
+    {
+      "id": "step-4",
+      "durationMs": 5000,
+      "caption": "{向き|むき}を{変える|かえる}と {何|なに}がかくれる？",
+      "description": "独立した図形の重なりへ注目し、実物を観察して言葉にする。",
+      "actions": [
+        {
+          "id": "action-0",
+          "t": 0,
+          "dur": 0,
+          "type": "scene.object",
+          "objectId": "guide-a",
+          "sprite": "ellipse",
+          "at": [
+            360,
+            320
+          ],
+          "scale": 1.8,
+          "color": "mizu"
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 0,
+          "type": "scene.object",
+          "objectId": "guide-b",
+          "sprite": "rect",
+          "at": [
+            460,
+            320
+          ],
+          "scale": 1.8,
+          "color": "kiiro"
+        },
+        {
+          "id": "action-2",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            170,
+            575
+          ],
+          "text": "アニメは かんさつの ガイド"
+        }
+      ]
+    }
+  ]
+}

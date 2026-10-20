@@ -1,0 +1,74 @@
+[
+  {
+    "path": "src\\engine\\hand.ts",
+    "deleted": true
+  },
+  {
+    "path": "src\\dev\\HandPoseGallery.tsx",
+    "deleted": true
+  },
+  {
+    "path": "src\\dev\\hand-pose-gallery.css",
+    "deleted": true
+  },
+  {
+    "path": "src\\dev\\legacy-hand.ts",
+    "deleted": true
+  },
+  {
+    "path": "tests\\hand.test.ts",
+    "deleted": true
+  },
+  {
+    "path": "public\\assets\\hand\\glove.svg",
+    "deleted": true
+  },
+  {
+    "path": "public\\assets\\hand-before\\glove.svg",
+    "deleted": true
+  },
+  {
+    "path": "public\\assets\\hand-before\\pencil.svg",
+    "deleted": true
+  },
+  {
+    "path": "public\\assets\\hand-before\\crayon.svg",
+    "deleted": true
+  },
+  {
+    "path": "public\\assets\\hand-before\\brush-round.svg",
+    "deleted": true
+  },
+  {
+    "path": "public\\assets\\hand-before\\brush-flat.svg",
+    "deleted": true
+  },
+  {
+    "path": "public\\assets\\hand-before\\waribashi.svg",
+    "deleted": true
+  },
+  {
+    "path": "public\\assets\\hand-before\\soft-tools.svg",
+    "deleted": true
+  },
+  {
+    "path": "docs\\hand-redesign\\source-before\\glove.svg",
+    "deleted": true
+  },
+  {
+    "path": "docs\\hand-redesign\\source-before\\overlay.ts",
+    "deleted": true
+  },
+  {
+    "path": "docs\\hand-redesign\\source-before\\stage.ts",
+    "deleted": true
+  },
+  {
+    "path": "docs\\hand-redesign\\source-before\\snapshots.ts",
+    "deleted": true
+  },
+  {
+    "path": "docs\\hand-redesign\\source-before\\main.tsx",
+    "deleted": true
+  }
+]

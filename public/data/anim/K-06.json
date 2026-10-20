@@ -1,0 +1,189 @@
+{
+  "schemaVersion": 1,
+  "id": "K-06",
+  "seed": 47506,
+  "stage": {
+    "paper": "gayoushi",
+    "view": "top",
+    "mirror": "none"
+  },
+  "regions": {},
+  "steps": [
+    {
+      "id": "step-1",
+      "durationMs": 5000,
+      "caption": "おなじ かたちを ならべよう",
+      "description": "同じ花形を同じ大きさで左右へ置く。",
+      "actions": [
+        {
+          "id": "action-0",
+          "t": 0,
+          "dur": 0,
+          "type": "scene.object",
+          "objectId": "a",
+          "sprite": "flower",
+          "at": [
+            280,
+            320
+          ],
+          "scale": 2,
+          "color": "aka"
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 0,
+          "type": "scene.object",
+          "objectId": "b",
+          "sprite": "flower",
+          "at": [
+            720,
+            320
+          ],
+          "scale": 2,
+          "color": "ao"
+        },
+        {
+          "id": "action-2",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            150,
+            80
+          ],
+          "text": "かたちは おなじ"
+        }
+      ]
+    },
+    {
+      "id": "step-2",
+      "durationMs": 5000,
+      "caption": "いろから どんな かんじ？",
+      "description": "赤と青の花の感じを問う。",
+      "actions": [
+        {
+          "id": "action-0",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            240,
+            480
+          ],
+          "text": "あか"
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            680,
+            480
+          ],
+          "text": "あお"
+        },
+        {
+          "id": "action-2",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            140,
+            80
+          ],
+          "text": "どんな きもちや ばしょを かんじる？"
+        }
+      ]
+    },
+    {
+      "id": "step-3",
+      "durationMs": 5000,
+      "caption": "べつの いろでも ためそう",
+      "description": "同じ二つの花を黄と紫へ変更する。",
+      "actions": [
+        {
+          "id": "action-0",
+          "t": 0,
+          "dur": 0,
+          "type": "scene.object",
+          "objectId": "a",
+          "sprite": "flower",
+          "at": [
+            280,
+            320
+          ],
+          "scale": 2,
+          "color": "kiiro"
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 0,
+          "type": "scene.object",
+          "objectId": "b",
+          "sprite": "flower",
+          "at": [
+            720,
+            320
+          ],
+          "scale": 2,
+          "color": "murasaki"
+        },
+        {
+          "id": "action-2",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            210,
+            480
+          ],
+          "text": "きいろ"
+        },
+        {
+          "id": "action-3",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            660,
+            480
+          ],
+          "text": "むらさき"
+        }
+      ]
+    },
+    {
+      "id": "step-4",
+      "durationMs": 5000,
+      "caption": "かんじかたは ひとそれぞれだよ",
+      "description": "固定的な感情対応を用いず複数の感じ方を促す。",
+      "actions": [
+        {
+          "id": "action-0",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            140,
+            80
+          ],
+          "text": "きもちの こたえは ひとつじゃない"
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            220,
+            560
+          ],
+          "text": "じぶんの いろを えらぼう"
+        }
+      ]
+    }
+  ]
+}

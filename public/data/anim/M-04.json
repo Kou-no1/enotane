@@ -1,0 +1,197 @@
+{
+  "schemaVersion": 1,
+  "id": "M-04",
+  "seed": 47704,
+  "stage": {
+    "paper": "gayoushi",
+    "view": "top",
+    "mirror": "handedness"
+  },
+  "regions": {},
+  "steps": [
+    {
+      "id": "step-1",
+      "durationMs": 5000,
+      "caption": "{色|いろ}を{少し|すこし} {紙|かみ}へおこう",
+      "description": "赤い色だまりと離したストローの図。",
+      "actions": [
+        {
+          "id": "enter",
+          "type": "hand.enter",
+          "tool": "brush-round",
+          "t": 0,
+          "dur": 400
+        },
+        {
+          "id": "action-0",
+          "t": 400,
+          "dur": 3600,
+          "type": "paint.drop",
+          "at": [
+            330,
+            320
+          ],
+          "color": "aka",
+          "size": 45
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 0,
+          "type": "tool.place",
+          "item": "straw",
+          "to": [
+            190,
+            370
+          ],
+          "scale": 0.9
+        },
+        {
+          "id": "action-2",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            150,
+            80
+          ],
+          "text": "ストローは いろに つけない"
+        },
+        {
+          "id": "exit",
+          "type": "hand.exit",
+          "t": 4100,
+          "dur": 400
+        }
+      ]
+    },
+    {
+      "id": "step-2",
+      "durationMs": 5000,
+      "caption": "{短く|みじかく}{吹く|ふく}と {枝分かれ|えだわかれ}するよ",
+      "description": "右方向への送風で赤が枝状に広がる。",
+      "actions": [
+        {
+          "id": "enter",
+          "type": "hand.enter",
+          "tool": "brush-round",
+          "t": 0,
+          "dur": 400
+        },
+        {
+          "id": "action-0",
+          "t": 400,
+          "dur": 3600,
+          "type": "blow",
+          "at": [
+            330,
+            320
+          ],
+          "color": "aka",
+          "direction": [
+            1,
+            0
+          ],
+          "length": 270,
+          "branches": 7
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            150,
+            80
+          ],
+          "text": "すこしずつ ふく"
+        },
+        {
+          "id": "exit",
+          "type": "hand.exit",
+          "t": 4100,
+          "dur": 400
+        }
+      ]
+    },
+    {
+      "id": "step-3",
+      "durationMs": 5000,
+      "caption": "{息|いき}の{向き|むき}も {変え|かえ}てみよう",
+      "description": "別の位置から上向きへ青を広げる。",
+      "actions": [
+        {
+          "id": "enter",
+          "type": "hand.enter",
+          "tool": "brush-round",
+          "t": 0,
+          "dur": 400
+        },
+        {
+          "id": "action-0",
+          "t": 400,
+          "dur": 3600,
+          "type": "blow",
+          "at": [
+            720,
+            460
+          ],
+          "color": "ao",
+          "direction": [
+            0,
+            -1
+          ],
+          "length": 240,
+          "branches": 6
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            150,
+            80
+          ],
+          "text": "むきを かえる"
+        },
+        {
+          "id": "exit",
+          "type": "hand.exit",
+          "t": 4100,
+          "dur": 400
+        }
+      ]
+    },
+    {
+      "id": "step-4",
+      "durationMs": 5000,
+      "caption": "{口|くち}を{離して|はなして} {息|いき}を{吸|す}おう",
+      "description": "吸い込まない休息の手順を文字で表示する。",
+      "actions": [
+        {
+          "id": "action-0",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            350,
+            90
+          ],
+          "text": "すわない"
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            200,
+            540
+          ],
+          "text": "くちを はなして いきを すう"
+        }
+      ]
+    }
+  ]
+}

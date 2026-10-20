@@ -1,0 +1,298 @@
+{
+  "schemaVersion": 1,
+  "id": "W-08",
+  "seed": 48708,
+  "stage": {
+    "paper": "gayoushi",
+    "view": "top",
+    "mirror": "handedness"
+  },
+  "regions": {},
+  "steps": [
+    {
+      "id": "step-1",
+      "durationMs": 5000,
+      "caption": "{元|もと}の{色|いろ}を ぬってみよう",
+      "description": "赤の元色を中央の上段へ置く。",
+      "actions": [
+        {
+          "id": "enter",
+          "type": "hand.enter",
+          "tool": "brush-round",
+          "t": 0,
+          "dur": 400
+        },
+        {
+          "id": "action-0",
+          "t": 400,
+          "dur": 3600,
+          "type": "paint.wash",
+          "region": {
+            "shape": "rect",
+            "x": 365,
+            "y": 90,
+            "w": 270,
+            "h": 95
+          },
+          "color": "aka",
+          "water": 0.15,
+          "mode": "opaque"
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            355,
+            60
+          ],
+          "text": "もとの あか"
+        },
+        {
+          "id": "exit",
+          "type": "hand.exit",
+          "t": 4100,
+          "dur": 400
+        }
+      ]
+    },
+    {
+      "id": "step-2",
+      "durationMs": 5000,
+      "caption": "{白|しろ}と{水|みず}の{違い|ちがい}を くらべよう",
+      "description": "下の鉛筆線を白混色と水希釈でそれぞれ覆う。",
+      "actions": [
+        {
+          "id": "action-0",
+          "t": 0,
+          "dur": 5000,
+          "type": "compare",
+          "left": {
+            "schemaVersion": 1,
+            "id": "W-08",
+            "seed": 48715,
+            "stage": {
+              "paper": "gayoushi",
+              "view": "top",
+              "mirror": "handedness"
+            },
+            "regions": {},
+            "steps": [
+              {
+                "id": "step-1",
+                "durationMs": 5000,
+                "caption": "しろを まぜる",
+                "description": "しろを まぜる",
+                "actions": [
+                  {
+                    "id": "enter",
+                    "type": "hand.enter",
+                    "tool": "pencil",
+                    "t": 0,
+                    "dur": 400
+                  },
+                  {
+                    "id": "action-0",
+                    "t": 400,
+                    "dur": 1800,
+                    "type": "pencil.stroke",
+                    "path": {
+                      "gen": "line",
+                      "x1": 160,
+                      "y1": 315,
+                      "x2": 850,
+                      "y2": 315
+                    },
+                    "hardness": "2B",
+                    "pressure": 0.65,
+                    "width": 3
+                  },
+                  {
+                    "id": "action-1",
+                    "t": 2200,
+                    "dur": 1800,
+                    "type": "paint.mix",
+                    "region": {
+                      "shape": "rect",
+                      "x": 220,
+                      "y": 180,
+                      "w": 560,
+                      "h": 260
+                    },
+                    "colors": [
+                      "aka",
+                      "shiro"
+                    ],
+                    "amounts": [
+                      1,
+                      2
+                    ]
+                  },
+                  {
+                    "id": "exit",
+                    "type": "hand.exit",
+                    "t": 4100,
+                    "dur": 400
+                  }
+                ]
+              }
+            ]
+          },
+          "right": {
+            "schemaVersion": 1,
+            "id": "W-08",
+            "seed": 48716,
+            "stage": {
+              "paper": "gayoushi",
+              "view": "top",
+              "mirror": "handedness"
+            },
+            "regions": {},
+            "steps": [
+              {
+                "id": "step-1",
+                "durationMs": 5000,
+                "caption": "みずで うすめる",
+                "description": "みずで うすめる",
+                "actions": [
+                  {
+                    "id": "enter",
+                    "type": "hand.enter",
+                    "tool": "pencil",
+                    "t": 0,
+                    "dur": 400
+                  },
+                  {
+                    "id": "action-0",
+                    "t": 400,
+                    "dur": 1800,
+                    "type": "pencil.stroke",
+                    "path": {
+                      "gen": "line",
+                      "x1": 160,
+                      "y1": 315,
+                      "x2": 850,
+                      "y2": 315
+                    },
+                    "hardness": "2B",
+                    "pressure": 0.65,
+                    "width": 3
+                  },
+                  {
+                    "id": "action-1",
+                    "t": 2200,
+                    "dur": 1800,
+                    "type": "paint.wash",
+                    "region": {
+                      "shape": "rect",
+                      "x": 220,
+                      "y": 180,
+                      "w": 560,
+                      "h": 260
+                    },
+                    "color": "aka",
+                    "water": 0.95
+                  },
+                  {
+                    "id": "exit",
+                    "type": "hand.exit",
+                    "t": 4100,
+                    "dur": 400
+                  }
+                ]
+              }
+            ]
+          },
+          "labels": [
+            "しろを まぜる",
+            "みずで うすめる"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "step-3",
+      "durationMs": 5000,
+      "caption": "{反対|はんたい}の{色|いろ}を {少し|すこし}{混ぜ|まぜ}よう",
+      "description": "赤と少量の緑を混ぜた色を右に置く。",
+      "actions": [
+        {
+          "id": "enter",
+          "type": "hand.enter",
+          "tool": "brush-round",
+          "t": 0,
+          "dur": 400
+        },
+        {
+          "id": "action-0",
+          "t": 400,
+          "dur": 3600,
+          "type": "paint.mix",
+          "region": {
+            "shape": "rect",
+            "x": 600,
+            "y": 240,
+            "w": 270,
+            "h": 200
+          },
+          "colors": [
+            "aka",
+            "midori"
+          ],
+          "amounts": [
+            1,
+            0.2
+          ]
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            580,
+            200
+          ],
+          "text": "みどりを すこし"
+        },
+        {
+          "id": "exit",
+          "type": "hand.exit",
+          "t": 4100,
+          "dur": 400
+        }
+      ]
+    },
+    {
+      "id": "step-4",
+      "durationMs": 5000,
+      "caption": "{見せ|みせ}たい{感じ|かんじ}で {選べ|えらべ}るね",
+      "description": "色材を足す白と透け方を変える水を言葉で区別する。",
+      "actions": [
+        {
+          "id": "action-0",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            90,
+            510
+          ],
+          "text": "しろは いろの ざいりょう"
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            90,
+            560
+          ],
+          "text": "みずは すけかたを かえる"
+        }
+      ]
+    }
+  ]
+}

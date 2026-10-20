@@ -1,0 +1,244 @@
+{
+  "schemaVersion": 1,
+  "id": "Z-02",
+  "seed": 49002,
+  "stage": {
+    "paper": "gayoushi",
+    "view": "top",
+    "mirror": "none"
+  },
+  "regions": {},
+  "steps": [
+    {
+      "id": "step-1",
+      "durationMs": 5000,
+      "caption": "たてなが・よこながを くらべよう",
+      "description": "縦長と横長の紙を同じステージ内の枠として比較する。",
+      "actions": [
+        {
+          "id": "action-0",
+          "t": 0,
+          "dur": 5000,
+          "type": "compare",
+          "left": {
+            "schemaVersion": 1,
+            "id": "Z-02",
+            "seed": 49006,
+            "stage": {
+              "paper": "gayoushi",
+              "view": "top",
+              "mirror": "handedness"
+            },
+            "regions": {},
+            "steps": [
+              {
+                "id": "step-1",
+                "durationMs": 5000,
+                "caption": "たてなが",
+                "description": "たてなが",
+                "actions": [
+                  {
+                    "id": "action-0",
+                    "t": 0,
+                    "dur": 0,
+                    "type": "scene.object",
+                    "objectId": "paper",
+                    "sprite": "paper",
+                    "at": [
+                      500,
+                      310
+                    ],
+                    "scale": 3,
+                    "color": "shiro",
+                    "rotation": 90
+                  },
+                  {
+                    "id": "action-1",
+                    "t": 0,
+                    "dur": 0,
+                    "type": "scene.object",
+                    "objectId": "tree",
+                    "sprite": "tree",
+                    "at": [
+                      500,
+                      310
+                    ],
+                    "scale": 1.8,
+                    "color": "midori"
+                  }
+                ]
+              }
+            ]
+          },
+          "right": {
+            "schemaVersion": 1,
+            "id": "Z-02",
+            "seed": 49006,
+            "stage": {
+              "paper": "gayoushi",
+              "view": "top",
+              "mirror": "handedness"
+            },
+            "regions": {},
+            "steps": [
+              {
+                "id": "step-1",
+                "durationMs": 5000,
+                "caption": "よこなが",
+                "description": "よこなが",
+                "actions": [
+                  {
+                    "id": "action-0",
+                    "t": 0,
+                    "dur": 0,
+                    "type": "scene.object",
+                    "objectId": "paper",
+                    "sprite": "paper",
+                    "at": [
+                      500,
+                      310
+                    ],
+                    "scale": 3,
+                    "color": "shiro"
+                  },
+                  {
+                    "id": "action-1",
+                    "t": 0,
+                    "dur": 0,
+                    "type": "scene.object",
+                    "objectId": "tree",
+                    "sprite": "tree",
+                    "at": [
+                      500,
+                      310
+                    ],
+                    "scale": 1.8,
+                    "color": "midori"
+                  }
+                ]
+              }
+            ]
+          },
+          "labels": [
+            "たてなが",
+            "よこなが"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "step-2",
+      "durationMs": 5000,
+      "caption": "たかい きなら どう おく？",
+      "description": "縦の伸びる木と縦長の紙を図示する。",
+      "actions": [
+        {
+          "id": "action-0",
+          "t": 0,
+          "dur": 0,
+          "type": "scene.object",
+          "objectId": "sheet",
+          "sprite": "paper",
+          "at": [
+            270,
+            315
+          ],
+          "scale": 2.5,
+          "color": "shiro",
+          "rotation": 90
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 0,
+          "type": "scene.object",
+          "objectId": "tree",
+          "sprite": "tree",
+          "at": [
+            270,
+            320
+          ],
+          "scale": 2,
+          "color": "midori"
+        },
+        {
+          "id": "action-2",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            100,
+            80
+          ],
+          "text": "たてに のびる"
+        }
+      ]
+    },
+    {
+      "id": "step-3",
+      "durationMs": 5000,
+      "caption": "よこに のびる けしきも あるね",
+      "description": "横長の紙と山を配置する。",
+      "actions": [
+        {
+          "id": "action-0",
+          "t": 0,
+          "dur": 0,
+          "type": "scene.object",
+          "objectId": "sheet2",
+          "sprite": "paper",
+          "at": [
+            750,
+            315
+          ],
+          "scale": 2.5,
+          "color": "shiro"
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 0,
+          "type": "scene.object",
+          "objectId": "mountain",
+          "sprite": "mountain",
+          "at": [
+            750,
+            350
+          ],
+          "scale": 1.7,
+          "color": "ao"
+        },
+        {
+          "id": "action-2",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            575,
+            80
+          ],
+          "text": "よこに のびる"
+        }
+      ]
+    },
+    {
+      "id": "step-4",
+      "durationMs": 5000,
+      "caption": "かきたい もので えらぼう",
+      "description": "紙の向きを表したいことから選ぶと促す。",
+      "actions": [
+        {
+          "id": "action-0",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            340,
+            550
+          ],
+          "text": "なにを みせたい？"
+        }
+      ]
+    }
+  ]
+}

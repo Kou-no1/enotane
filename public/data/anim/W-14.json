@@ -1,0 +1,234 @@
+{
+  "schemaVersion": 1,
+  "id": "W-14",
+  "seed": 48714,
+  "stage": {
+    "paper": "gayoushi",
+    "view": "top",
+    "mirror": "handedness"
+  },
+  "regions": {},
+  "steps": [
+    {
+      "id": "step-1",
+      "durationMs": 5000,
+      "caption": "ぬれた{色|いろ}の {面|めん}をつくるよ",
+      "description": "赤の濡れた面を作る。",
+      "actions": [
+        {
+          "id": "enter",
+          "type": "hand.enter",
+          "tool": "brush-round",
+          "t": 0,
+          "dur": 400
+        },
+        {
+          "id": "action-0",
+          "t": 400,
+          "dur": 1800,
+          "type": "paint.wash",
+          "region": {
+            "shape": "ellipse",
+            "cx": 500,
+            "cy": 315,
+            "rx": 250,
+            "ry": 160
+          },
+          "color": "water",
+          "water": 0.9
+        },
+        {
+          "id": "action-1",
+          "t": 2200,
+          "dur": 1800,
+          "type": "paint.wash",
+          "region": {
+            "shape": "ellipse",
+            "cx": 500,
+            "cy": 315,
+            "rx": 220,
+            "ry": 145
+          },
+          "color": "aka",
+          "water": 0.65,
+          "layer": "wet"
+        },
+        {
+          "id": "action-2",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            150,
+            80
+          ],
+          "text": "ぬれている いろ"
+        },
+        {
+          "id": "exit",
+          "type": "hand.exit",
+          "t": 4100,
+          "dur": 400
+        }
+      ]
+    },
+    {
+      "id": "step-2",
+      "durationMs": 5000,
+      "caption": "きれいな{水|みず}の{筆|ふで}で ふちをなぞる",
+      "description": "水のマスクと水色の穂先で濡れた色の境界をなぞる。",
+      "actions": [
+        {
+          "id": "enter",
+          "type": "hand.enter",
+          "tool": "brush-round",
+          "t": 0,
+          "dur": 400
+        },
+        {
+          "id": "action-0",
+          "t": 400,
+          "dur": 1800,
+          "type": "paint.wash",
+          "region": {
+            "shape": "rect",
+            "x": 660,
+            "y": 210,
+            "w": 95,
+            "h": 220
+          },
+          "color": "water",
+          "water": 0.7
+        },
+        {
+          "id": "action-1",
+          "t": 2200,
+          "dur": 1800,
+          "type": "paint.soften",
+          "path": {
+            "gen": "line",
+            "x1": 675,
+            "y1": 220,
+            "x2": 690,
+            "y2": 410
+          },
+          "width": 62,
+          "strength": 0.7
+        },
+        {
+          "id": "action-2",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            150,
+            80
+          ],
+          "text": "みずの ふでで ふちを やわらげる"
+        },
+        {
+          "id": "exit",
+          "type": "hand.exit",
+          "t": 4100,
+          "dur": 400
+        }
+      ]
+    },
+    {
+      "id": "step-3",
+      "durationMs": 5000,
+      "caption": "{残す|のこす}ふちと ぼかすふちを{選|えら}ぼう",
+      "description": "片側だけを水の筆でぼかし、もう片側をくっきり残す。",
+      "actions": [
+        {
+          "id": "enter",
+          "type": "hand.enter",
+          "tool": "brush-round",
+          "t": 0,
+          "dur": 400
+        },
+        {
+          "id": "action-0",
+          "t": 400,
+          "dur": 3600,
+          "type": "paint.soften",
+          "path": {
+            "points": [
+              [
+                650,
+                225
+              ],
+              [
+                690,
+                270
+              ],
+              [
+                700,
+                355
+              ],
+              [
+                650,
+                410
+              ]
+            ]
+          },
+          "width": 46,
+          "strength": 0.55
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.arrow",
+          "at": [
+            230,
+            480
+          ],
+          "to": [
+            310,
+            315
+          ],
+          "text": "のこした ふち"
+        },
+        {
+          "id": "exit",
+          "type": "hand.exit",
+          "t": 4100,
+          "dur": 400
+        }
+      ]
+    },
+    {
+      "id": "step-4",
+      "durationMs": 5000,
+      "caption": "ぬれたうちに ためそう",
+      "description": "乾燥後の仕上がりを固定し、実物の条件を注記する。",
+      "actions": [
+        {
+          "id": "action-0",
+          "t": 400,
+          "dur": 3600,
+          "type": "paint.dry",
+          "region": {
+            "shape": "ellipse",
+            "cx": 500,
+            "cy": 315,
+            "rx": 280,
+            "ry": 170
+          }
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            150,
+            80
+          ],
+          "text": "かわいた あとは かわりかたが ちがう"
+        }
+      ]
+    }
+  ]
+}

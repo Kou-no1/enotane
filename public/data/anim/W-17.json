@@ -1,0 +1,186 @@
+{
+  "schemaVersion": 1,
+  "id": "W-17",
+  "seed": 48717,
+  "stage": {
+    "paper": "gayoushi",
+    "view": "top",
+    "mirror": "handedness"
+  },
+  "regions": {},
+  "steps": [
+    {
+      "id": "step-1",
+      "durationMs": 5000,
+      "caption": "{空の|そらの}{大きい|おおきい}{面|めん}を {決め|きめ}よう",
+      "description": "上半分の空領域を注記する。",
+      "actions": [
+        {
+          "id": "action-0",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            150,
+            80
+          ],
+          "text": "ひろい そらの ばしょ"
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.circle",
+          "at": [
+            500,
+            220
+          ],
+          "r": 160
+        }
+      ]
+    },
+    {
+      "id": "step-2",
+      "durationMs": 5000,
+      "caption": "{広い|ひろい}{筆|ふで}で {色|いろ}をつなごう",
+      "description": "空を青から水色へ面でつなぐ。",
+      "actions": [
+        {
+          "id": "enter",
+          "type": "hand.enter",
+          "tool": "brush-round",
+          "t": 0,
+          "dur": 400
+        },
+        {
+          "id": "action-0",
+          "t": 400,
+          "dur": 3600,
+          "type": "paint.wash",
+          "region": {
+            "shape": "rect",
+            "x": 90,
+            "y": 120,
+            "w": 820,
+            "h": 310
+          },
+          "color": "ao",
+          "water": 0.7,
+          "pattern": "grad",
+          "gradTo": "mizu"
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            150,
+            80
+          ],
+          "text": "ひろい ふでで ぬる"
+        },
+        {
+          "id": "exit",
+          "type": "hand.exit",
+          "t": 4100,
+          "dur": 400
+        }
+      ]
+    },
+    {
+      "id": "step-3",
+      "durationMs": 5000,
+      "caption": "{主役|しゅやく}と{背景|はいけい}を {合わせ|あわせ}てみよう",
+      "description": "大きな木を空の前へ置く。",
+      "actions": [
+        {
+          "id": "enter",
+          "type": "hand.enter",
+          "tool": "brush-round",
+          "t": 0,
+          "dur": 400
+        },
+        {
+          "id": "action-0",
+          "t": 0,
+          "dur": 0,
+          "type": "scene.object",
+          "objectId": "tree",
+          "sprite": "tree",
+          "at": [
+            490,
+            430
+          ],
+          "scale": 2.5,
+          "color": "midori"
+        },
+        {
+          "id": "action-1",
+          "t": 400,
+          "dur": 3600,
+          "type": "paint.wash",
+          "region": {
+            "shape": "rect",
+            "x": 90,
+            "y": 450,
+            "w": 820,
+            "h": 90
+          },
+          "color": "kimidori",
+          "water": 0.7
+        },
+        {
+          "id": "action-2",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            150,
+            80
+          ],
+          "text": "しゅやくと はいけい"
+        },
+        {
+          "id": "exit",
+          "type": "hand.exit",
+          "t": 4100,
+          "dur": 400
+        }
+      ]
+    },
+    {
+      "id": "step-4",
+      "durationMs": 5000,
+      "caption": "{時間|じかん}や{場所|ばしょ}で {色|いろ}を{選べ|えらべ}るね",
+      "description": "夕方の雲を加え、背景の選択を促す。",
+      "actions": [
+        {
+          "id": "action-0",
+          "t": 0,
+          "dur": 0,
+          "type": "scene.object",
+          "objectId": "cloud",
+          "sprite": "cloud",
+          "at": [
+            710,
+            250
+          ],
+          "scale": 1.1,
+          "color": "momo"
+        },
+        {
+          "id": "action-1",
+          "t": 0,
+          "dur": 5000,
+          "type": "note.label",
+          "at": [
+            190,
+            580
+          ],
+          "text": "どんな じかんに したい？"
+        }
+      ]
+    }
+  ]
+}

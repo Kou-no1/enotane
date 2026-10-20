@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "id": "P-02",
+  "seed": 202,
+  "stage": { "paper": "gayoushi", "view": "top", "mirror": "handedness" },
+  "regions": {},
+  "steps": [
+    {
+      "id": "straight", "durationMs": 5000,
+      "caption": "まっすぐな せんを ひいてみよう",
+      "description": "紙の上の方に、左から右へまっすぐな線を描く。",
+      "actions": [
+        { "id": "enter", "type": "hand.enter", "tool": "pencil", "t": 0, "dur": 300 },
+        { "id": "line", "type": "pencil.stroke", "path": { "gen": "line", "x1": 170, "y1": 140, "x2": 830, "y2": 140 }, "hardness": "2B", "pressure": 0.65, "width": 3, "t": 400, "dur": 3400 },
+        { "id": "label", "type": "note.label", "at": [210, 90], "text": "まっすぐ", "t": 3900, "dur": 900 }
+      ]
+    },
+    {
+      "id": "wave", "durationMs": 5000,
+      "caption": "くねくね うごかすと どうなる？",
+      "description": "まっすぐな線の下に、上下へゆれる曲線を描く。",
+      "actions": [
+        { "id": "line", "type": "pencil.stroke", "path": { "gen": "wave", "x": 170, "y": 245, "w": 660, "amplitude": 35, "cycles": 4 }, "hardness": "2B", "pressure": 0.65, "width": 3, "t": 200, "dur": 3800 },
+        { "id": "label", "type": "note.label", "at": [210, 190], "text": "くねくね", "t": 4000, "dur": 800 }
+      ]
+    },
+    {
+      "id": "zigzag", "durationMs": 5000,
+      "caption": "ぎざぎざ まがる せんも あるよ",
+      "description": "曲線の下に、角があるぎざぎざの線を描く。",
+      "actions": [
+        { "id": "line", "type": "pencil.stroke", "path": { "gen": "zigzag", "x": 170, "y": 355, "w": 660, "amplitude": 35, "cycles": 5 }, "hardness": "2B", "pressure": 0.65, "width": 3, "t": 200, "dur": 3800 },
+        { "id": "label", "type": "note.label", "at": [210, 300], "text": "ぎざぎざ", "t": 4000, "dur": 800 }
+      ]
+    },
+    {
+      "id": "spiral", "durationMs": 5000,
+      "caption": "ぐるぐる まわる せんを かこう",
+      "description": "紙の左下に、中心から外へぐるぐる広がる線を描く。",
+      "actions": [
+        { "id": "line", "type": "pencil.stroke", "path": { "gen": "spiral", "cx": 350, "cy": 490, "r": 76, "turns": 2.5 }, "hardness": "2B", "pressure": 0.65, "width": 3, "t": 200, "dur": 3800 },
+        { "id": "label", "type": "note.label", "at": [200, 435], "text": "ぐるぐる", "t": 4000, "dur": 800 }
+      ]
+    },
+    {
+      "id": "dots", "durationMs": 5000,
+      "caption": "てんてん どんな かんじが する？",
+      "description": "右下に点を並べる。点と点の間は、えんぴつを持ち上げる。",
+      "actions": [
+        { "id": "line", "type": "pencil.stroke", "path": { "gen": "dots", "x": 570, "y": 500, "w": 250, "count": 11 }, "hardness": "2B", "pressure": 0.8, "width": 7, "t": 200, "dur": 3400 },
+        { "id": "exit", "type": "hand.exit", "t": 3700, "dur": 300 },
+        { "id": "label", "type": "note.label", "at": [630, 445], "text": "てんてん", "t": 4000, "dur": 800 }
+      ]
+    }
+  ]
+}
